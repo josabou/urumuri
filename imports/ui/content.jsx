@@ -3,7 +3,7 @@ function content(){
 
     return (
 <div>
-<div class="container">
+<div class="contents">
 <input type="text" placeholder="Search.."/>
 <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">choose category
@@ -102,7 +102,13 @@ Nutrition during pregnancy and in the first years of a child’s life provides t
 </div>
 
 <div class="blankSeparator1"></div>
+<div className="footer">
+ <div className="container">
+   <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">jean-salvi.fr</a></p>
+ </div>
+ </div>
 </div>
+
     );
 
 }

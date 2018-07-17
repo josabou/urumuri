@@ -13,18 +13,18 @@ function contact(){
     </div>
     <div className="col-md-8 col-md-offset-2">
       <div className="col-md-4">
-        <div className="contact-item"> <i className="fa fa-map-marker fa-2x"></i>
+        <div className="contact-item"> <i className="glyphicon glyphicon-map-marker fa-2x"></i>
           <p>kigali-gishushu</p>
             <p>kigali , rwanda</p>
         </div>
       </div>
       <div className="col-md-4">
-        <div className="contact-item"> <i className="fa fa-envelope-o fa-2x"></i>
+        <div className="contact-item"> <i className="glyphicon glyphicon-envelope fa-2x"></i>
           <p>djeansalvi@gmail.com</p>
         </div>
       </div>
       <div className="col-md-4">
-        <div className="contact-item"> <i className="fa fa-phone fa-2x"></i>
+        <div className="contact-item"> <i className="glyphicon glyphicon-phone fa-2x"></i>
           <p> +250783277997</p>
           <p>  +250722980546</p>
         </div>
@@ -67,12 +67,12 @@ function contact(){
         </ul>
       </div>
 
-      <div class="col-sm-3 col-sm-offset-1">
-        <div class="single-widget">
+      <div className="col-sm-3 col-sm-offset-1">
+        <div className="single-widget">
           <h2>stay in touch</h2>
-          <form action="#" class="searchform">
+          <form action="#" className="searchform">
             <input type="text" placeholder="Your email address" />
-            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+            <button type="submit" className="btn btn-default"><i className="glyphicon glyphicon-circle-arrow-right"></i></button>
             <p>Get the most recent updates from <br />our site and be updated your self...</p>
           </form>
         </div>
