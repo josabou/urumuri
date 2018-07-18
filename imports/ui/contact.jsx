@@ -13,14 +13,11 @@ function contact(){
     </div>
     <div className="col-md-8 col-md-offset-2">
       <div className="col-md-4">
-        <div className="contact-item"> <i className="fa fa-map-marker fa-2x"></i>
-          <p>kigali-gishushu</p>
-            <p>kigali , rwanda</p>
-        </div>
+
       </div>
       <div className="col-md-4">
         <div className="contact-item"> <i className="fa fa-envelope-o fa-2x"></i>
-          <p>djeansalvi@gmail.com</p>
+          <p>urumuri@gmail.com</p>
         </div>
       </div>
       <div className="col-md-4">
@@ -33,7 +30,7 @@ function contact(){
     </div>
     <div className="col-md-8 col-md-offset-2">
       <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
+      <form name="sentMessage" id="contactForm" >
         <div className="row">
           <div className="col-md-6">
             <div className="form-group">
@@ -67,12 +64,12 @@ function contact(){
         </ul>
       </div>
 
-      <div class="col-sm-3 col-sm-offset-1">
-        <div class="single-widget">
+      <div className="col-sm-3 col-sm-offset-1">
+        <div className="single-widget">
           <h2>stay in touch</h2>
-          <form action="#" class="searchform">
+          <form action="#" className="searchform">
             <input type="text" placeholder="Your email address" />
-            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+            <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right"></i></button>
             <p>Get the most recent updates from <br />our site and be updated your self...</p>
           </form>
         </div>
@@ -82,7 +79,7 @@ function contact(){
   </div>
   <div className="footer">
     <div className="container">
-      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">jean-salvi.fr</a></p>
+      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri.fr</a></p>
     </div>
   </div>
 </div>
