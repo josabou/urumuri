@@ -1,3 +1,5 @@
+import { Mongo } from 'meteor/mongo';
+
 Childcolb = new Mongo.Collection('Childcolb');
 Parentscolb = new Mongo.Collection('Parentscolb');
 Pregnantcolb = new Mongo.Collection('Pregnantcolb');
