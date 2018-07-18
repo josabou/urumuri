@@ -15,16 +15,16 @@ function home(){
 
 
     <div className="carousel-inner">
-      <div className="item active">
-        <img src="la.jpg" alt="Los Angeles"/>
+      <div className="item active slide">
+        <img src="././images/im1.jpg" alt="Los Angeles"/>
       </div>
 
-      <div className="item">
-        <img src="chicago.jpg" alt="Chicago"/>
+      <div className="item slide">
+        <img src="././images/im2.jpg" alt="Chicago"/>
       </div>
 
-      <div className="item">
-        <img src="ny.jpg" alt="New York"/>
+      <div className="item slide">
+        <img src="././images/im3.jpg" alt="New York"/>
       </div>
     </div>
 

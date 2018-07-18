@@ -12,9 +12,7 @@ function contact(){
       <p>are you interested in our services? please contact us and we are there for you.</p>
     </div>
     <div className="col-md-8 col-md-offset-2">
-      <div className="col-md-4">
 
-      </div>
       <div className="col-md-4">
         <div className="contact-item"> <i className="fa fa-envelope-o fa-2x"></i>
           <p>urumuri@gmail.com</p>
@@ -64,7 +62,7 @@ function contact(){
         </ul>
       </div>
 
-      <div className="col-sm-3 col-sm-offset-1">
+      <div className="col-sm-6 col-sm-offset-1">
         <div className="single-widget">
           <h2>stay in touch</h2>
           <form action="#" className="searchform">
@@ -79,7 +77,7 @@ function contact(){
   </div>
   <div className="footer">
     <div className="container">
-      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri.fr</a></p>
+      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
     </div>
   </div>
 </div>
