@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-function content(){
+
+function contents(){
 
     return (
 <div>
@@ -32,7 +33,7 @@ function content(){
           <li><a href="#">umwana</a></li>
         </ul>
       </div>
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit">search<i class="fa fa-search"></i></button>
 
 </div>
 <div class="blankSeparator"></div>
@@ -112,4 +113,4 @@ Nutrition during pregnancy and in the first years of a child’s life provides t
     );
 
 }
-export default content;
+export default contents;

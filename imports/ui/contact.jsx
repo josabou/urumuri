@@ -69,11 +69,11 @@ function contact(){
           <h2>stay in touch</h2>
           <form action="#" className="searchform">
             <input type="text" placeholder="Your email address" />
-<<<<<<< HEAD
+
             <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right"></i></button>
-=======
+
             <button type="submit" className="btn btn-default"><i className="glyphicon glyphicon-circle-arrow-right"></i></button>
->>>>>>> 5d9e0b0f5950789bc50c06ec88288deecdeeffa0
+
             <p>Get the most recent updates from <br />our site and be updated your self...</p>
           </form>
         </div>
