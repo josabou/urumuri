@@ -19,7 +19,7 @@ class about extends Component {
           <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
               <h3>jean-salvi</h3>
-              <p>app developer</p>
+              <p>software engineering student at AUCA and he is pasiaonated about addressing people challenge through technology</p>
             </div>
           </div>
         </div>
