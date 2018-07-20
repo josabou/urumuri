@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Mongo } from 'meteor/mongo';
 import { Childcolb } from '../ourdb/Contents.js';
+import { withTracker } from 'meteor/react-meteor-data';
 
 
 
@@ -9,16 +10,7 @@ import { Childcolb } from '../ourdb/Contents.js';
 console.log(Childcolb.find(  ));
 
 class contents extends Component {
-   insert(){
-    Childcolb.insert({
-   _id: '3',
-   title: 'parents',
-   description: 'bra bra bra',
-   url: 'http://www.idontknow.com'
 
-})
-    alert();
-  }
 render (){
 
     return (
@@ -52,7 +44,7 @@ render (){
           <li><a href="#">umwana</a></li>
         </ul>
       </div>
-      <button type="submit"onClick={this.insert.bind(this)}>search<i className="fa fa-search"></i></button>
+      <button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
 
 </div>
 <div className="blankSeparator"></div>
@@ -160,4 +152,8 @@ render (){
 }
 }
 
-export default contents;
+export default withTracker(() => {
+ return {
+   tasks: Childcolb.find({}, { sort: { createdAt: -1 } }).fetch(),
+ };
+})(contents);

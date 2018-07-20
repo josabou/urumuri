@@ -18,14 +18,29 @@ function home(){
     <div className="carousel-inner">
       <div className="item active slide">
         <img src="././images/img6.jpg" alt="Los Angeles"/>
+        <div className="carousel-caption">
+             <h1>The First 1,000 Days: When Nutrition Matters Most</h1>
+             <p>The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days.</p>
+             <button>readmore</button>
+           </div>
       </div>
 
       <div className="item slide">
         <img src="././images/img5.jpg" alt="Chicago"/>
+        <div className="carousel-caption">
+             <h1>The First 1,000 Days: When Nutrition Matters Most</h1>
+             <p>The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days.</p>
+             <button>readmore</button>
+           </div>
       </div>
 
       <div className="item slide">
         <img src="././images/img4.jpg" alt="New York"/>
+        <div className="carousel-caption">
+             <h1>The First 1,000 Days: When Nutrition Matters Most</h1>
+             <p>The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days..</p>
+             <button>readmore</button>
+           </div>
       </div>
     </div>
 
@@ -39,7 +54,22 @@ function home(){
       <span className="sr-only">Next</span>
     </a>
   </div>
-
+  <div className="social">
+    <h3>Follow us</h3>
+    <ul>
+      <li><a href="https://www.facebook.com/people/Salvio_Sage"><i className="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/salvio_sage"><i className="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+      <li><a href="#"><i className="fa fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a></li>
+      <li><a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+  <div className="footer">
+    <div className="container">
+      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
+    </div>
+  </div>
 </div>
     );
 
