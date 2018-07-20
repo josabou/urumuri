@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
+//import ReactBootstrapSlider from 'react-bootstrap-slider';
 function home(){
 
     return (
@@ -8,7 +9,7 @@ function home(){
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
     <ol className="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" classNameName="active"></li>
+      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>

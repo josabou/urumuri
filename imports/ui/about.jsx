@@ -1,12 +1,57 @@
 import React, { Component } from 'react';
-function about(){
+class about extends Component {
+  render (){
 
     return (
+
     <div>
 <div> <div id="about">
   <div className="container">
+  <div id="team" className="text-center">
+
+      <div className="section-title center">
+        <h2>Meet team urumuli</h2>
+        <hr/>
+        <p>actually i am working alone , but i am looking on how can i cooperate with the other to make a strong team which will facilitate to work quiker and relevant.</p>
+      </div>
+      <div id="row">
+        <div className="col-xs-6 col-md-3 col-sm-6">
+          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+            <div className="caption">
+              <h3>jean-salvi</h3>
+              <p>app developer</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-xs-6 col-md-3 col-sm-6">
+          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+            <div className="caption">
+              <h3>jjosiane</h3>
+              <p>Web Designer</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-xs-6 col-md-3 col-sm-6">
+          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+            <div className="caption">
+              <h3>germaine</h3>
+              <p>Creative Director</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-xs-6 col-md-3 col-sm-6">
+          <div className="thumbnail"> <img src=""././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+            <div className="caption">
+              <h3>josiane</h3>
+              <p>Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div className="section-title text-center center">
-      <h2>About us</h2>
+      <h2>team urumuli </h2>
       <hr/>
     </div>
     <div className="row">
@@ -38,5 +83,6 @@ I software developer. In addition to my love of computers  programming,I like to
      </div>
     );
 
+}
 }
 export default about;

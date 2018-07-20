@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import { DropdownButton} from 'react-bootstrap';
 import { MenuItem} from 'react-bootstrap';
@@ -6,7 +7,8 @@ import { Navbar} from 'react-bootstrap';
 import { Nav} from 'react-bootstrap';
 import { NavItem} from 'react-bootstrap';
 
-function renderDropdownButton() {
+class notfound extends Component {
+  render (){
   return (
     <DropdownButton
       bsStyle={"primary"}
@@ -18,12 +20,12 @@ function renderDropdownButton() {
       <MenuItem eventKey="3" >Item</MenuItem>
       <MenuItem eventKey="4"> link</MenuItem>
     </DropdownButton>
-    
+
   );
+}
 }
 
 
 
 
-
-export default renderDropdownButton;
+export default notfound;

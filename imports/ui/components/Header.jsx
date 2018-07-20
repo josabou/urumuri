@@ -26,12 +26,12 @@ export default class Header extends React.Component {
         <form>
             Username:<input
               type="text"
-            
+
               placeholder="Enter your Username" className="input_text"
             /><br/>
              Password:<input
               type="Password"
-             
+
               placeholder="Password" className="input_text"
             /><br/>
             <button className="btn btn-info" data-dismiss="modal">Login</button>
