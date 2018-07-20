@@ -40,7 +40,7 @@ class about extends Component {
           </div>
         </div>
         <div className="col-xs-6 col-md-3 col-sm-6">
-          <div className="thumbnail"> <img src=""././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
               <h3>josiane</h3>
               <p>Project Manager</p>
