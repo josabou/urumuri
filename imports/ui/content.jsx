@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Mongo } from 'meteor/mongo';
-import { Childcolb } from '../ourdb/Contents.js';
+import {Childcolb} from '../ourdb/child.jsx';
 import { withTracker } from 'meteor/react-meteor-data';
-
-
-
-
-console.log(Childcolb.find(  ));
 
 class contents extends Component {
 
 render (){
-
+const what =Childcolb.findOne();
     return (
 <div>
 <div className="contents">
@@ -53,7 +48,7 @@ render (){
     <div className="col-xs-3">
       <h3>feeding infos</h3>
 
-      <p>{}</p>
+      <p>{what._id}</p>
 
       <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     <div className="two_third lastcolumn">
@@ -152,8 +147,4 @@ render (){
 }
 }
 
-export default withTracker(() => {
- return {
-   tasks: Childcolb.find({}, { sort: { createdAt: -1 } }).fetch(),
- };
-})(contents);
+export default contents;

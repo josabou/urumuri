@@ -25,10 +25,12 @@ class signup extends Component {
     <div className="form-group">
     Province:
   <select required>
-  <option >--select--</option>
-  <option >Saab</option>
-  <option >Opel</option>
-  <option >Audi</option>
+  <option >--selectprovince--</option>
+  <option >northern</option>
+  <option >southern </option>
+  <option >kigali city</option>
+  <option >eastern </option>
+  <option >western</option>
   </select>
   District:
   <select required>
