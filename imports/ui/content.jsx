@@ -3,42 +3,51 @@ import ReactDOM from 'react-dom';
 import { Mongo } from 'meteor/mongo';
 import {Childcolb} from '../ourdb/child.jsx';
 import { withTracker } from 'meteor/react-meteor-data';
+import { NavItem} from 'react-bootstrap';
+import Async from 'react-select/lib/Async';
+import {ReactiveVar} from 'meteor/reactive-var';
+import Select from 'react-select';
+
+const options = [
+  { value: '1', label: 'parents' },
+  { value: '2', label: 'children' },
+  { value: '3', label: 'overview' }
+];
+const discriptions = [
+  { value: '1', label: 'behaviour' },
+  { value: '2', label: 'info' },
+  { value: '3', label: 'nutrition' }
+];
 
 class contents extends Component {
+  state = {
+    selectedOption1: null,
+    selectedOption2: null,
+  }
+  handleChange1 = (selectedOption) => {
+    this.setState({selectedOption1: selectedOption });
+    console.log(`Option selected:`, selectedOption);
+  }
+
+  handleChange2 = (selectedOption) => {
+    this.setState({selectedOption2: selectedOption });
+    console.log(`Option selected:`, selectedOption);
+  }
 
 render (){
-const what =Childcolb.findOne();
+const what =Childcolb.findOne(  { cat:'parents1'}, {  body: true,_id:false } );
+const selected= this.state;
     return (
+
 <div>
+<div>
+<Select value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
+<Select value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>,
 <div className="contents">
 <input type="text" placeholder="Search.."/>
-<div className="dropdown">
-    <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">choose category
-    <span className="caret"></span></button>
-    <ul className="dropdown-menu">
-      <li><a href="#">umubyeyi </a></li>
-      <li><a href="#">aratwite</a></li>
-      <li><a href="#">umwana</a></li>
-    </ul>
-  </div>
-  <div className="dropdown">
-      <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">choose category
-      <span className="caret"></span></button>
-      <ul className="dropdown-menu">
-        <li><a href="#">umubyeyi </a></li>
-        <li><a href="#">aratwite</a></li>
-        <li><a href="#">umwana</a></li>
-      </ul>
-    </div>
-    <div className="dropdown">
-        <button className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">choose category
-        <span className="caret"></span></button>
-        <ul className="dropdown-menu">
-          <li><a href="#">umubyeyi </a></li>
-          <li><a href="#">aratwite</a></li>
-          <li><a href="#">umwana</a></li>
-        </ul>
-      </div>
+
+
+
       <button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
 
 </div>
@@ -48,7 +57,7 @@ const what =Childcolb.findOne();
     <div className="col-xs-3">
       <h3>feeding infos</h3>
 
-      <p>{what._id}</p>
+      <p>{what.body}</p>
 
       <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     <div className="two_third lastcolumn">
