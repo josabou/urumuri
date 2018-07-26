@@ -13,13 +13,33 @@ class  notFound extends React.Component {
     return  (
     <div style={{background: '#2c3e50', color: '#FFF', width: 220}}>
         <SideNav highlightColor='#E91E63' highlightBgColor='#00bcd4' defaultSelected='sales'>
-            <Nav id='dashboard'>
+            <Nav id='upcomming'>
                 <NavIcon><SvgIcon size={20} icon={ic_aspect_ratio}/></NavIcon>
-                <NavText> Dashboard </NavText>
+                <NavText>upcomming </NavText>
             </Nav>
-            <Nav id='sales'>
+            <Nav id='parents'>
                 <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
-                <NavText> Sales </NavText>
+                <NavText> parents </NavText>
+            </Nav>
+            <Nav id='kindof'>
+                <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
+                <NavText> parents </NavText>
+            </Nav>
+            <Nav id='anything'>
+                <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
+                <NavText> parents </NavText>
+            </Nav>
+            <Nav id='idont'>
+                <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
+                <NavText> parents </NavText>
+            </Nav>
+            <Nav id='ohhhh'>
+                <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
+                <NavText> parents </NavText>
+            </Nav>
+            <Nav id='lameeee'>
+                <NavIcon><SvgIcon size={20} icon={ic_business}/></NavIcon>
+                <NavText> parents </NavText>
             </Nav>
         </SideNav>
     </div>
