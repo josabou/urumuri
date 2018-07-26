@@ -8,6 +8,16 @@ import Async from 'react-select/lib/Async';
 import {ReactiveVar} from 'meteor/reactive-var';
 import Select from 'react-select';
 
+import {UnmountClosed} from 'react-collapse';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemTitle,
+    AccordionItemBody,
+} from 'react-accessible-accordion';
+
+import 'react-accessible-accordion/dist/fancy-example.css';
+
 const options = [
   { value: '1', label: 'parents' },
   { value: '2', label: 'children' },
@@ -27,15 +37,17 @@ class contents extends Component {
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption });
     console.log(`Option selected:`, selectedOption);
+    let i =selectedOption.label;
   }
 
   handleChange2 = (selectedOption) => {
     this.setState({selectedOption2: selectedOption });
     console.log(`Option selected:`, selectedOption);
+    let i =selectedOption.label;
   }
 
 render (){
-const what =Childcolb.findOne(  { cat:'parents1'}, {  body: true,_id:false } );
+const what =Childcolb.findOne(  { cat:'parents1'} );
 const selected= this.state;
     return (
 
@@ -130,6 +142,29 @@ const selected= this.state;
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 <div className="blankSeparator1"></div>
+<div>
+
+<Accordion>
+      <AccordionItem>
+          <AccordionItemTitle>
+              <h3>Simple title</h3>
+          </AccordionItemTitle>
+          <AccordionItemBody>
+              <p>Body content</p>
+          </AccordionItemBody>
+      </AccordionItem>
+      <AccordionItem>
+          <AccordionItemTitle>
+              <h3>Complex title</h3>
+              <div>With a bit of description</div>
+          </AccordionItemTitle>
+          <AccordionItemBody>
+              <p>Body content</p>
+          </AccordionItemBody>
+      </AccordionItem>
+  </Accordion>
+
+</div>
 <div className="footer">
  <div className="container">
    <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">jean-salvi.fr</a></p>

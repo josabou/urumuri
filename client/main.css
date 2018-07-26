@@ -15,6 +15,20 @@ body {
 
   font-size: 14px;
 }
+input {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+select {
+  margin-bottom: 1rem;
+  display: block;
+}
 
 .signup{
 
