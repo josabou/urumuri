@@ -31,6 +31,7 @@ export default class App extends React.Component{
           <Route  path="/signup" component={signup}/>
           <Route  path="/test" component={test}/>
        	  <Route component={NotFound}/>
+          AccountsUIWrapper
 
           </Switch>
       </div>

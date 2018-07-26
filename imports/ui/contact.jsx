@@ -51,17 +51,7 @@ class contact extends Component {
         <div id="success"></div>
         <button type="submit" className="btn btn-default">Send Message</button>
       </form>
-      <div className="social">
-        <h3>Follow us</h3>
-        <ul>
-          <li><a href="https://www.facebook.com/people/Salvio_Sage"><i className="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/salvio_sage"><i className="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i className="fa fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a></li>
-          <li><a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
+
 
       <div className="col-sm-6 col-sm-offset-1">
         <div className="single-widget">
@@ -76,13 +66,19 @@ class contact extends Component {
 
     </div>
   </div>
-  <div className="footer">
-    <div className="container">
-      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
-    </div>
-  </div>
-</div>
 
+</div>
+<div className="footer">
+<a href="https://www.facebook.com/people/Salvio_Sage"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+  <a href="https://twitter.com/salvio_sage"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+<a href="#"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+  <a href="#"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+  <a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a>
+  <a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+
+
+    <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
+</div>
 </div>
 
     );
