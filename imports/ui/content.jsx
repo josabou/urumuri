@@ -19,36 +19,36 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 const options = [
-  { value: '1', label: 'parents' },
-  { value: '2', label: 'children' },
-  { value: '3', label: 'overview' }
+  { value: '0', label: 'parents1' },
+  { value: '1', label: 'parents2' },
+  { value: '2', label: 'parents3' }
 ];
 const discriptions = [
-  { value: '1', label: 'behaviour' },
-  { value: '2', label: 'info' },
-  { value: '3', label: 'nutrition' }
+  { value: '0', label: 'behaviour' },
+  { value: '1', label: 'info' },
+  { value: '2', label: 'nutrition' }
 ];
 
 class contents extends Component {
   state = {
-    selectedOption1: null,
-    selectedOption2: null,
+    selectedOption1: 1,
+    selectedOption2: 1,
   }
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption });
     console.log(`Option selected:`, selectedOption);
-    let i =selectedOption.label;
   }
 
   handleChange2 = (selectedOption) => {
     this.setState({selectedOption2: selectedOption });
     console.log(`Option selected:`, selectedOption);
-    let i =selectedOption.label;
   }
 
 render (){
-const what =Childcolb.findOne(  { cat:'parents1'} );
-const selected= this.state;
+  var num=this.state.selectedOption1;
+  var label1=options[num].label
+ var what =Childcolb.findOne(  { cat:label1} );
+ var selected= this.state;
     return (
 
 <div>
@@ -67,7 +67,7 @@ const selected= this.state;
 <div className="container">
   <div className="info">
     <div className="col-xs-3">
-      <h3>feeding infos</h3>
+      <h3>{what.title}</h3>
 
       <p>{what.body}</p>
 

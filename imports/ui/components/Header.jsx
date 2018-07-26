@@ -10,6 +10,7 @@ export default class Header extends React.Component {
         <NavLink className="inactive" activeClassName="active" to="/about">Who We Are</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/content">Content</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/contact">Contact Us</NavLink>
+        <NavLink className="inactive" activeClassName="active" to="/test">test</NavLink>
         <NavLink className="inactive" to="/bad-url">Not Found Page</NavLink>
         <a  className="inactive" href="#" data-toggle="modal" data-target="#myModal">SIGN IN  </a>
 

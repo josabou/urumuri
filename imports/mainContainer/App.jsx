@@ -8,6 +8,7 @@ import Content from '../ui/content.jsx';
 import about from '../ui/about.jsx';
 import contact from '../ui/contact.jsx';
 import login from '../ui/login.jsx';
+import test from '../ui/test.jsx';
 import signup from '../ui/signup.jsx';
 import NotFound from '../ui/NotFound.jsx';
 import AccountsUIWrapper from '../ui/AccountsUIWrapper.js';
@@ -28,6 +29,7 @@ export default class App extends React.Component{
           <Route  path="/contact" component={contact}/>
           <Route  path="/login" component={login}/>
           <Route  path="/signup" component={signup}/>
+          <Route  path="/test" component={test}/>
        	  <Route component={NotFound}/>
 
           </Switch>
