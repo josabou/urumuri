@@ -31,16 +31,16 @@ const discriptions = [
 
 class contents extends Component {
   state = {
-    selectedOption1: 1,
+    selectedOption1: 0,
     selectedOption2: 1,
   }
   handleChange1 = (selectedOption) => {
-    this.setState({selectedOption1: selectedOption });
+    this.setState({selectedOption1: selectedOption.value });
     console.log(`Option selected:`, selectedOption);
   }
 
   handleChange2 = (selectedOption) => {
-    this.setState({selectedOption2: selectedOption });
+    this.setState({selectedOption2: selectedOption.value });
     console.log(`Option selected:`, selectedOption);
   }
 
@@ -48,6 +48,7 @@ render (){
   var num=this.state.selectedOption1;
   var label1=options[num].label
  var what =Childcolb.findOne(  { cat:label1} );
+ console.log(what);
  var selected= this.state;
     return (
 
