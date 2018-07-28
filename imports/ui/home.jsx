@@ -2,10 +2,20 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
 //import ReactBootstrapSlider from 'react-bootstrap-slider';
-function home(){
+
+class home extends React.Component{
+  constructor(props){
+    super(props);
+
+}
+  componentDidMount(){
+    
+  }
+render(){
 
     return (
     <div>
+      
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
     <ol className="carousel-indicators">
@@ -72,6 +82,8 @@ function home(){
   </div>
 </div>
     );
+
+}
 
 }
 export default home;
