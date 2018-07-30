@@ -32,11 +32,11 @@ class Header extends React.Component {
             window.open("/parents", "_self");
             break;
           }
-          else if (po[key].position == "ngo") {
+          else if (po[key].position == "health_center") {
             sessionStorage.setItem('user_id', po[key]._id);
             sessionStorage.setItem('username', po[key].username);
             sessionStorage.setItem('account_type', po[key].position);
-            window.open("/ngo", "_self");
+            window.open("/health_center", "_self");
             break;
           }
         } else {

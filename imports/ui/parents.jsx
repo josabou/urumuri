@@ -17,44 +17,47 @@ class parents extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            overview_visible: true,
+            food_visible: true,
             message_visible: false,
             upcomming_visible: false,
-            announce_visible: false
+            vaccine_visible:false
         }
 
     }
+    
+
+   
     showIncomming() {
         this.setState({ message_visible: false });
-        this.setState({ overview_visible: false });
-        this.setState({ announce_visible: false });
+        this.setState({ food_visible: false });
         this.setState({ upcomming_visible: false });
+        this.setState({ vaccine_visible: false });
 
         this.setState({ upcomming_visible: true });
     }
     showMessage() {
         this.setState({ message_visible: false });
-        this.setState({ overview_visible: false });
-        this.setState({ announce_visible: false });
+        this.setState({ food_visible: false });
+        this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
 
         this.setState({ message_visible: true });
     }
-    showOverview() {
+    showFood() {
         this.setState({ message_visible: false });
-        this.setState({ overview_visible: false });
-        this.setState({ announce_visible: false });
+        this.setState({ food_visible: false });
+        this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
 
-        this.setState({ overview_visible: true });
+        this.setState({ food_visible: true });
     }
-    showAnnounce() {
+    showVaccine() {
         this.setState({ message_visible: false });
-        this.setState({ overview_visible: false });
-        this.setState({ announce_visible: false });
+        this.setState({ food_visible: false });
+        this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
 
-        this.setState({ announce_visible: true });
+        this.setState({ vaccine_visible: true });
     }
     componentDidMount() {
         if (sessionStorage.length == 0) {
@@ -64,9 +67,24 @@ class parents extends React.Component {
         document.getElementById("profileUI").style.display = "block";
         document.getElementById("username_Jojo_general").innerHTML = "" + sessionStorage.getItem("username");
         document.getElementById("logout").style.display = "inline";
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+
 
         document.getElementById("activitypage").style.display = "inline";
-        document.getElementById("activitypage").href = "/healthmentors";
+        document.getElementById("activitypage").href = "/parents";
     }
     w3_open() {
         document.getElementById("mySidebar").style.display = "block";
@@ -80,15 +98,15 @@ class parents extends React.Component {
     render() {
         return (
 
-            <div style={{ background: '#2c3e50', color: '#FFF' }}>
+            <div style={{ background: '#2c3e50', color: '#FFF'}}>
                 <div>
                     <div className="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)}>Close &times;</button>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>Incomming Event</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showAnnounce.bind(this)}>Announce</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>Overview</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>Message</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBIKORWA BITEGANIJWE KUBA</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showFood.bind(this)}>AMAKURU Y'AMAFUNGURO UMWANA YAFATA</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showVaccine.bind(this)}>INKINGO ZAFASHWE NIMYAKA Y'UMWANA</a>
                     </div>
 
                     <div>
@@ -97,53 +115,13 @@ class parents extends React.Component {
                         <div className="center-block" style={{ margin: "0px 300px 0px 300px" }} >
 
                             <div className="container" style={{ width: "100%", color: "black" }}>
-
-                                <div className={this.state.announce_visible ? "announce" : "announce_invisible"}>
-                                    <h2>Announce</h2>
-                                    <div>
-                                        <select>
-                                            <option>Health Mentor</option>
-                                            <option>Health center</option>
-                                            <option>Parents </option>
-
-                                        </select>
-                                        <hr></hr>
-                                        <div><h3>Parents</h3>
-                                            <div style={{ height: "300px", overflow: "scroll" }}>
-                                                <form >
-                                                    <input type="checkbox" value="Kanakuze Veddy" /> Kanakuze Veddy<br />
-                                                    <input type="checkbox" value="Hitimana baptist" /> Hitimana baptist<br />
-                                                    <input type="checkbox" value="Hirary JOanah" />Hirary JOanah<br /><br />
-                                                    <table>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea></td>
-                                                                <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </form></div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
                                 <div className={this.state.message_visible ? "message" : "message_invisible"}>
-                                    <h2>Message</h2>
+                                    <h2>UBUTUMWA</h2>
                                     <div>
                                         <table>
                                             <tbody>
                                                 <tr>
                                                     <td><div style={{ width: "200px", height: "400px", overflow: "scroll" }}>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
                                                         <div style={{ borderBottom: "1px solid black" }}>
                                                             <h6>Kanakuze Dativa</h6>
                                                         </div>
@@ -174,242 +152,175 @@ class parents extends React.Component {
                                         </table>
                                     </div>
                                 </div>
+                                <div className={this.state.food_visible ? "food" : "food_invisible"}>
+                                    <h4>AMAKURU YAMAFUNGURO</h4>
+                                    <div style={{ height: "600px", overflow: "scroll" }}>
+                                    <h6 style={{color:"blue"}}>AMAKURU KUBIRYO WAGABURIRA UMWANA NUKO WABITEGURA</h6>
+                                    
+<button className="accordion">1DAY - 3WEEKS</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px" ,marginLeft:"400px",marginBottom:"50px"}}> UKO WABITEGURA</button>
+</div>
+</div>
+
+<button className="accordion">3WEEKS - 2MOUTHS</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px",marginLeft:"400px",marginBottom:"50px" }}> UKO WABITEGURAE</button>
+</div>
+</div>
+
+<button className="accordion">2MOUTHS-6MOUTHS</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px",marginLeft:"400px" ,marginBottom:"50px"}}> UKO WABITEGURA</button>
+</div>
+</div>
+<button className="accordion">Umwana hagati y’amezi 6 na 8</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+<h4><strong style={{color:"green"}}>IBYO YASHOBORA GUFATA</strong></h4>
+<div><strong>Ibinyampeke : </strong>Umuceri, ingano cyangwa ibibikomokaho</div>
+<div><strong>Imbuto :</strong> Avoka, imineke, ibinyomoro, apricots na prunes</div>
+<div><strong>Imboga :</strong> Karoti, epinari, urunyogwe, ibitonore</div>
+<div><strong>Proteines :</strong> inyama y’inkoko, tofu</div>
+<div><strong>Ibiva ku mata : </strong>yogourt ikoze mu mata yuzuye.</div>
+
+<h4><strong style={{color:"green"}}>UKO BITEGURWA</strong></h4>
+<div>•	Ibi byose umwana abihabwa biseye. Ndetse umuceri n’ingano bishobora gukorwamo igikoma,
+     ari nacyo cyiza kuri uyu mwana kurenza ibindi bikoma byose wamuha.</div>
+<div>•	Ibiryo by’uyu mwana ntibikarangwa ndetse n’umunyu ushyiramo gacye cyane bishoboka.</div>
+<div>•	Kuko uyu mwana ariho aba agitangira kurya, si byiza guhita umuha ibintu byinshi kuko bishobora gutuma yanga ibere. 
+    Ikindi jya umuha ubwoko bumwe ukwabwo, kugeza igihe umenyeye icyo akunda kurenza ibindi, cyangwa igitera umubiri we ubwivumbure.</div>
+</div>
+</div>
+<button className="accordion">Umwana hagati y’amezi 8 na 10</button>
+<div className="panel">
+<div style={{ height: "500px", overflow: "scroll" }}>
+<h4><strong style={{color:"green"}}>IBYO YASHOBORA GUFATA</strong></h4>
+<div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
+<div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
+<div><strong>•	Imboga : </strong>karoti, poivron, epinari, urunyogwe, ibitonore, intoryi, ibibiringanya, igitunguru, amashu, ibirayi, ibihumyo</div>
+<div><strong>•	Poroteyine : </strong>Inyama y’inkoko, umuhondo w’igi, inyama y’inka</div>
+<div><strong>•	Ibiva ku mata :</strong> Yogourt, fromage</div>
+<strong>ICYITONDERWA:</strong> Ibi biryo urabisya, gusa uko agenda amera amenyo, imbuto zoroshye ushobora kumuha akifatira akaba yanyunyuza nk’ikinyomoro. Tangira umumenyereze kwitamika kandi, amenye uko bafata ikiyiko.
+<strong>URUGERO: Inombe y’ibirayi, urunyogwe na karoti</strong>
+<div><img src="images/10.jpg"  style={{width:"100px", height:"100px"}}/></div>
+<p>Iyi ni indyo yuzuye ishobora kugaburirwa umwana kuva ku mezi umunani.<br/>
+ Muri iyi ndyo, harimo intungamubiri nka proteines, beta-carotenes, imyunyungugu nka fer fibres, n’izindi zitandukanye.</p>
+<h6 style={{fontWeight:"bold",color:"blue"}}> Ibikenewe</h6>
+<ol>
+<li>Agakombe k’amashaza atonoye (yavuyeho igishishwa cy’inyuma)<span><img src="images/1.jpg" style={{width:"50px", height:"50px"}} /></span></li>
+<li>Ibirayi 2 biringaniye, bihase kandi bikasemo uduce <span><img src="images/2.jpg" style={{width:"50px", height:"50px"}} /></span></li>
+<li>Karoti 2 ziringaniye ziharuye zikasemo n’uduce<span><img src="images/3.jpg" style={{width:"50px", height:"50px"}} /></span></li>
+<li>½ cy’igitunguru gikase<span><img src="images/4.jpg" style={{width:"50px", height:"50px"}} /></span></li>
+<li>Ibiyiko 2 by’amavuta ya Olive ataratetswemo ibindi bintu<span><img src="images/5.jpg" style={{width:"50px", height:"50px"}} /></span></li>
+<li>Ikiyiko cy’umutobe w’indimu<span><img src="images/6.png"  style={{width:"50px", height:"50px"}}/></span></li>
+</ol>
+<h4><strong style={{color:"green"}}>UKO BITEGURWA</strong></h4>
+<div>
+    <p><strong>step1:</strong>Ufata amashaza ukayatumbika mu mazi igihe kinini, ukayakuramo ugashyira mu yandi mazi,
+     yamara kuvaho ibishishwa ukayatogosa ku ruhande, hanyuma ukayashyira mu kuma gasya.
+      (umuntu ashobora kwifashisha paswari mu gihe nta kabugenewe afite).</p>
+
+      <p><strong>step2:</strong>Biza amazi mu gasafuriya ku ruhande, hanyuma ushyiremo bya birayi bikase, wongeremo za karoti <span><img src="images/7.jpg" style={{width:"50px", height:"50px"}} /></span>
+ ubirekere ku muriro mukeya mu gihe cy’iminota 30 kugeza kuri 40.<span><img src="images/8.jpg" style={{width:"50px", height:"50px"}} /></span></p>
+
+ <p><strong>step3:</strong>Fata wa munyigi w’amashaza, uvange na bya birayi na karoti bihiye wakuye ku muriro bikirimo n’amazi wabitekesheje,
+ ongeramo ibiyiko 2 by’amavuta ya Olive, hanyuma ubinyuze muri mixeur <span><img src="images/9.jpg" style={{width:"50px", height:"50px"}} /></span> 
+ cyangwa se ikindi kintu wifashisha mu gusya ibiribwa, kugeza igihe uboneye inombe yoroshye kandi ivanze neza.<span><img src="images/10.jpg" style={{width:"60px", height:"60px"}} /></span>
+ </p></div>
+</div>
+</div>
+<button className="accordion">Umwana hagati y’amezi 10 na 12</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+<h4><strong style={{color:"green"}}>IBYO YASHOBORA GUFATA</strong></h4>
+<div>Uyu mwana ifunguro ryose abantu bakuru bashobora gufungura ariko ridakomeye cyane yemerewe kuriryaho.</div>
+<div style={{color:"red"}}> Ibyo waba uretse kumuha ni imyumbati, umutsima w’ibigori, n’igi ryose.<strong>Igi</strong> ukomeza kumuha umuhondo waryo kugeza umwaka wuzuye. 
+<div style={{color:"red"}}><strong>Indimu, n’ibindi birimo acide ntarabyemererwa ataruzuza umwaka.</strong></div>
+ <strong>Ibyo kurya bye urabinomba ariko ntibyorohe cyane kuko aba atangiye kumenya guhekenya.</strong>
+<h5><strong>ICYITONDERWA:</strong></h5>
+<p>Iyo amezi 12 yuzuye aba yemerewe kunywa amata yonyine, adafunguye cyangwa atavanzwemo ikindi kintu.
+ Gusa mbere yuko ukaranga ibyo kurya ukuraho ibye, ugatonyangirizamo utuvuta ducye cyane.</p>
+</div>
+</div></div>
+<button className="accordion">1YEAR - HALF-2YEARS</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px",marginLeft:"400px" ,marginBottom:"50px"}}> UKO WABITEGURA</button>
+</div>
+</div>
+<button className="accordion">2YEARS - 2YEARS AND HALF</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px",marginLeft:"400px",marginBottom:"50px" }}> UKO WABITEGURA</button>
+</div>
+</div>
+<button className="accordion">2YEARS AND HALF - 3YEARS</button>
+<div className="panel">
+<div style={{ height: "200px", overflow: "scroll" }}>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button className="btn btn-success" style={{ width: "200px", height: "40px",marginLeft:"400px",marginBottom:"50px" }}> UKO WABITEGURA</button>
+</div>
+</div>
+ </div>
+                                </div>
                                 <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
-                                    <h4>upcomming event</h4>
-                                    <div>
+                                    <h4>IBIKORWA IBITEGANIJWE KUBA</h4>
+                                    <div style={{ height: "600px", overflow: "scroll" }}>
                                         <h5>minisante</h5>
-                                        <div>dsvdshjhdsjbjhjbbhjjjj on <span>12/02/18</span></div>
+                                        <div>Hari igikorwa cyo gukingira abana kuri uyu wa<span>12/02/18</span></div>
                                         <h5>Health center</h5>
-                                        <div>tomorrow on <span>12/02/18</span> there is action of giving vaccines t parents please inform your pe</div>
+                                        <div>Ejo kuri <span>12/02/18</span>hari igikorwa cyo gukingira kuri health center ya kacyiru</div>
                                     </div>
                                 </div>
+                                <div className={this.state.vaccine_visible ? "vaccine" : "vaccine_invisible"}>
+                                    <h4>Inkingo Umwana yafashe nimyaka afite</h4>
+                                    <div style={{ height: "400px", overflow: "scroll" }}>
+                                        
+                                        <div><div class="container">
 
-                            </div><div className={this.state.overview_visible ? "overview" : "overview_invisible"} >
-                                <div><h2>Overview</h2></div>
-                                <div id="exTab2" className="container" style={{ width: "100%" }}>
+  <h6>Menya ibyerekeye inkingo w'emeza izo Umwana wawe yamaze gufata</h6>
+  <form>
+    <label className="checkbox-inline">
+      <input type="checkbox"  />BCG (Baccille Calmette Guérin vaccine): Uru rukingo ruhabwa umwana ukivuka rukaba rumukingira igituntu n’imbasa
+    </label>
+    <label className="checkbox-inline">
+    <input type="checkbox"  />Poliomyélite I (afite ukwezi 1 n’igice): Umwana aba akingiwe: Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke
+  </label>
+  <label className="checkbox-inline">
+  <input type="checkbox"  />Pentavalent I (Afite amezi 2 n’igice): Aha na none umwana aba akingiwe, Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke
+</label>
+<label className="checkbox-inline">
+  <input type="checkbox"  />Pneumocoque (afite amezi 3 n’igice): Umwana uhawe uru rukingo aba akingiwe: Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke.
+</label>
+<label className="checkbox-inline">
+  <input type="checkbox"  />VAR cyangwa Rougeole (afite amezi 9): Uru rukingo rukaba rukingira umwana ISERU.
+</label>
+  </form>
+ <h3> <strong>ICYITONDERWA:</strong>uwana wese agomba gufata izi nkingo zose uko zavuzwe hejuru</h3>
+</div>
+<div>
+    <h4>Hitamo imyaka y'Umwana</h4>
+<form>
+  Itariki Yavukiyeho: <input type="date" />
 
-                                    <ul className="nav nav-tabs">
-                                        <li className="active">
-                                            <a href="#1" data-toggle="tab">Parents</a>
-                                        </li>
-                                        <li><a href="#2" data-toggle="tab">Notifications</a>
-                                        </li>
-
-                                    </ul>
-
-                                    <div className="tab-content ">
-                                        <div className="tab-pane active" id="1">
-                                            <div>
-
-                                                <div className="container" style={{ width: "100%" }}>
-                                                    <div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Taken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Untaken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Child's age</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
-                                            <div>
-
-                                                <div className="container" style={{ width: "100%" }}>
-                                                    <div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Taken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Untaken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Child's age</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
-                                            <div>
-
-                                                <div className="container" style={{ width: "100%" }}>
-                                                    <div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Taken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Untaken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Child's age</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
-                                            <div>
-
-                                                <div className="container" style={{ width: "100%" }}>
-                                                    <div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Taken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Untaken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Child's age</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
-                                            <div>
-
-                                                <div className="container" style={{ width: "100%" }}>
-                                                    <div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Taken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Untaken Vaccines:</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                    <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                <h4>Child's age</h4>
-                                                                <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="tab-pane" id="2">
-                                            <table>
-                                                <tbody>
-                                                    <tr><td>Kanakuze Dativa</td></tr>
-                                                    <tr><td><img src="images/noticon.png" style={{ maxWidth: "10px", maxHeight: "10px" }} /></td>
-                                                        <td>Helloffndjkvnfjjfnfknkfj</td>
-                                                        <td>12/02/15</td></tr>
-                                                    <tr><td>Health Center</td></tr>
-                                                    <tr><td><img src="images/noticon.png" style={{ maxWidth: "10px", maxHeight: "10px" }} /></td>
-                                                        <td>hekngfdgdhghgdgdffddffdhgh</td>
-                                                        <td>12/02/15</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
+</form>
+</div>
+</div>
                                     </div>
                                 </div>
                             </div>

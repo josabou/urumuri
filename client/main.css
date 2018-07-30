@@ -1006,8 +1006,24 @@ body {
     display: none;
 }
 
+.food {
+    display: block;
+}
+
+.food_invisible {
+    display: none;
+}
+
 .upcomming {
     display: block;
+}
+
+.vaccine {
+    display: block;
+}
+
+.vaccine_invisible {
+    display: none;
 }
 
 .upcomming_invisible {
@@ -1048,4 +1064,42 @@ body {
     color: white;
     background-color: #428bca;
     padding: 5px 15px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }

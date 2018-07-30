@@ -47,10 +47,10 @@ user(e){
         sessionStorage.setItem('account_type',global.position);
         window.open("/parents","_self");
       }
-      if (global.position=="ngo"){
+      if (global.position=="health_center"){
         sessionStorage.setItem('username',global.username);
         sessionStorage.setItem('account_type',global.position);
-        window.open("/ngo","_self");
+        window.open("/health_center","_self");
       }
     }});
    
@@ -103,8 +103,22 @@ user(e){
   <select ref="sector">
   
   <option value="kimihurura" >kimihurura</option>
+  <option value="nyenyeri" >Bumbogo</option>
+  <option  value="kamukina">Gatsata</option>
+  <option value="kimihurura" >Jali</option>
+  <option value="nyenyeri" >Gikomero</option>
+  <option  value="kamukina">Gisozi</option>
+  <option value="kimihurura" >Jabana</option>
+  <option value="nyenyeri" >Kinyinya</option>
+  <option  value="kamukina">Ndera</option>
+  <option value="kimihurura" >Nduba</option>
+  <option value="nyenyeri" >Rusororo</option>
+  <option  value="kamukina">Rutunga</option>
+  <option value="kimihurura" >Kacyiru</option>
   <option value="nyenyeri" >nyenyeri</option>
   <option  value="kamukina">kamukina</option>
+  <option value="kimihurura" >Kimironko</option>
+  <option value="nyenyeri" >Remera</option>
   </select>
   </div>
   <div className="form-group">
@@ -113,7 +127,7 @@ user(e){
 
   <option value="health_mentor" >Health mentor</option>
   <option value="parents" >Parents </option>
-  <option value="ngo" >NGO</option>
+  <option value="health_center" >Health center</option>
   </select>
   </div>
   <div className="form-group">

@@ -12,7 +12,7 @@ import login from '../ui/login.jsx';
 import test from '../ui/test.jsx';
 import healthmentors from '../ui/healthmentors.jsx';
 import parents from '../ui/parents.jsx';
-import ngo from '../ui/ngo.jsx';
+import health_center from '../ui/health_center.jsx';
 import signup from '../ui/signup.jsx';
 import NotFound from '../ui/NotFound.jsx';
 import AccountsUIWrapper from '../ui/AccountsUIWrapper.js';
@@ -36,7 +36,7 @@ export default class App extends React.Component{
           <Route  path="/test" component={test}/>
           <Route  path="/healthmentors" component={healthmentors}/>
           <Route  path="/parents" component={parents}/>
-          <Route  path="/ngo" component={ngo}/>
+          <Route  path="/health_center" component={health_center}/>
        	  <Route component={NotFound}/>
 
           </Switch>
