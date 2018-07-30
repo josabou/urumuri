@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
-//import ReactBootstrapSlider from 'react-bootstrap-slider';
+import { Mongo } from 'meteor/mongo';
+import {Childcolb} from '../ourdb/child.jsx';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemTitle,
+    AccordionItemBody,
+} from 'react-accessible-accordion';
 
-class home extends React.Component{
-  constructor(props){
-    super(props);
-
-}
-  componentDidMount(){
-    
-  }
-render(){
+import 'react-accessible-accordion/dist/fancy-example.css';
+function home(){
 
     return (
     <div>
@@ -64,6 +64,27 @@ render(){
       <span className="sr-only">Next</span>
     </a>
   </div>
+  <Accordion>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>Simple title</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>Body content</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>Complex title</h3>
+                <div>With a bit of description</div>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>Body content</p>
+            </AccordionItemBody>
+        </AccordionItem>
+    </Accordion>
+
+
   <div className="social">
     <h3>Follow us</h3>
     <ul>
@@ -74,13 +95,14 @@ render(){
       <li><a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a></li>
       <li><a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="fa fa-linkedin"></i></a></li>
     </ul>
-  </div>
+  </div>,
   <div className="footer">
-    <div className="container">
+
       <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
-    </div>
+
   </div>
-</div>
+  </div>
+
     );
 
 }

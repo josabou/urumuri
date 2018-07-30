@@ -32,7 +32,7 @@ const discriptions = [
 class contents extends Component {
   state = {
     selectedOption1: 0,
-    selectedOption2: 1,
+    selectedOption2: 0,
   }
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption.value });
@@ -75,12 +75,12 @@ render (){
       <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     <div className="two_third lastcolumn">
       <div className="col-xs-4">
-        <h3>parents overview</h3>
-        <p>The right nutrition during this 1,000 day window has a profound impact on a child’s ability to grow, learn and thrive—and a lasting effect on a country’s health and prosperity.</p>
+        <h3>{what.title}</h3>
+        <p>{what.body}</p>
         <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
       <div className="col-xs-4 lastcolumn">
-        <h3>childs overview</h3>
-        <p>It is why it is critical that women and children get the right nutrition during this time. Malnutrition early in life can cause irreversible damage to children’s brain development and their physical growth, leading to a diminished capacity to learn, poorer performance in school, greater susceptibility to infection and disease and a lifetime of lost earning potential. It can even put them at increased risk of developing illnesses like heart disease, diabetes and certain types of cancers later in life</p>
+        <h3>{what.title}</h3>
+        <p>{what.body}</p>
         <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     </div>
   </div>
@@ -108,22 +108,22 @@ render (){
   <div className="blankSeparator"></div>
   <div className="col-xs-3">
     <section className="boxthreeleft"> <img src="images/home/1.png" alt=""/>
-      <h3>Natural beauty</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h3>{what.title}</h3>
+      <p>{what.body}</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
 
   <div className="col-xs-3">
     <section className="boxthreecenter"> <img src="images/home/2.png" alt=""/>
-      <h3>Fashion Love</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h3>{what.title}</h3>
+      <p>{what.body}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
 
   <div className="col-xs-3 lastcolumn">
     <section className="boxthreeright"> <img src="images/home/3.png" alt=""/>
-      <h3>Modern Design Interior</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h3>{what.title}</h3>
+      <p>{what.body}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
 </div>
@@ -135,10 +135,10 @@ render (){
 <Accordion>
       <AccordionItem>
           <AccordionItemTitle>
-              <h3>Simple title</h3>
+              <h3>{what.title}</h3>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>Body content</p>
+              <p>{what.body}</p>
           </AccordionItemBody>
       </AccordionItem>
       <AccordionItem>
@@ -147,7 +147,7 @@ render (){
               <div>With a bit of description</div>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>Body content</p>
+              <p>{what.body}</p>
           </AccordionItemBody>
       </AccordionItem>
   </Accordion>

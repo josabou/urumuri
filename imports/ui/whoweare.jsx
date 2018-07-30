@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-function whoweare(){ 
-  
+import ReactDOM from 'react-dom';
+
+class about extends Component {
+  render (){
+
     return (
-    <div>
-<div> <p>who we are content</p></div>
-     </div>
+
     );
-  
 }
-export default whoweare;
+}
+export default whoweares;

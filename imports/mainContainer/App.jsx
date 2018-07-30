@@ -38,6 +38,7 @@ export default class App extends React.Component{
           <Route  path="/parents" component={parents}/>
           <Route  path="/health_center" component={health_center}/>
        	  <Route component={NotFound}/>
+          AccountsUIWrapper
 
           </Switch>
       </div>

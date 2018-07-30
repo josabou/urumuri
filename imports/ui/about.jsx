@@ -80,6 +80,11 @@ I software developer. In addition to my love of computers  programming,I like to
     </div>
   </div>
 </div></div>
+<div className="footer">
+
+    <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
+
+</div>
      </div>
     );
 
