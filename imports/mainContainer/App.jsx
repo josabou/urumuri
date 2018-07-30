@@ -1,5 +1,6 @@
 import {Meteor} from 'meteor/meteor';
 import React from 'react';
+import {user} from '../api/user.js'
 import ReactDOM from 'react-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -9,6 +10,9 @@ import about from '../ui/about.jsx';
 import contact from '../ui/contact.jsx';
 import login from '../ui/login.jsx';
 import test from '../ui/test.jsx';
+import healthmentors from '../ui/healthmentors.jsx';
+import parents from '../ui/parents.jsx';
+import health_center from '../ui/health_center.jsx';
 import signup from '../ui/signup.jsx';
 import NotFound from '../ui/NotFound.jsx';
 import AccountsUIWrapper from '../ui/AccountsUIWrapper.js';
@@ -21,7 +25,7 @@ export default class App extends React.Component{
      return(
      <BrowserRouter>
      <div>
-       <Header />
+         <Header/>
      	<Switch>
           <Route exact path="/" component={Home}/>
           <Route  path="/content" component={Content}/>
@@ -30,6 +34,9 @@ export default class App extends React.Component{
           <Route  path="/login" component={login}/>
           <Route  path="/signup" component={signup}/>
           <Route  path="/test" component={test}/>
+          <Route  path="/healthmentors" component={healthmentors}/>
+          <Route  path="/parents" component={parents}/>
+          <Route  path="/health_center" component={health_center}/>
        	  <Route component={NotFound}/>
           AccountsUIWrapper
 

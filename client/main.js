@@ -1,5 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
+// import '../lib/config/at_config.js'
+import {user} from '../imports/api/user.js'
 import { render } from 'react-dom';
 import { Childcolb } from '../imports/ourdb/Contents.js';
 

@@ -30,3 +30,5 @@ jquery
 aldeed:collection2
 aldeed:simple-schema
 check
+useraccounts:bootstrap
+useraccounts:core

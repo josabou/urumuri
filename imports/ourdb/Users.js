@@ -1,15 +1,28 @@
-import { Mongo } from 'meteor/mongo';
-import {usersdb} from './child.jsx';
-//export const usersdb = new Mongo.Collection('usersdb');
-//export const Pregnantcolb = new Mongo.Collection('Pregnantcolb');
-//export const Parentscoln = new Mongo.Collection('Parentscoln');
-//export const Childcoli = new Mongo.Collection('Parentscoli');
-//export const Pregnantcoli = new Mongo.Collection('Pregnantcoli');
-usersdb.insert({ cat:'parents1',title: 'Hello world', body: 'The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days' });
- usersdb.insert({ cat:'parents2',title: 'Hello world', body: 'First post' });
-usersdb.insert({ cat:'parents3',title: 'Hello world', body: 'First    post' });
-usersdb.insert({ cat:'parents4',title: 'Hello world', body: 'First post' });
-usersdb.insert({ cat:'parents5',title: 'Hello world', body: 'First post' });
-usersdb.insert({ cat:'parents6',title: 'Hello world', body: 'First post' });
-usersdb.insert({ cat:'parents7',title: 'Hello world', body: 'First post' });
-usersdb.insert({ cat:'parents8',title: 'Hello world', body: 'First post' });
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
+
+export const User = {
+  get: function() {
+    return Meteor.user() || {};
+  },
+
+  id: function() {
+    return Meteor.userId();
+  },
+
+  isLoggedIn: function() {
+    return !! Meteor.userId();
+  },
+
+  isLoggedOut: function() {
+    return ! User.isLoggedIn();
+  },
+
+  profile: function() {
+    return User.get().profile;
+  },
+
+  create: function(opts, callback) {
+    Accounts.createUser(opts, callback);
+  }
+};
