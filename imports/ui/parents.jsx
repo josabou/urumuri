@@ -16,7 +16,7 @@ import ScrollableInkTabBar from 'rc-tabs/lib/ScrollableInkTabBar';
 class parents extends React.Component {
     renderchildren() {
         return this.props.child_data.map((key) => (
-          <div ><p>{key.childname}</p>
+          <div key={key._id}><p>{key.childname}</p>
               <p> {key.age} days</p>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
               <p>{vaccine.time}: {vaccine.type} </p>              
@@ -31,6 +31,7 @@ class parents extends React.Component {
             food_visible: true,
             message_visible: false,
             upcomming_visible: false,
+            inkingo_visible:false,
             vaccine_visible: false
         }
 
@@ -42,6 +43,7 @@ class parents extends React.Component {
         this.setState({ message_visible: false });
         this.setState({ food_visible: false });
         this.setState({ upcomming_visible: false });
+        this.setState({ inkingo_visible: false });
         this.setState({ vaccine_visible: false });
 
         this.setState({ upcomming_visible: true });
@@ -51,6 +53,7 @@ class parents extends React.Component {
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
+        this.setState({ inkingo_visible: false });
 
         this.setState({ message_visible: true });
     }
@@ -59,6 +62,7 @@ class parents extends React.Component {
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
+        this.setState({ inkingo_visible: false });
 
         this.setState({ food_visible: true });
     }
@@ -67,8 +71,18 @@ class parents extends React.Component {
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
+        this.setState({ inkingo_visible: false });
 
         this.setState({ vaccine_visible: true });
+    }
+    showInkingo() {
+        this.setState({ message_visible: false });
+        this.setState({ food_visible: false });
+        this.setState({ vaccine_visible: false });
+        this.setState({ upcomming_visible: false });
+        this.setState({ inkingo_visible: false });
+
+        this.setState({ inkingo_visible: true });
     }
     componentDidMount() {
         if (sessionStorage.length == 0) {
@@ -111,16 +125,16 @@ class parents extends React.Component {
 
             <div style={{ background: '#2c3e50', color: '#FFF' }}>
                 <div>
-                    <div className="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style={{ display: "none" }} id="mySidebar">
+                    <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
-                            onClick={this.w3_close.bind(this)}>Close &times;</button>
+                            onClick={this.w3_close.bind(this)} >Close &times;</button>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBIKORWA BITEGANIJWE KUBA</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showFood.bind(this)}>AMAKURU Y'AMAFUNGURO UMWANA YAFATA</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
-                        <a href="/child_register" className="w3-bar-item w3-button" >INKINGO ZAFASHWE NIMYAKA Y'UMWANA</a>
-                        <a href="#" className="w3-bar-item w3-button" >ANDIKISHA UMWANA WAWE</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showVaccine.bind(this)} >INKINGO ZAFASHWE NIMYAKA Y'UMWANA</a>
+                        <a href="/child_register" className="w3-bar-item w3-button" >ANDIKISHA UMWANA WAWE</a><br/>
                     </div>
-
+</div>
                     <div>
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
@@ -190,15 +204,12 @@ class parents extends React.Component {
                                                                 <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
                                                                     
                                                                     <div style={{ height: "350px", overflow: "scroll" }}>
-                                                                        <div className="badge">Mugiga<span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                                        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                                    <div className="badge">{this.renderchildren()}</div>
+                                                                       
                                                                         <div className="badge" style={{background:"green"}}><button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
 
                                                                     </div>
-                                                                    <div>{this.renderchildren()}</div>
+                                                                   
 
                                                                 </div>
 
@@ -254,7 +265,7 @@ class parents extends React.Component {
                                                                 </div>
                                                             </div></td>
                                                             </tr>
-                                                            <tr><td><button className="btn btn-danger" style={{width:"100px"}}>INKINGO UMWANA WAWE ATARAFATA</button></td></tr>
+                                                            <tr><td><button className="btn btn-danger" style={{width:"350px"}} onClick={this.showInkingo.bind(this)}>INKINGO UMWANA WAWE ATARAFATA</button></td></tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -303,17 +314,51 @@ class parents extends React.Component {
                                                 <h4>Hitamo imyaka y'Umwana</h4>
                                                 <form>
                                                     Itariki Yavukiyeho: <input type="date" />
-                                                    <button className="btn btn-success" onClick={this.showFood.bind(this)}  style={{width:"20px",height:"20px"}}>OHEREZA</button>
+                                                    <textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea>
+                                                    <button className="btn btn-success" style={{width:"50px",height:"20px"}} onClick={this.showFood.bind(this)}  >OHEREZA</button>
 
                                                 </form>
                                             </div>
                                     </div>
                                 </div>
+
+                                <div className={this.state.inkingo_visible ? "inkingo" : "inkingo_invisible"}>
+                                <div className="container" style={{ width: "100%" }}>
+                                <div>
+                                    <div className="row">
+                                        <div style={{ clear: "both" }}></div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>INKINGO ZAFASHWE:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                            </div>
+                                        </div>
+                                        <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>INKINGO ZITARAFATWA:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div style={{ clear: "both" }}></div>
+                                    </div></div>
+                            </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-
+                
             </div>
         )
     }

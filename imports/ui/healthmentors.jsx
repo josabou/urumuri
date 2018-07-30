@@ -82,7 +82,7 @@ class healthmentors extends React.Component {
 
             <div style={{ background: '#2c3e50', color: '#FFF' }}>
                 <div>
-                    <div className="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style={{ display: "none" }} id="mySidebar">
+                    <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)}>Close &times;</button>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBIKORWA BITEGANIJWE KUBA</a>
@@ -90,7 +90,7 @@ class healthmentors extends React.Component {
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>INCAMAKE</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
                     </div>
-
+</div>
                     <div>
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
@@ -174,7 +174,7 @@ class healthmentors extends React.Component {
                                         </table>
                                     </div>
                                 </div>
-                                <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
+                                <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"} style={{height:"300px"}}>
                                     <h4>IBIKORWA BITEGANIJWE KUBA</h4>
                                     <div>
                                         <h5>minisante</h5>
@@ -404,8 +404,9 @@ class healthmentors extends React.Component {
                                                         <td>12/02/15</td></tr>
                                                     <tr><td>Health Center</td></tr>
                                                     <tr><td><img src="images/noticon.png" style={{ maxWidth: "10px", maxHeight: "10px" }} /></td>
-                                                        <td>Wiriwe Mujyana, twakumenyashaga ko hari igikorwa giteganijwe mumurenge wacu cyo gutera abana inshinge twashakaga ko ubigenza kuba turage bawe!</td>
-                                                        <td>icyo gikorwa kiba giteganijwe kuwa 12/02/15</td></tr>
+                                                        <td>Wiriwe Mujyana, twakumenyashaga ko hari igikorwa giteganijwe mumurenge wacu cyo gutera abana inshinge twashakaga ko ubigenza kuba turage bawe
+                                                        icyo gikorwa kiba giteganijwe kuwa</td>
+                                                        <td> 12/02/15</td></tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -415,7 +416,7 @@ class healthmentors extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+               
 
             </div>
         )

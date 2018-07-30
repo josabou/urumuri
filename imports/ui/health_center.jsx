@@ -74,7 +74,7 @@ class health_center extends React.Component {
 
             <div style={{ background: '#2c3e50', color: '#FFF' }}>
                 <div>
-                    <div className="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style={{ display: "none" }} id="mySidebar">
+                    <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)}>Close &times;</button>
                         
@@ -82,7 +82,7 @@ class health_center extends React.Component {
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>INCAMAKE</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
                     </div>
-
+</div>
                     <div>
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
@@ -190,7 +190,7 @@ class health_center extends React.Component {
                                                                                     </div>
                                                                                    <div className="row" style={{width:"100%"}}>
                                                                                <div className="col order-first" style={{ float: "left", width: "400px" }}>
-                                                                                            <div className="badge" style={{color:"black",background:"blue"}}>UKO ABAKANGURAMBAGA BANGANA</div>
+                                                                                            <div className="badge" style={{color:"black",background:"blue"}}>UKO ABAJYANAMA B'UBUZIMA BANGANA</div>
                                                                                             <div >
                                                                                                 <span className="badge" style={{ fontSize: "20px" }}>4</span>
                                                                                             </div>
@@ -230,7 +230,7 @@ class health_center extends React.Component {
                                                                 
                         </div>
                     </div>
-                </div>
+               
 
             </div>
         )

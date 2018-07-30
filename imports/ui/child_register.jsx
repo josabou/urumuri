@@ -7,13 +7,22 @@ class child_register extends Component {
 child(e){
   e.preventDefault();
 
-  if (this.refs.childname.value && this.refs.age.value && this.refs.parent_id.value && this.refs.vaccine.value  && this.refs.vaccine.value && this.refs.hstd.value && this.refs.hst.value)
+  if (this.refs.childname.value && this.refs.age.value && this.refs.parent_id.value &&
+     ((this.refs.vaccined1.value  && this.refs.vaccine1.value) || (this.refs.vaccined2.value  && this.refs.vaccine2.value) || (this.refs.vaccined3.value  && this.refs.vaccine3.value) || (this.refs.vaccined4.value  && this.refs.vaccine4.value)|| (this.refs.vaccined5.value  && this.refs.vaccine5.value)  )&& this.refs.hstd.value && this.refs.hst.value)
   {
     global.childname=this.refs.childname.value;
     global.age=this.refs.age.value;
     global.parent_id=this.refs.parent_id.value;
-    global.vaccined=this.refs.vaccined.value;
-    global.vaccine=this.refs.vaccine.value;
+    global.vaccined1=this.refs.vaccined1.value;
+    global.vaccined2=this.refs.vaccined2.value; 
+    global.vaccined3=this.refs.vaccined3.value;
+    global.vaccined4=this.refs.vaccined4.value;
+    global.vaccined5=this.refs.vaccined5.value;
+    global.vaccine1=this.refs.vaccine1.value;
+    global.vaccine2=this.refs.vaccine2.value;
+    global.vaccine3=this.refs.vaccine3.value;
+    global.vaccine4=this.refs.vaccine4.value;
+    global.vaccine5=this.refs.vaccine5.value;
     global.hst=this.refs.hstd.value;
     global.hst=this.refs.hst.value;
     var theData={
@@ -21,7 +30,11 @@ child(e){
     "createdAt": new Date(),
     "age":global.age,
     "parent_id":global.parent_id,
-    "vaccine":[{"time": global.vaccine,"type":global.vaccined,}],
+    "vaccine1":[{"time": global.vaccine1,"type":global.vaccined1,}],
+    "vaccine2":[{"time": global.vaccine2,"type":global.vaccined2,}],
+    "vaccine3":[{"time": global.vaccine3,"type":global.vaccined3,}],
+    "vaccine4":[{"time": global.vaccine4,"type":global.vaccined4,}],
+    "vaccine5":[{"time": global.vaccine5,"type":global.vaccined5,}],
     "hst":[{"time":global.hst, "text":global.hstd}],
     };
 
@@ -49,40 +62,58 @@ child(e){
     <div className="form-group">
           IZINA RY'UMWANA:<input
           type="text" ref="childname"
-          placeholder="Enter your childname" required/>
+          placeholder="Enter your childname" />
     </div>
  
     <div className="form-group">
               IMINSI UMWANA AMAZE AVUTSE:<input
               type="text" ref="age"
-              placeholder="Enter yourchild's age" required />
+              placeholder="Enter yourchild's age"  />
     </div>
    
     <div className="form-group">
     AMAZINA Y'UMUBYEYI:<input
     type="text" value={  sessionStorage.getItem('username')} ref="parent_id"
-    placeholder="oarent name" required />
+    placeholder="parent name"  />
 </div>
 <div className="form-group">
   INKINGO UMWANA YAFASHE:
+  <div>
+<input type="date" ref="vaccined1"
+placeholder="Enter History" />
+<div className="checkbox-inline">
+<input type="checkbox" ref="vaccine1" />Baccille Calmette Guérin vaccine
+    </div></div><div>
+    <input type="date" ref="vaccined2"
+placeholder="Enter History" />
+ <div className="checkbox-inline">
+ <input type="checkbox"  ref="vaccine2"/>Poliomyélite I 
+  </div></div><div>
+  <input type="date" ref="vaccined3"
+placeholder="Enter History" />
+ <div className="checkbox-inline">
+ <input type="checkbox"  ref="vaccine3"/>Pentavalent I
+</div></div><div>
+<input type="date" ref="vaccined4"
+placeholder="Enter History" />
+<div className="checkbox-inline">
+<input type="checkbox" ref="vaccine4"/>Pneumocoque
+</div>
+</div><div>
+<input type="date" ref="vaccined5"
+placeholder="Enter History" />
+  <div className="checkbox-inline">
+ <input type="checkbox"  ref="vaccine5"/> Rougeole
+</div></div>
 
-<input type="date" ref="vaccined"
-              placeholder="Enter History" required/>
-              <select ref="vaccine" >
 
-<option value="Baccille" >Baccille Calmette Guérin vaccine</option>
-<option value="Poliomyélite">Poliomyélite I </option>
-<option value="Pentavalent" >Pentavalent I</option>
-<option value="Pneumocoque" >Pneumocoque </option>
-<option value="Rougeole">Rougeole</option>
-</select>
 </div>
     <div className="form-group">
               History:<input
               type="date" ref="hstd"
-              placeholder="Enter History" required/><input
+              placeholder="Enter History" /><input
               type="text" ref="hst"
-              placeholder="Enter History" required/>
+              placeholder="Enter History" />
     </div>
  
     <div className="form-group">
