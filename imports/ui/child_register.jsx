@@ -7,10 +7,8 @@ class child_register extends Component {
 child(e){
   e.preventDefault();
 
-  if (this.refs.childname.value && this.refs.age.value && this.refs.parent_id.value &&
-     ((this.refs.vaccined1.value  && this.refs.vaccine1.value) || (this.refs.vaccined2.value  && this.refs.vaccine2.value) || (this.refs.vaccined3.value  && this.refs.vaccine3.value) || (this.refs.vaccined4.value  && this.refs.vaccine4.value)|| (this.refs.vaccined5.value  && this.refs.vaccine5.value)  )&& this.refs.hstd.value && this.refs.hst.value)
-  {
-    global.childname=this.refs.childname.value;
+  if (this.refs.childname.value && this.refs.age.value && this.refs.parent_id.value && this.refs.hstd.value && this.refs.hst.value)
+  {    global.childname=this.refs.childname.value;
     global.age=this.refs.age.value;
     global.parent_id=this.refs.parent_id.value;
     global.vaccined1=this.refs.vaccined1.value;
@@ -18,11 +16,11 @@ child(e){
     global.vaccined3=this.refs.vaccined3.value;
     global.vaccined4=this.refs.vaccined4.value;
     global.vaccined5=this.refs.vaccined5.value;
-    global.vaccine1=this.refs.vaccine1.value;
-    global.vaccine2=this.refs.vaccine2.value;
-    global.vaccine3=this.refs.vaccine3.value;
-    global.vaccine4=this.refs.vaccine4.value;
-    global.vaccine5=this.refs.vaccine5.value;
+    global.vaccine1=this.refs.vaccine1.checked;
+    global.vaccine2=this.refs.vaccine2.checked;
+    global.vaccine3=this.refs.vaccine3.checked;
+    global.vaccine4=this.refs.vaccine4.checked;
+    global.vaccine5=this.refs.vaccine5.checked;
     global.hst=this.refs.hstd.value;
     global.hst=this.refs.hst.value;
     var theData={
@@ -30,11 +28,7 @@ child(e){
     "createdAt": new Date(),
     "age":global.age,
     "parent_id":global.parent_id,
-    "vaccine1":[{"time": global.vaccine1,"type":global.vaccined1,}],
-    "vaccine2":[{"time": global.vaccine2,"type":global.vaccined2,}],
-    "vaccine3":[{"time": global.vaccine3,"type":global.vaccined3,}],
-    "vaccine4":[{"time": global.vaccine4,"type":global.vaccined4,}],
-    "vaccine5":[{"time": global.vaccine5,"type":global.vaccined5,}],
+    "vaccine":[{name:"Baccille Calmette Guérin vaccine", "time": global.vaccined1,"type":global.vaccine1,},{name:"Poliomyélite I ","time": global.vaccined2,"type":global.vaccine2,},{name:"Pentavalent I","time": global.vaccined3,"type":global.vaccine3,}, {name:"Pneumocoque","time": global.vaccined4,"type":global.vaccine4,},{name:"Rougeole","time": global.vaccined5,"type":global.vaccine5,}],
     "hst":[{"time":global.hst, "text":global.hstd}],
     };
 

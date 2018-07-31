@@ -14,13 +14,14 @@ import ScrollableInkTabBar from 'rc-tabs/lib/ScrollableInkTabBar';
 
 
 class parents extends React.Component {
+
     renderchildren() {
         return this.props.child_data.map((key) => (
           <div key={key._id}><p>{key.childname}</p>
               <p> {key.age} days</p>
-              {Array.isArray(key.vaccine) ? key.vaccine1.map((vaccine1)=>(
-              <p>{vaccine1.time}: {vaccine1.type} </p>              
-              )) : key.vaccine1}
+              {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
+              <p>{vaccine.type ? vaccine.time + " : " + vaccine.name : ""}</p>              
+              )) : key.vaccine}
           </div>
         ));
       }
