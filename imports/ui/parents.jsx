@@ -25,7 +25,24 @@ class parents extends React.Component {
           </div>
         ));
       }
-
+      renderUnTakenVaccine() {
+        return this.props.child_data.map((key) => (
+          <div key={key._id}>
+              {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
+              <p>{vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></p>             
+              )) : key.vaccine}
+          </div>
+        ));
+      }
+      renderTakenVaccine() {
+        return this.props.child_data.map((key) => (
+          <div key={key._id}>
+              {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
+              <p> {vaccine.type ? vaccine.time + " : " + vaccine.name : ""}<br/></p>             
+              )) : key.vaccine}
+          </div>
+        ));
+      }
     constructor(props) {
         super(props);
         this.state = {
@@ -268,21 +285,13 @@ class parents extends React.Component {
                                         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
                                             <h4>INKINGO ZAFASHWE:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                            <div className="badge">{this.renderTakenVaccine()}</div>
                                             </div>
                                         </div>
                                         <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
                                             <h4>INKINGO ZITARAFATWA:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                            <div className="badge">{this.renderUnTakenVaccine()}</div>
                                             </div>
                                         </div>
                                     
