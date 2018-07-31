@@ -61,8 +61,8 @@ child(e){
  
     <div className="form-group">
               IMINSI UMWANA AMAZE AVUTSE:<input
-              type="text" ref="age"
-              placeholder="Enter yourchild's age"  />
+              type="date" ref="age"
+               />
     </div>
    
     <div className="form-group">
@@ -73,29 +73,24 @@ child(e){
 <div className="form-group">
   INKINGO UMWANA YAFASHE:
   <div>
-<input type="date" ref="vaccined1"
-placeholder="Enter History" />
+<input type="date" ref="vaccined1" />
 <div className="checkbox-inline">
 <input type="checkbox" ref="vaccine1" />Baccille Calmette Guérin vaccine
     </div></div><div>
-    <input type="date" ref="vaccined2"
-placeholder="Enter History" />
+    <input type="date" ref="vaccined2"/>
  <div className="checkbox-inline">
  <input type="checkbox"  ref="vaccine2"/>Poliomyélite I 
   </div></div><div>
-  <input type="date" ref="vaccined3"
-placeholder="Enter History" />
+  <input type="date" ref="vaccined3"/>
  <div className="checkbox-inline">
  <input type="checkbox"  ref="vaccine3"/>Pentavalent I
 </div></div><div>
-<input type="date" ref="vaccined4"
-placeholder="Enter History" />
+<input type="date" ref="vaccined4" />
 <div className="checkbox-inline">
 <input type="checkbox" ref="vaccine4"/>Pneumocoque
 </div>
 </div><div>
-<input type="date" ref="vaccined5"
-placeholder="Enter History" />
+<input type="date" ref="vaccined5" />
   <div className="checkbox-inline">
  <input type="checkbox"  ref="vaccine5"/> Rougeole
 </div></div>

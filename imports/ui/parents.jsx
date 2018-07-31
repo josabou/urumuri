@@ -188,7 +188,7 @@ class parents extends React.Component {
                                             <div className="tab-pane active" id="1">
                                                 <div>
 
-                                                    <div className="container" style={{ width: "100%" }}>
+                                                    <div className="container" style={{ width: "50%" }}>
                                                         <div>
                                                             <div className="row">
                                                                 <div style={{ clear: "both" }}></div>
@@ -291,35 +291,6 @@ class parents extends React.Component {
                             </div></td></tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                            <div className="tab-pane active" id="3">
-                                                <div>
-
-                                                    <div className="container" style={{ width: "100%" }}>
-                                                        <div>
-                                                            <div className="row">
-                                                                <div style={{ clear: "both" }}></div>
-                                                            </div>
-                                                            <div className="row">
-                                                                <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                    
-                                                                    <div style={{ height: "350px", overflow: "scroll" }}>
-                                                                    <div className="badge">{this.renderchildren()}</div>
-                                                                       
-                                                                    <a href="/child_register" className="w3-bar-item w3-button" >ANDIKISHA UMWANA WAWE</a>
-
-                                                                    </div>
-                                                                   
-
-                                                                </div>
-
-                                                                <div style={{ clear: "both" }}></div>
-                                                            </div></div>
-                                                    </div>
-                                                </div>
-                 
-
-
                                             </div>
                                         </div>
                                     </div>
