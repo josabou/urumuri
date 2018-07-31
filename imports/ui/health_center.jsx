@@ -28,6 +28,7 @@ class health_center extends React.Component {
     }
  componentDidMount(){
 var center = user.find({username: sessionStorage.getItem('username')}).fetch();
+console.log(center.length);
 for(var key in center ){
     if(center.hasOwnProperty(key)){
       console.log(center[key].sector);
