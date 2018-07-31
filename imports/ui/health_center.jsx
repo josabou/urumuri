@@ -60,7 +60,7 @@ class health_center extends React.Component {
      console.log( global.username);
      for(var key in center ){
          if(center.hasOwnProperty(key)){
-          // console.log(center[key].sector);
+       
          }
      }
         if (sessionStorage.length == 0) {
