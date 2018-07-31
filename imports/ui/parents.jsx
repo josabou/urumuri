@@ -18,9 +18,9 @@ class parents extends React.Component {
         return this.props.child_data.map((key) => (
           <div key={key._id}><p>{key.childname}</p>
               <p> {key.age} days</p>
-              {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p>{vaccine.time}: {vaccine.type} </p>              
-              )) : key.vaccine}
+              {Array.isArray(key.vaccine) ? key.vaccine1.map((vaccine1)=>(
+              <p>{vaccine1.time}: {vaccine1.type} </p>              
+              )) : key.vaccine1}
           </div>
         ));
       }
