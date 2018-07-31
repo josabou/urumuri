@@ -21,7 +21,7 @@
     "meteor-react-autoform": "^0.3.0",
     "mongoose": "^5.2.5",
     "prop-types": "^15.6.2",
-    "rc-tabs": "^9.3.1",
+    "rc-tabs": "^9.3.2",
     "react": "^16.4.1",
     "react-accessible-accordion": "^2.4.4",
     "react-addons-pure-render-mixin": "^15.6.2",

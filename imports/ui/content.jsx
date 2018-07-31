@@ -36,57 +36,66 @@ class contents extends Component {
   }
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption.value });
-    console.log(`Option selected:`, selectedOption);
+    console.log(`Option1 selected:`, selectedOption);
   }
 
   handleChange2 = (selectedOption) => {
     this.setState({selectedOption2: selectedOption.value });
-    console.log(`Option selected:`, selectedOption);
+    console.log(`Option2 selected:`, selectedOption);
   }
 
 render (){
   var num=this.state.selectedOption1;
+  var num2=this.state.selectedOption2;
   var label1=options[num].label
- var what =Childcolb.findOne(  { cat:label1} );
+  var label2=discriptions[num2].label
+  console.log(label1);
+  console.log(label2);
+ var what =Childcolb.findOne(
+   {
+      $and: [
+         {cat:label1}, {cat2:label2}
+      ]
+   }
+);
+
  console.log(what);
  var selected= this.state;
     return (
 
-<div>
+<div id="content">
+<div className="contents">
+<input type="text" placeholder=" Type to Search.."/>
+<button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
+
+</div>
 <div>
 <Select value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
 <Select value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>,
-<div className="contents">
-<input type="text" placeholder="Search.."/>
 
-
-
-      <button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
-
-</div>
 <div className="blankSeparator"></div>
-<div className="container">
+
   <div className="info">
     <div className="col-xs-3">
-      <h3>{what.title}</h3>
+      <h3>{what.title[0]}</h3>
 
-      <p>{what.body}</p>
+      <p>{what.body[0]}</p>
 
       <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     <div className="two_third lastcolumn">
       <div className="col-xs-4">
-        <h3>{what.title}</h3>
-        <p>{what.body}</p>
+        <h3>{what.title[1]}</h3>
+        <p>{what.body[1]}</p>
         <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
       <div className="col-xs-4 lastcolumn">
-        <h3>{what.title}</h3>
-        <p>{what.body}</p>
+        <h3>{what.title[2]}</h3>
+        <p>{what.body[2]}</p>
         <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
     </div>
   </div>
-</div>
 
-<div className="container clients">
+
+
   <div className="sepContainer"></div>
   <h3>Our Clients</h3>
   <div className="col-xs-2"> <img src="images/client1.jpg" alt=""/> </div>
@@ -101,32 +110,29 @@ render (){
 
   <div className="col-xs-2 lastcolumn"> <img src="images/client6.jpg" alt=""/> </div>
 
-</div>
-
-<div className="container boxthree">
   <div className="sepContainer1"></div>
   <div className="blankSeparator"></div>
   <div className="col-xs-3">
     <section className="boxthreeleft"> <img src="images/home/1.png" alt=""/>
-      <h3>{what.title}</h3>
-      <p>{what.body}</p>
+      <h3>{what.title[3]}</h3>
+      <p>{what.body[3]}</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
 
   <div className="col-xs-3">
     <section className="boxthreecenter"> <img src="images/home/2.png" alt=""/>
-      <h3>{what.title}</h3>
-      <p>{what.body}.</p>
+      <h3>{what.title[4]}</h3>
+      <p>{what.body[4]}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
 
   <div className="col-xs-3 lastcolumn">
     <section className="boxthreeright"> <img src="images/home/3.png" alt=""/>
-      <h3>{what.title}</h3>
-      <p>{what.body}.</p>
+      <h3>{what.title[5]}</h3>
+      <p>{what.body[5]}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
-</div>
+
 <div className="blankSeparator1"></div>
 
 <div className="blankSeparator1"></div>
@@ -135,10 +141,10 @@ render (){
 <Accordion>
       <AccordionItem>
           <AccordionItemTitle>
-              <h3>{what.title}</h3>
+              <h3>{what.title[6]}</h3>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>{what.body}</p>
+              <p>{what.body[6]}</p>
           </AccordionItemBody>
       </AccordionItem>
       <AccordionItem>
@@ -147,7 +153,7 @@ render (){
               <div>With a bit of description</div>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>{what.body}</p>
+              <p>{what.body[7]}</p>
           </AccordionItemBody>
       </AccordionItem>
   </Accordion>
@@ -155,7 +161,7 @@ render (){
 </div>
 <div className="footer">
  <div className="container">
-   <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">jean-salvi.fr</a></p>
+   <p>Copyright &copy; 1000DaysCare. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team urumuri</a></p>
  </div>
  </div>
 </div>

@@ -53,7 +53,9 @@ class Header extends React.Component {
   render() {
     return (
       <header className='Header'>
-        <b>Logo</b> &nbsp;
+      <NavLink className="inactive" activeClassName="active" exact to="/">
+          <img src="././images/logo.png"alt="logo"></img>
+        </NavLink>
         <NavLink className="inactive" activeClassName="active" exact to="/">Home</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/about">Who We Are</NavLink>
           <NavLink className="inactive" activeClassName="active" to="/whoweare">Who We </NavLink>

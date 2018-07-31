@@ -15,7 +15,7 @@ function home(){
 
     return (
     <div>
-      
+
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
     <ol className="carousel-indicators">
@@ -107,5 +107,5 @@ function home(){
 
 }
 
-}
+
 export default home;

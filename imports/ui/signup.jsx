@@ -53,9 +53,9 @@ user(e){
         window.open("/health_center","_self");
       }
     }});
-   
-  
- 
+
+
+
   }
   else
   {
@@ -85,7 +85,7 @@ user(e){
     <div className="form-group">
     Province:
   <select ref="province" >
-  
+
   <option value="northern" >northern</option>
   <option value="southern">southern </option>
   <option value="kigali city" >kigali city</option>
@@ -94,14 +94,14 @@ user(e){
   </select>
   District:
   <select ref="district">
-  
+
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
   </select>
   Sector:
   <select ref="sector">
-  
+
   <option value="kimihurura" >kimihurura</option>
   <option value="nyenyeri" >Bumbogo</option>
   <option  value="kamukina">Gatsata</option>
@@ -156,6 +156,7 @@ user(e){
 
    </div>
 
+     </div>
      </div>
 
 
