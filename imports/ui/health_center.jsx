@@ -26,16 +26,8 @@ class health_center extends React.Component {
         }
 
     }
- componentDidMount(){
-     alert("hello");
-var center = user.find({username: sessionStorage.getItem('username')}).fetch();
-console.log(center.length);
-for(var key in center ){
-    if(center.hasOwnProperty(key)){
-      console.log(center[key].sector);
-    }
-}
- }
+    
+ 
     showMessage() {
         this.setState({ message_visible: false });
         this.setState({ overview_visible: false });
@@ -61,6 +53,15 @@ for(var key in center ){
         this.setState({ announce_visible: true });
     }
     componentDidMount() {
+        
+   
+     var center = user.find({username: sessionStorage.getItem('username')}).fetch();
+     console.log(center.length);
+     for(var key in center ){
+         if(center.hasOwnProperty(key)){
+           console.log(center[key].sector);
+         }
+     }
         if (sessionStorage.length == 0) {
             window.open("/", "_self");
         }
