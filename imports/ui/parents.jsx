@@ -17,10 +17,10 @@ class parents extends React.Component {
 
     renderchildren() {
         return this.props.child_data.map((key) => (
-          <div key={key._id}><p>{key.childname}</p>
-              <p> {key.age} days</p>
+          <div key={key._id}><p>umwana wawe yitwa {key.childname}</p>
+              <p> amaze iminsi {key.age}  avutse</p>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p>{vaccine.type ? vaccine.time + " : " + vaccine.name : ""}</p>              
+              <p>kuri ii tariki {vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></p>             
               )) : key.vaccine}
           </div>
         ));
@@ -32,7 +32,6 @@ class parents extends React.Component {
             food_visible: true,
             message_visible: false,
             upcomming_visible: false,
-            inkingo_visible:false,
             vaccine_visible: false
         }
 
@@ -44,7 +43,7 @@ class parents extends React.Component {
         this.setState({ message_visible: false });
         this.setState({ food_visible: false });
         this.setState({ upcomming_visible: false });
-        this.setState({ inkingo_visible: false });
+
         this.setState({ vaccine_visible: false });
 
         this.setState({ upcomming_visible: true });
@@ -54,7 +53,7 @@ class parents extends React.Component {
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
-        this.setState({ inkingo_visible: false });
+
 
         this.setState({ message_visible: true });
     }
@@ -62,8 +61,7 @@ class parents extends React.Component {
         this.setState({ message_visible: false });
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
-        this.setState({ upcomming_visible: false });
-        this.setState({ inkingo_visible: false });
+  
 
         this.setState({ food_visible: true });
     }
@@ -72,19 +70,11 @@ class parents extends React.Component {
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
         this.setState({ upcomming_visible: false });
-        this.setState({ inkingo_visible: false });
+
 
         this.setState({ vaccine_visible: true });
     }
-    showInkingo() {
-        this.setState({ message_visible: false });
-        this.setState({ food_visible: false });
-        this.setState({ vaccine_visible: false });
-        this.setState({ upcomming_visible: false });
-        this.setState({ inkingo_visible: false });
-
-        this.setState({ inkingo_visible: true });
-    }
+   
     componentDidMount() {
         if (sessionStorage.length == 0) {
             window.open("/", "_self");
@@ -189,6 +179,8 @@ class parents extends React.Component {
                                             </li>
                                             <li><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
                                             </li>
+                                            <li><a href="#3" data-toggle="tab">ANDIKISHA UMWANA WAWE</a>
+                                            </li>
 
                                         </ul>
 
@@ -266,11 +258,69 @@ class parents extends React.Component {
                                                                 </div>
                                                             </div></td>
                                                             </tr>
-                                                            <tr><td><button className="btn btn-danger" style={{width:"350px"}} onClick={this.showInkingo.bind(this)}>INKINGO UMWANA WAWE ATARAFATA</button></td></tr>
+                                                            <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
+                                                            <div className="container" style={{ width: "100%" }}>
+                                <div>
+                                    <div className="row">
+                                        <div style={{ clear: "both" }}></div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>INKINGO ZAFASHWE:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
+                                            </div>
+                                        </div>
+                                        <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>INKINGO ZITARAFATWA:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div style={{ clear: "both" }}></div>
+                                    </div></div>
+                            </div></td></tr>
                                                     </tbody>
                                                 </table>
                                             </div>
+                                            <div className="tab-pane active" id="3">
+                                                <div>
 
+                                                    <div className="container" style={{ width: "100%" }}>
+                                                        <div>
+                                                            <div className="row">
+                                                                <div style={{ clear: "both" }}></div>
+                                                            </div>
+                                                            <div className="row">
+                                                                <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
+                                                                    
+                                                                    <div style={{ height: "350px", overflow: "scroll" }}>
+                                                                    <div className="badge">{this.renderchildren()}</div>
+                                                                       
+                                                                    <a href="/child_register" className="w3-bar-item w3-button" >ANDIKISHA UMWANA WAWE</a>
+
+                                                                    </div>
+                                                                   
+
+                                                                </div>
+
+                                                                <div style={{ clear: "both" }}></div>
+                                                            </div></div>
+                                                    </div>
+                                                </div>
+                 
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -323,38 +373,7 @@ class parents extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className={this.state.inkingo_visible ? "inkingo" : "inkingo_invisible"}>
-                                <div className="container" style={{ width: "100%" }}>
-                                <div>
-                                    <div className="row">
-                                        <div style={{ clear: "both" }}></div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>INKINGO ZAFASHWE:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-                                            </div>
-                                        </div>
-                                        <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>INKINGO ZITARAFATWA:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                                <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style={{ clear: "both" }}></div>
-                                    </div></div>
-                            </div>
-                                </div>
+                        
 
                             </div>
                         </div>
