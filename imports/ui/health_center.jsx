@@ -55,7 +55,7 @@ class health_center extends React.Component {
     componentDidMount() {
         
         global.username=sessionStorage.getItem('username');
-     var center = user.find({username:  global.username+""});
+     var center = user.find({username:  global.username+""}).fetch();
     
      console.log( global.username);
      for(var key in center ){
