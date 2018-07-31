@@ -54,13 +54,13 @@ class health_center extends React.Component {
     }
     componentDidMount() {
         
-        global.username=sessionStorage.getItem('username');
+    global.username=sessionStorage.getItem('username');
      var center = user.find({username: sessionStorage.getItem('username')}).fetch();
     
      console.log( global.username);
      for(var key in center ){
          if(center.hasOwnProperty(key)){
-           console.log(center[key].sector);
+          // console.log(center[key].sector);
          }
      }
         if (sessionStorage.length == 0) {
