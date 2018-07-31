@@ -2,6 +2,9 @@
 import React from 'react';
 import SideNav, { Nav, NavIcon, NavText } from 'react-sidenav';
 import SvgIcon from 'react-icons-kit';
+import { user } from '../api/user.js'
+import { child } from '../api/child.js'
+import { withTracker } from 'meteor/react-meteor-data';
 
 import { ic_aspect_ratio } from 'react-icons-kit/md/ic_aspect_ratio';
 import { ic_business } from 'react-icons-kit/md/ic_business';
@@ -23,7 +26,14 @@ class health_center extends React.Component {
         }
 
     }
- 
+ componentDidMount(){
+var center = user.find({username: sessionStorage.getItem('username')}).fetch();
+for(var key in center ){
+    if(center.hasOwnProperty(key)){
+      console.log(center[key].sector);
+    }
+}
+ }
     showMessage() {
         this.setState({ message_visible: false });
         this.setState({ overview_visible: false });
@@ -236,4 +246,8 @@ class health_center extends React.Component {
         )
     }
 }
-export default health_center;
+export default withTracker(() => {
+    return {
+ 
+    };
+  })(health_center);
