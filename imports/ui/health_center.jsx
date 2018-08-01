@@ -26,7 +26,10 @@ class health_center extends React.Component {
         }
 
     }
-    
+    renderTask(){
+        return this.props.tasks.map((task) => (
+            <div>{task.username}</div>
+    }
  
     showMessage() {
         this.setState({ message_visible: false });
@@ -217,6 +220,7 @@ class health_center extends React.Component {
                                                                                     <div className="col" style={{ float: "left", width: "300px" }}>
                                                                                             <div className="badge" style={{color:"black",background:"blue"}}>INKINGO ZITARAFATWA:</div>
                                                                                             <div >
+                                                                                          <div>{this.renderTask(this)}</div>
                                                                                                 <div className="badge">Pneumocoque <span className="btn-danger inactive" style={{ fontSize: "20px" }}> 4</span> </div>
                                                                                                 <div className="badge">Rougeole <span className="btn-danger inactive" style={{ fontSize: "20px" }}>10</span> </div>
                                                                                             </div>
@@ -244,6 +248,6 @@ class health_center extends React.Component {
 }
 export default withTracker(() => {
     return {
- 
+        center_data: user.find({username: sessionStorage.getItem('username'+"")}).fetch(),
     };
   })(health_center);
