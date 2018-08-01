@@ -68,17 +68,17 @@ user(e){
     <div style={{height:"600px",width:"100%",overflow:"scroll"}}>
     <form className="form" style={{width:"100%"}} onSubmit={this.user.bind(this)} >
     <div className="form-group">
-Firstname:<input
+Firstname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
           type="text" ref="fname"  className="form-control"
           placeholder="Enter your Firstname" required/>
     </div>
     <div className="form-group">
-Lastname:<input className="form-control"
+Lastname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input className="form-control"
               type="text" ref="lname"
               placeholder="Enter your Lastname" required />
     </div>
     <div className="form-group">
-Tel:<input
+Tel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
               type="text" ref="tel" className="form-control"
               placeholder="Enter your Phone number" required />
     </div><div className="row">
@@ -121,8 +121,7 @@ Sector:
   <option value="nyenyeri" >Remera</option>
   </select></div><div className="row">
   </div> <div className="col-sm-4 form-group">
-Position:
-  <select ref="position" className="form-control">
+Position:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select ref="position" className="form-control">
 
   <option value="health_mentor" >Health mentor</option>
   <option value="parents" >Parents </option>
@@ -130,7 +129,7 @@ Position:
   </select>
   </div></div>
   <div className="form-group">
-Username:<input
+Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
   type="text" ref="username" className="form-control"
   placeholder="UserName" required/>
 </div>
