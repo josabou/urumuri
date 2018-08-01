@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
 import { Mongo } from 'meteor/mongo';
 import {Childcolb} from '../ourdb/child.jsx';
+import { withTracker } from 'meteor/react-meteor-data';
+import { NavItem} from 'react-bootstrap';
+import Async from 'react-select/lib/Async';
+import {ReactiveVar} from 'meteor/reactive-var';
+import { Carousel } from 'react-responsive-carousel';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import {
     Accordion,
     AccordionItem,
@@ -11,9 +16,87 @@ import {
 } from 'react-accessible-accordion';
 
 import 'react-accessible-accordion/dist/fancy-example.css';
-function home(){
+class home extends TrackerReact(Component) {
+  constructor(props){
+  super(props);
+    this.state = {
 
+      subscribe:{
+    childcolb:Meteor.subscribe('Childcolb' )
+    }
+    }
+  }
+  componentWillUnmount(){
+    this.state.subscribe.childcolb.stop();
+  }
+  render (){
+   var what1 =Childcolb.findOne(
+     {
+       $and: [
+          {cat:'parents1'}, {cat2:'behaviour'}
+       ]
+    }
+ );
+ console.log(what1);
+ var what2 =Childcolb.findOne(
+   {
+      $and: [
+         {cat:'parents2'}, {cat2:'behaviour'}
+      ]
+   }
+);
+ var what3 =Childcolb.findOne(
+   {
+      $and: [
+         {cat:'parents3'}, {cat2:'behaviour'}
+      ]
+   }
+);
+var what4 =Childcolb.findOne(
+  {
+     $and: [
+        {cat:'parents1'}, {cat2:'info'}
+     ]
+  }
+);
+var what5 =Childcolb.findOne(
+ {
+    $and: [
+       {cat:'parents2'}, {cat2:'info'}
+    ]
+ }
+);
+var what6 =Childcolb.findOne(
+ {
+    $and: [
+       {cat:'parents3'}, {cat2:'info'}
+    ]
+ }
+);
+var what7 =Childcolb.findOne(
+  {
+     $and: [
+        {cat:'parents1'}, {cat2:'nutrition'}
+     ]
+  }
+);
+var what8 =Childcolb.findOne(
+ {
+    $and: [
+       {cat:'parents2'}, {cat2:'nutrition'}
+    ]
+ }
+);
+var what9 =Childcolb.findOne(
+ {
+    $and: [
+       {cat:'parents3'}, {cat2:'nutrition'}
+    ]
+ }
+);
+if(this.state.subscribe.childcolb.ready() && typeof what1 !== "undefined"){
     return (
+
     <div>
 
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -67,10 +150,58 @@ function home(){
   <Accordion>
         <AccordionItem>
             <AccordionItemTitle>
-                <h3>Simple title</h3>
+                <h3>{what1.title[0]}</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
-                <p>Body content</p>
+                <p>{what1.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what2.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what2.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what3.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what3.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what4.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what4.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what5.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what5.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what6.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what6.body[0]}</p>
+            </AccordionItemBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionItemTitle>
+                <h3>{what7.title[0]}</h3>
+            </AccordionItemTitle>
+            <AccordionItemBody>
+                <p>{what7.body[0]}</p>
             </AccordionItemBody>
         </AccordionItem>
         <AccordionItem>
@@ -79,7 +210,7 @@ function home(){
                 <div>With a bit of description</div>
             </AccordionItemTitle>
             <AccordionItemBody>
-                <p>Body content</p>
+                <p>{what8.body[0]}</p>
             </AccordionItemBody>
         </AccordionItem>
     </Accordion>
@@ -103,8 +234,9 @@ function home(){
   </div>
   </div>
 
-    );
-
+    );}
+    return (<div>'loading data'</div>);
+}
 }
 
 
