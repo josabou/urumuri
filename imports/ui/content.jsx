@@ -7,8 +7,8 @@ import { NavItem} from 'react-bootstrap';
 import Async from 'react-select/lib/Async';
 import {ReactiveVar} from 'meteor/reactive-var';
 import Select from 'react-select';
-
 import {UnmountClosed} from 'react-collapse';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import {
     Accordion,
     AccordionItem,
@@ -29,11 +29,21 @@ const discriptions = [
   { value: '2', label: 'nutrition' }
 ];
 
-class contents extends Component {
-  state = {
-    selectedOption1: 0,
-    selectedOption2: 0,
+class contents extends TrackerReact(Component) {
+  constructor(props){
+super(props);
+    this.state = {
+      selectedOption1: 0,
+      selectedOption2: 0,
+      subscribe:{
+    childcolb:Meteor.subscribe('Childcolb' )
+    }
+    }
   }
+  componentWillUnmount(){
+    this.state.subscribe.childcolb.stop();
+  }
+
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption.value });
     console.log(`Option1 selected:`, selectedOption);
@@ -61,6 +71,7 @@ render (){
 
  console.log(what);
  var selected= this.state;
+ if(this.state.subscribe.childcolb.ready() && typeof what !== "undefined"){
     return (
 
 <div id="content">
@@ -68,50 +79,50 @@ render (){
 <input type="text" placeholder=" Type to Search.."/>
 <button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
 
-</div>
 <div>
-<Select value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
-<Select value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>,
+<Select className="sele" value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
+<Select  className="sele" value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>
+</div>
 
 <div className="blankSeparator"></div>
 
   <div className="info">
-    <div className="col-xs-3">
+    <div className="col-xs-4">
       <h3>{what.title[0]}</h3>
 
       <p>{what.body[0]}</p>
 
-      <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
-    <div className="two_third lastcolumn">
+      <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+
       <div className="col-xs-4">
         <h3>{what.title[1]}</h3>
         <p>{what.body[1]}</p>
-        <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
-      <div className="col-xs-4 lastcolumn">
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+      <div className="col-xs-4 ">
         <h3>{what.title[2]}</h3>
         <p>{what.body[2]}</p>
-        <a href="http://themeforest.net/item/positivo-responsive-and-fresh-wp-theme/2700306?ref=anariel7" title="" className="buttonhome">&rarr; download pdf</a> </div>
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a>
     </div>
   </div>
 
 
 
   <div className="sepContainer"></div>
-  <h3>Our Clients</h3>
-  <div className="col-xs-2"> <img src="images/client1.jpg" alt=""/> </div>
+  <div>
+  <h3>Our partner</h3>
+  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
 
-  <div className="col-xs-2"> <img src="images/client2.jpg" alt=""/> </div>
+  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
 
-  <div className="col-xs-2"> <img src="images/client3.jpg" alt=""/> </div>
+  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
 
-  <div className="col-xs-2"> <img src="images/client4.jpg" alt=""/> </div>
+  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
 
-  <div className="col-xs-2"> <img src="images/client5.jpg" alt=""/> </div>
+  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
 
-  <div className="col-xs-2 lastcolumn"> <img src="images/client6.jpg" alt=""/> </div>
-
-  <div className="sepContainer1"></div>
+   </div>
   <div className="blankSeparator"></div>
+  <div>
   <div className="col-xs-3">
     <section className="boxthreeleft"> <img src="images/home/1.png" alt=""/>
       <h3>{what.title[3]}</h3>
@@ -125,6 +136,12 @@ render (){
       <p>{what.body[4]}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
+  <div className="col-xs-3">
+    <section className="boxthreecenter"> <img src="images/home/2.png" alt=""/>
+      <h3>{what.title[4]}</h3>
+      <p>{what.body[4]}.</p>
+      <a className ="simple" href="#">+ Learn more</a> </section>
+  </div>
 
   <div className="col-xs-3 lastcolumn">
     <section className="boxthreeright"> <img src="images/home/3.png" alt=""/>
@@ -132,19 +149,17 @@ render (){
       <p>{what.body[5]}.</p>
       <a className ="simple" href="#">+ Learn more</a> </section>
   </div>
-
-<div className="blankSeparator1"></div>
-
+  </div>
 <div className="blankSeparator1"></div>
 <div>
 
 <Accordion>
       <AccordionItem>
           <AccordionItemTitle>
-              <h3>{what.title[6]}</h3>
+              <h3>{what.title[5]}</h3>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>{what.body[6]}</p>
+              <p>{what.body[5]}</p>
           </AccordionItemBody>
       </AccordionItem>
       <AccordionItem>
@@ -153,7 +168,7 @@ render (){
               <div>With a bit of description</div>
           </AccordionItemTitle>
           <AccordionItemBody>
-              <p>{what.body[7]}</p>
+              <p>{what.body[5]}</p>
           </AccordionItemBody>
       </AccordionItem>
   </Accordion>
@@ -167,7 +182,8 @@ render (){
 </div>
 
 
-    );
+    );}
+    return (<div>'loading data'</div>);
     var acc = document.getElementsByClassName("accordion");
     var i;
 

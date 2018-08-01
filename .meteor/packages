@@ -22,7 +22,6 @@ twbs:bootstrap
 accounts-ui
 accounts-password
 react-meteor-data
-autopublish
 praneybehl:react-select
 semantic:ui
 flemay:less-autoprefixer
@@ -32,3 +31,4 @@ aldeed:simple-schema
 check
 useraccounts:bootstrap
 useraccounts:core
+ultimatejs:tracker-react

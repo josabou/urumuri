@@ -12,9 +12,17 @@ textarea {
 
 select {
     margin-bottom: 1rem;
-    display: block;
+    display: inline-block;
+    width: 30%;
 }
-
+.content{
+  background-image: url("./public/images/img6.jpg");
+}
+.sele{
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 50%;
+}
 .signup {
     position: fixed;
     left: 20%;

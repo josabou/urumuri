@@ -6,7 +6,7 @@ class contact extends Component {
 
 <div>
 <div id="contact" className="text-center">
-  <div className="container">
+  //<div className="container">
     <div className="section-title center">
       <h2>Contact us</h2>
       <hr/>
@@ -65,22 +65,22 @@ class contact extends Component {
         </div>
 
     </div>
-  </div>
 
-</div>
+
+//</div>
 <div className="footer">
-<a href="https://www.facebook.com/people/Salvio_Sage"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
-  <a href="https://twitter.com/salvio_sage"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
-<a href="#"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
-  <a href="#"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
-  <a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a>
-  <a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="glyphicon glyphicon-phone fa-2x"></i></a>
+<a href="https://www.facebook.com/people/Salvio_Sage"><i className="socicon socicon-twitter"></i></a>
+  <a href="https://twitter.com/salvio_sage"><i className="socicon socicon-twitter"></i></a>
+<a href="#"><i className="socicon socicon-twitter"></i></a>
+  <a href="#"><i className="socicon socicon-twitter"></i></a>
+  <a href="https://www.instagram.com/salviosage/"><i className="socicon socicon-twitter"></i></a>
+  <a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="socicon socicon-twitter"></i></a>
 
 
     <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
 </div>
 </div>
-
+</div>
     );
 
 }
