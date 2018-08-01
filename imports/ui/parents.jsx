@@ -196,7 +196,7 @@ class parents extends React.Component {
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">AMAKURU K'UMWANA</a>
                                             </li>
-                                            <li style={{width:"40px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
+                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
                                             </li>
                                             <li tyle={{width:"30px"}}><a href="/child_register"  data-toggle="tab">ANDIKISHA UMWANA WAWE</a> 
                                             </li>
@@ -239,7 +239,7 @@ class parents extends React.Component {
                                                         <tr><td>Info for Child's age</td></tr>
                                                         <tr><td><button className="accordion">uko wagaburira umwaanaUmwana wawe ari hagati y’amezi 8 na 10</button>
                                                             <div className="panel">
-                                                                <div style={{ height: "500px", overflow: "scroll" }}>
+                                                                <div style={{width:"100px", height: "500px", overflow: "scroll" }}>
                                                                     <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
                                                                     <div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
                                                                     <div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
@@ -284,13 +284,13 @@ class parents extends React.Component {
                                         <div style={{ clear: "both" }}></div>
                                     </div>
                                     <div className="row">
-                                        <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                        <div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
                                             <h4>INKINGO ZAFASHWE:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
                                             <div className="badge">{this.renderTakenVaccine()}</div>
                                             </div>
                                         </div>
-                                        <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
+                                        <div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
                                             <h4>INKINGO ZITARAFATWA:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
                                             <div className="badge">{this.renderUnTakenVaccine()}</div>
