@@ -64,26 +64,47 @@ user(e){
 }
   render (){
     return (
-    <div className="signup">
-    <div style={{height:"600px",overflow:"scroll"}}>
+      <div>
+      <div class="row " >
     <form className="form" onSubmit={this.user.bind(this)} >
-    <div className="form-group">
-          Firstname:<input
-          type="text" ref="fname"
+    <div className="signup"  style={{width:"700px",height:"100%",overflow:"scroll"}}>
+    <header className="registration_form"> Registration-Form</header><hr></hr>
+    <div className="col-sm-12">
+    <div className="row">
+    <div className="col-xs-4">
+              <label className="firstname">First Name :</label> </div>
+              <div className="col-xs-8">
+              <input
+          type="text" ref="fname"  className="form-control"
           placeholder="Enter your Firstname" required/>
     </div>
-    <div className="form-group">
-              Lastname:<input className="form-control"
-              type="text" ref="lname"
-              placeholder="Enter your Lastname" required />
     </div>
-    <div className="form-group">
-              Tel:<input
-              type="text" ref="tel" className="form-control"
-              placeholder="Enter your Phone number" required />
+		 </div>
+     <div className="col-sm-12">
+    <div className="row">
+    <div className="col-xs-4">
+    <label className="firstname">Last Name :</label> </div>
+    <div className="col-xs-8">
+<input className="form-control"
+               placeholder="Enter your Lastname" type="text" ref="lname"/>
+       </div>
+       </div>
+        </div>
+     <div className="col-sm-12">
+    <div className="row">
+    <div className="col-xs-4">
+
+    <label >Tel :</label> </div>
+<div className="col-xs-8">
+<input
+              type="text" ref="tel" className="form-control"/>
+              </div>
     </div>
-    <div className="form-group">
-    Province:
+		 </div>
+     <div className="col-sm-12">
+     <div className="row">
+     <div className="col-xs-4 ">
+     <label >Province:</label>
   <select ref="province" className="form-control" >
 
   <option value="northern" >northern</option>
@@ -91,15 +112,18 @@ user(e){
   <option value="kigali city" >kigali city</option>
   <option value="eastern" >eastern </option>
   <option value="western">western</option>
-  </select>
-  District:
+  </select> </div>
+  <div className="col-xs-4 ">
+  <label cl>District:</label>
+
   <select ref="district" className="form-control">
 
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
-  </select>
-  Sector:
+  </select></div></div> <div class="col-xs-4 ">
+  <label className="loation">Sector:</label>
+
   <select ref="sector" className="form-control">
 
   <option value="kimihurura" >kimihurura</option>
@@ -119,47 +143,53 @@ user(e){
   <option  value="kamukina">kamukina</option>
   <option value="kimihurura" >Kimironko</option>
   <option value="nyenyeri" >Remera</option>
-  </select>
-  </div>
-  <div className="form-group">
-    Position:
-  <select ref="position" className="form-control">
+  </select></div></div>
+  <div className="col-sm-12">
+     <div className="row">
+     <div className="col-xs-4 ">
+  <label className="loation">Position:</label></div>
+  <div className="col-xs-8 ">
+ <select ref="position" className="form-control">
 
   <option value="health_mentor" >Health mentor</option>
   <option value="parents" >Parents </option>
   <option value="health_center" >Health center</option>
-  </select>
-  </div>
-  <div className="form-group">
-  Username:<input
-  type="text" ref="username" className="form-control"
-  placeholder="UserName" required/>
-</div>
-    <div className="form-group">
-              Password:<input
-              type="Password" ref="pswd" className="form-control"
-              placeholder="Password" required/>
-    </div>
-    <div className="form-group">
-              ConfirmPassword:<input
+  </select></div>
+  </div></div>
+ 
+  <div className="col-sm-12">
+  <div className="row">
+  <div className="col-xs-4">
+          <label class="pass">Password :</label></div>
+<div className="col-xs-8"><input
+              type="Password" ref="pswd" className="form-control"/>
+     		 </div>
+          </div>
+		  </div>
+      <div className="col-sm-12">
+<div className="row">
+<div className="col-xs-4">
+        <label class="pass">Confirm Password :</label></div>
+<div class="col-xs-8"><input
               type="Password" ref="confirmpswd" className="form-control"
-              placeholder="Password" required/>
-    </div>
-    <div className="form-group">
+              placeholder="Password" required />
+		 </div>
+          </div>
+		  </div>
+
             <button className="btn btn-info" type="submit">Submit</button>
+           
             <button className="btn btn-basic">Cancel</button>
     </div>
    </form>
-   <div className="footer">
-
-       <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
-
+  
+  
    </div>
 
-     </div>
-     </div>
+   
+    
 
-
+</div>
     );
 
 }
