@@ -65,9 +65,9 @@ user(e){
   render (){
     return (
       <div>
-      <div class="row " style={{height:"100%"}}>
-    <form className="form" style={{height:"100%",overflow:"scroll"}} onSubmit={this.user.bind(this)} >
-    <div className="signup">
+      <div class="row " >
+    <form className="form" onSubmit={this.user.bind(this)} >
+    <div className="signup"  style={{height:"100%",overflow:"scroll"}}>
     <header className="registration_form"> Registration-Form</header><hr></hr>
     <div className="col-sm-12">
     <div className="row">
@@ -176,18 +176,17 @@ user(e){
 		 </div>
           </div>
 		  </div>
-        <div className="row">
-      <div >
+      <div className="col-sm-8">
             <button className="btn btn-info" type="submit">Submit</button></div>
-      <div >
+            <div className="col-xs-8">
             <button className="btn btn-basic">Cancel</button></div>
-    </div></div>
+    </div>
    </form>
-   </div>
+  
    <div className="footer">
 
        <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
-
+       </div>
    </div>
 
    
