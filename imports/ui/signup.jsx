@@ -181,7 +181,7 @@ ConfirmPassword:<div class="col-xs-8"><input
             <button className="btn btn-info" type="submit">Submit</button></div>
             <div class="col-xs-8">
             <button className="btn btn-basic">Cancel</button></div>
-    </div></div>
+    </div></div></div>
    </form>
 
    <div className="footer">
@@ -192,7 +192,7 @@ ConfirmPassword:<div class="col-xs-8"><input
 
    
      </div>
-</div>
+
 
     );
 
