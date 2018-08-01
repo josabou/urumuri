@@ -2,6 +2,9 @@
 import React from 'react';
 import SideNav, { Nav, NavIcon, NavText } from 'react-sidenav';
 import SvgIcon from 'react-icons-kit';
+import { user } from '../api/user.js'
+import { child } from '../api/child.js'
+import { withTracker } from 'meteor/react-meteor-data';
 
 import { ic_aspect_ratio } from 'react-icons-kit/md/ic_aspect_ratio';
 import { ic_business } from 'react-icons-kit/md/ic_business';
@@ -22,6 +25,10 @@ class health_center extends React.Component {
             announce_visible: false
         }
 
+    }
+    renderTask(){
+        return this.props.tasks.map((task) => (
+            <div>{task.username}</div>));
     }
  
     showMessage() {
@@ -49,6 +56,8 @@ class health_center extends React.Component {
         this.setState({ announce_visible: true });
     }
     componentDidMount() {
+        
+  
         if (sessionStorage.length == 0) {
             window.open("/", "_self");
         }
@@ -211,6 +220,7 @@ class health_center extends React.Component {
                                                                                     <div className="col" style={{ float: "left", width: "300px" }}>
                                                                                             <div className="badge" style={{color:"black",background:"blue"}}>INKINGO ZITARAFATWA:</div>
                                                                                             <div >
+                                                                                          <div>{this.renderTask(this)}</div>
                                                                                                 <div className="badge">Pneumocoque <span className="btn-danger inactive" style={{ fontSize: "20px" }}> 4</span> </div>
                                                                                                 <div className="badge">Rougeole <span className="btn-danger inactive" style={{ fontSize: "20px" }}>10</span> </div>
                                                                                             </div>
@@ -236,4 +246,8 @@ class health_center extends React.Component {
         )
     }
 }
-export default health_center;
+export default withTracker(() => {
+    return {
+        center_data: user.find({username: sessionStorage.getItem('username'+"")}).fetch(),
+    };
+  })(health_center);
