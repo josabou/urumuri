@@ -73,18 +73,18 @@ user(e){
           placeholder="Enter your Firstname" required/>
     </div>
     <div className="form-group">
-              Lastname:<input
+              Lastname:<input className="form-control"
               type="text" ref="lname"
               placeholder="Enter your Lastname" required />
     </div>
     <div className="form-group">
               Tel:<input
-              type="text" ref="tel"
+              type="text" ref="tel" className="form-control"
               placeholder="Enter your Phone number" required />
     </div>
     <div className="form-group">
     Province:
-  <select ref="province" >
+  <select ref="province" className="form-control" >
 
   <option value="northern" >northern</option>
   <option value="southern">southern </option>
@@ -93,14 +93,14 @@ user(e){
   <option value="western">western</option>
   </select>
   District:
-  <select ref="district">
+  <select ref="district" className="form-control">
 
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
   </select>
   Sector:
-  <select ref="sector">
+  <select ref="sector" className="form-control">
 
   <option value="kimihurura" >kimihurura</option>
   <option value="nyenyeri" >Bumbogo</option>
@@ -123,7 +123,7 @@ user(e){
   </div>
   <div className="form-group">
     Position:
-  <select ref="position" >
+  <select ref="position" className="form-control">
 
   <option value="health_mentor" >Health mentor</option>
   <option value="parents" >Parents </option>
@@ -132,17 +132,17 @@ user(e){
   </div>
   <div className="form-group">
   Username:<input
-  type="text" ref="username"
+  type="text" ref="username" className="form-control"
   placeholder="UserName" required/>
 </div>
     <div className="form-group">
               Password:<input
-              type="Password" ref="pswd"
+              type="Password" ref="pswd" className="form-control"
               placeholder="Password" required/>
     </div>
     <div className="form-group">
               ConfirmPassword:<input
-              type="Password" ref="confirmpswd"
+              type="Password" ref="confirmpswd" className="form-control"
               placeholder="Password" required/>
     </div>
     <div className="form-group">
