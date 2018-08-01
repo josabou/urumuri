@@ -34,7 +34,7 @@ class healthmentors extends React.Component {
               global.username=mydata.username;
                      })}</div> 
                      <div>
-{vaccines.find({_id:task._id}).fetch().forEach(function (myvaccine){
+{vaccines.find({}).fetch().forEach(function (myvaccine){
     console.log(myvaccine.name);
     global._name=myvaccine.name;
     global.age=myvaccine.age;
