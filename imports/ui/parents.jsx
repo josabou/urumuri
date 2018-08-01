@@ -20,8 +20,9 @@ class parents extends React.Component {
           <div key={key._id}><p>umwana wawe yitwa {key.childname}</p>
               <p> amaze iminsi {key.age}  avutse</p>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p>kuri ii tariki {vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></p>             
+              <p> {vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> </p>             
               )) : key.vaccine}
+              <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
           </div>
         ));
       }
@@ -29,8 +30,9 @@ class parents extends React.Component {
         return this.props.child_data.map((key) => (
           <div key={key._id}>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p>{vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></p>             
+              <p>{vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> </p>             
               )) : key.vaccine}
+              <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
           </div>
         ));
       }
@@ -190,13 +192,13 @@ class parents extends React.Component {
                                     <div><h2>INCAMAKE</h2></div>
                                     <div id="exTab2" className="container" style={{ width: "100%" }}>
 
-                                        <ul className="nav nav-tabs">
-                                            <li className="active">
+                                        <ul className="nav nav-tabs" tyle={{width:"400px"}}>
+                                            <li className="active" s>
                                                 <a href="#1" data-toggle="tab">AMAKURU K'UMWANA</a>
                                             </li>
-                                            <li><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
+                                            <li style={{width:"40px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
                                             </li>
-                                            <li><a href="#3" data-toggle="tab">ANDIKISHA UMWANA WAWE</a>
+                                            <li tyle={{width:"30px"}}><a href="/child_register"  data-toggle="tab">ANDIKISHA UMWANA WAWE</a> 
                                             </li>
 
                                         </ul>
@@ -205,7 +207,7 @@ class parents extends React.Component {
                                             <div className="tab-pane active" id="1">
                                                 <div>
 
-                                                    <div className="container" style={{ width: "50%" }}>
+                                                    <div className="container" style={{ width: "100%" }}>
                                                         <div>
                                                             <div className="row">
                                                                 <div style={{ clear: "both" }}></div>
