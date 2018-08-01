@@ -2,6 +2,7 @@ import {Meteor} from 'meteor/meteor';
 import React from 'react';
 import {user} from '../api/user.js'
 import {child} from '../api/child.js'
+import {vaccines} from '../api/vaccines.js'
 import ReactDOM from 'react-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import {BrowserRouter, Route, Switch } from 'react-router-dom';

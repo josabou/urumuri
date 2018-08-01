@@ -76,7 +76,8 @@ child(e){
 <input type="date" ref="vaccined1" />
 <div className="checkbox-inline">
 <input type="checkbox" ref="vaccine1" />Baccille Calmette Guérin vaccine
-    </div></div><div>
+    </div></div>
+    <div>
     <input type="date" ref="vaccined2"/>
  <div className="checkbox-inline">
  <input type="checkbox"  ref="vaccine2"/>Poliomyélite I 
