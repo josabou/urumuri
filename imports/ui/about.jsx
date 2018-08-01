@@ -24,7 +24,7 @@ class about extends Component {
           </div>
         </div>
         <div className="col-xs-6 col-md-3 col-sm-6">
-          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+          <div className="thumbnail"> <img src="././images/jojo.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
               <h3>jjosiane</h3>
               <p>Web Designer</p>
@@ -32,7 +32,7 @@ class about extends Component {
           </div>
         </div>
         <div className="col-xs-6 col-md-3 col-sm-6">
-          <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
+          <div className="thumbnail"> <img src="././images/mutoni.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
               <h3>germaine</h3>
               <p>Creative Director</p>
@@ -55,8 +55,7 @@ class about extends Component {
       <hr/>
     </div>
     <div className="row">
-      <div className="col-md-4"><img src="img/about.png" className="img-responsive"/></div>
-      <div className="col-md-4" >
+      <div className="col-md-6" >
         <div className="about-text">
           <h4>who we are</h4>
           <p>
@@ -64,7 +63,7 @@ I software developer. In addition to my love of computers  programming,I like to
           <p> I have the technical & communication knowledge. I assist people in managing their help desk or work with them to devise a contingency plan for proper computer maintenance and troubleshooting </p>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col-md-6">
         <div className="about-text">
           <h4>what we do</h4>
 
