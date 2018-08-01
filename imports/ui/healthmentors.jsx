@@ -431,6 +431,6 @@ class healthmentors extends React.Component {
 
 export default withTracker(() => {
     return {
-      mentor_data: child.find({healthmentors_id: sessionStorage.getItem('username')}).fetch(),
+      mentor_data: user.find({healthmentors_id: sessionStorage.getItem('username')}).fetch(),
     };
   })(healthmentors);
