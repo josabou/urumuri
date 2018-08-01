@@ -29,10 +29,10 @@ class parents extends React.Component {
       renderUnTakenVaccine() {
         var output=[];
         var l=0;
-        for(i=0;i<this.props.child_data.length;i++){
+        for(var i=0;i<this.props.child_data.length;i++){
             output[l]=[];k=0;
             if (this.props.child_data[i].vaccine.length> 0){
-                for(j=0; j< this.props.child_data[i].vaccine.length;j++){
+                for(var j=0; j< this.props.child_data[i].vaccine.length;j++){
                     if (!this.props.child_data[i].vaccine[j].type){
                         output[l][k]=<p><input type="checkbox" /> {this.props.child_data[i].vaccine[j].name} <br/></p>
                         k++;
