@@ -30,7 +30,8 @@ class parents extends React.Component {
         var output=[];
         var l=0;
         for(var i=0;i<this.props.child_data.length;i++){
-            output[l]=[];k=0;
+            output[l]=[];
+            var k=0;
             if (this.props.child_data[i].vaccine.length> 0){
                 for(var j=0; j< this.props.child_data[i].vaccine.length;j++){
                     if (!this.props.child_data[i].vaccine[j].type){
