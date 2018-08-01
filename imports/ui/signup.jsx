@@ -81,8 +81,8 @@ user(e){
               Tel:<input
               type="text" ref="tel" className="form-control"
               placeholder="Enter your Phone number" required />
-    </div>
-    <div className="form-group">
+    </div><div className="row">
+    <div className="col-sm-4 form-group">
     Province:
   <select ref="province" className="form-control" >
 
@@ -91,14 +91,14 @@ user(e){
   <option value="kigali city" >kigali city</option>
   <option value="eastern" >eastern </option>
   <option value="western">western</option>
-  </select>
+  </select></div> <div className="col-sm-4 form-group">
   District:
   <select ref="district" className="form-control">
 
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
-  </select>
+  </select></div> <div className="col-sm-4 form-group">
   Sector:
   <select ref="sector" className="form-control">
 
@@ -119,7 +119,7 @@ user(e){
   <option  value="kamukina">kamukina</option>
   <option value="kimihurura" >Kimironko</option>
   <option value="nyenyeri" >Remera</option>
-  </select>
+  </select></div>
   </div>
   <div className="form-group">
     Position:
