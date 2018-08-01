@@ -24,6 +24,10 @@ class healthmentors extends React.Component {
         }
 
     }
+    renderTask(){
+        return this.props.tasks.map((task) => (
+            <div>{task.username}</div>));
+    }
     showIncomming() {
         this.setState({ message_visible: false });
         this.setState({ overview_visible: false });
@@ -232,6 +236,7 @@ class healthmentors extends React.Component {
                                                                 <h4>UKO UMWANA ANGANA</h4>
                                                                 <div style={{ height: "140px", overflow: "scroll" }}>
                                                                     <span className="badge" style={{ fontSize: "20px" }}>4</span>
+                                                                    <div>{this.renderTask(this)}</div>
                                                                 </div>
                                                             </div>
                                                             <div style={{ clear: "both" }}></div>
@@ -422,4 +427,9 @@ class healthmentors extends React.Component {
         )
     }
 }
-export default healthmentors;
+
+export default withTracker(() => {
+    return {
+      mentor_data: child.find({healthmentors_id: sessionStorage.getItem('username')}).fetch(),
+    };
+  })(healthmentors);
