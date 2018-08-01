@@ -28,7 +28,7 @@ class health_center extends React.Component {
     }
     renderTask(){
         return this.props.tasks.map((task) => (
-            <div>{task.username}</div>
+            <div>{task.username}</div>));
     }
  
     showMessage() {
