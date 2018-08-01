@@ -26,7 +26,7 @@ class healthmentors extends React.Component {
 
     }
     renderTask(){
-        return this.props.tasks.map((task) => (
+        return this.props.mentor_data.map((task) => (
             <div>{task.username}</div>));
     }
     showIncomming() {
@@ -431,6 +431,6 @@ class healthmentors extends React.Component {
 
 export default withTracker(() => {
     return {
-      mentor_data: user.find({healthmentors_id: sessionStorage.getItem('username')}).fetch(),
+      mentor_data: user.find({healthmentors_id: sessionStorage.getItem('username')+""}).fetch(),
     };
   })(healthmentors);
