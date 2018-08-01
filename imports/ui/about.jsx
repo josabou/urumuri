@@ -12,7 +12,7 @@ class about extends Component {
       <div className="section-title center">
         <h2>Meet team urumuli</h2>
         <hr/>
-        <p>actually i am working alone , but i am looking on how can i cooperate with the other to make a strong team which will facilitate to work quiker and relevant.</p>
+        <p>We are all very passionate about infant nutrition!</p>
       </div>
       <div id="row">
         <div className="col-xs-6 col-md-3 col-sm-6">
