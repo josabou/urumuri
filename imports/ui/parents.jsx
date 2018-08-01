@@ -27,7 +27,8 @@ class parents extends React.Component {
         ));
       }
       renderUnTakenVaccine() {
-        var output=[];l=0;
+        var output=[];
+        var l=0;
         for(i=0;i<this.props.child_data.length;i++){
             output[l]=[];k=0;
             if (this.props.child_data[i].vaccine.length> 0){
