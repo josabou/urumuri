@@ -69,7 +69,7 @@ user(e){
     <form className="form" onSubmit={this.user.bind(this)} >
     <div className="form-group">
           Firstname:<input
-          type="text" ref="fname"
+          type="text" ref="fname"  className="form-control"
           placeholder="Enter your Firstname" required/>
     </div>
     <div className="form-group">
