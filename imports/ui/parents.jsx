@@ -30,7 +30,7 @@ class parents extends React.Component {
         return this.props.child_data.map((key) => (
           <div key={key._id}>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p>{vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> </p>             
+              <p> {(!vaccine.type) ? <input type="checkbox" ref={"vaccine_"+vaccine.name}> {vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name}</input> : ""  }<br/></p>       
               )) : key.vaccine}
               <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
           </div>
