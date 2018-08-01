@@ -65,25 +65,25 @@ user(e){
   render (){
     return (
     <div className="signup">
-    <div style={{height:"600px",overflow:"scroll"}}>
+    <div style={{height:"600px",width:"100%",overflow:"scroll"}}>
     <form className="form" onSubmit={this.user.bind(this)} >
     <div className="form-group">
-          Firstname:<input
+Firstname:<input
           type="text" ref="fname"  className="form-control"
           placeholder="Enter your Firstname" required/>
     </div>
     <div className="form-group">
-              Lastname:<input className="form-control"
+Lastname:<input className="form-control"
               type="text" ref="lname"
               placeholder="Enter your Lastname" required />
     </div>
     <div className="form-group">
-              Tel:<input
+Tel:<input
               type="text" ref="tel" className="form-control"
               placeholder="Enter your Phone number" required />
     </div><div className="row">
     <div className="col-sm-4 form-group">
-    Province:
+Province:
   <select ref="province" className="form-control" >
 
   <option value="northern" >northern</option>
@@ -92,14 +92,14 @@ user(e){
   <option value="eastern" >eastern </option>
   <option value="western">western</option>
   </select></div> <div className="col-sm-4 form-group">
-  District:
+District:
   <select ref="district" className="form-control">
 
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
   </select></div> <div className="col-sm-4 form-group">
-  Sector:
+Sector:
   <select ref="sector" className="form-control">
 
   <option value="kimihurura" >kimihurura</option>
@@ -119,32 +119,31 @@ user(e){
   <option  value="kamukina">kamukina</option>
   <option value="kimihurura" >Kimironko</option>
   <option value="nyenyeri" >Remera</option>
-  </select></div>
-  </div>
-  <div className="form-group">
-    Position:
+  </select></div><div className="row">
+  </div> <div className="col-sm-4 form-group">
+Position:
   <select ref="position" className="form-control">
 
   <option value="health_mentor" >Health mentor</option>
   <option value="parents" >Parents </option>
   <option value="health_center" >Health center</option>
   </select>
-  </div>
+  </div></div>
   <div className="form-group">
-  Username:<input
+Username:<input
   type="text" ref="username" className="form-control"
   placeholder="UserName" required/>
 </div>
-    <div className="form-group">
-              Password:<input
+<div className="form-group">
+Password:<input
               type="Password" ref="pswd" className="form-control"
               placeholder="Password" required/>
-    </div>
-    <div className="form-group">
-              ConfirmPassword:<input
+</div>
+<div className="form-group">
+ConfirmPassword:<input
               type="Password" ref="confirmpswd" className="form-control"
               placeholder="Password" required/>
-    </div>
+</div>
     <div className="form-group">
             <button className="btn btn-info" type="submit">Submit</button>
             <button className="btn btn-basic">Cancel</button>
