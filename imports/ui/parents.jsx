@@ -43,7 +43,7 @@ class parents extends React.Component {
             }
         }
         return output.map((output_i)=>(
-            <div key={key._id}>
+            <div key={output_i._id}>
             {output_i.map((vaccine)=>(
                 vaccine
             ))}
