@@ -58,11 +58,11 @@ class Header extends React.Component {
         </NavLink>
         <NavLink className="inactive" activeClassName="active" exact to="/">Home</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/about">Who We Are</NavLink>
-          <NavLink className="inactive" activeClassName="active" to="/whoweare">Who We </NavLink>
+          //<NavLink className="inactive" activeClassName="active" to="/whoweare">Who We </NavLink>
         <NavLink className="inactive" activeClassName="active" to="/content">Content</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/contact">Contact Us</NavLink>
-        <NavLink className="inactive" activeClassName="active" to="/test">test</NavLink>
-        <NavLink className="inactive" to="/bad-url">Not Found Page</NavLink>
+        //<NavLink className="inactive" activeClassName="active" to="/test">test</NavLink>
+        //<NavLink className="inactive" to="/bad-url">Not Found Page</NavLink>
         <a className="inactive" id="jojo_sign_in" href="#" data-toggle="modal" data-target="#myModal">SIGN IN  </a>
         <a className="inactive" href="/" id="activitypage" style={{ display: "none"  }}>Activity Page</a>
         <a className="inactive" href="#" onClick={this.logOut.bind(this)} id="logout" style={{ display: "none" }}>Log out</a>

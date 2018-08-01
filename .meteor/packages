@@ -32,3 +32,4 @@ check
 useraccounts:bootstrap
 useraccounts:core
 ultimatejs:tracker-react
+carlosbaraza:meteor-socicon
