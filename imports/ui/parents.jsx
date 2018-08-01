@@ -27,13 +27,26 @@ class parents extends React.Component {
         ));
       }
       renderUnTakenVaccine() {
-        return this.props.child_data.map((key) => (
-          <div key={key._id}>
-              {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p> {(!vaccine.type) ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""  }<br/></p>       
-              )) : key.vaccine}
-              <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
-          </div>
+        var output=[];l=0;
+        for(i=0;i<this.props.child_data.length;i++){
+            output[l]=[];k=0;
+            if (this.props.child_data[i].vaccine.length> 0){
+                for(j=0; j< this.props.child_data[i].vaccine.length;j++){
+                    if (!this.props.child_data[i].vaccine[j].type){
+                        output[l][k]=<p><input type="checkbox" /> {this.props.child_data[i].vaccine[j].name} <br/></p>
+                        k++;
+                    }
+                }
+                l++;
+            }
+        }
+        return output.map((output_i)=>(
+            <div key={key._id}>
+            {output_i.map((vaccine)=>(
+                vaccine
+            ))}
+             <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
+            </div>
         ));
       }
       renderTakenVaccine() {
