@@ -53,7 +53,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className='Header'>
-    
+
         <NavLink className="inactive" activeClassName="active" exact to="/">Home</NavLink>
         <NavLink className="inactive" activeClassName="active" to="/about">Who We Are</NavLink>
 
@@ -76,14 +76,14 @@ class Header extends React.Component {
               <div className="modal-body">
                 <form onSubmit={this.user.bind(this)}>
                   Username:<input
-                    type="text"
+                    type="text" className="form-control"
 
-                    placeholder="Enter your Username" className="input_text" ref="username"
+                    placeholder="Enter your Username" className="form-control" ref="username"
                   /><br />
                   Password:<input
                     type="Password"
 
-                    placeholder="Password" ref="pswd" className="input_text"
+                    placeholder="Password" ref="pswd" className="form-control "
                   /><br />
                   <button className="btn btn-info" type="submit" >Login</button>
                   <button className="btn btn-link" ><a href={"/signup"}>Create account</a></button>

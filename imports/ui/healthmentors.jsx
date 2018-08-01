@@ -22,6 +22,13 @@ class healthmentors extends React.Component {
             overview_visible: true,
             message_visible: false,
             upcomming_visible: false,
+            m1_visible:true,
+            m2_visible:false,
+            m3_visible:false,
+            m4_visible:false,
+            m5_visible:false,
+            m6_visible:false,
+            m7_visible:false,
             announce_visible: false
         }
 
@@ -83,6 +90,92 @@ class healthmentors extends React.Component {
               </div>));
 
     }
+
+    showM1() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m1_visible: true });
+    }
+    showM2() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m2_visible: true });
+    }
+    showM3() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m3_visible: true });
+    }
+    showM4() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m4_visible: true });
+    }
+    showM5() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m5_visible: true });
+    }
+    showM6() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m6_visible: true });
+    }
+    showM7() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+        this.setState({ m5_visible: false });
+        this.setState({ m6_visible: false });
+        this.setState({ m7_visible: false });
+
+
+        this.setState({ m7_visible: true });
+    }
+
     showIncomming() {
         this.setState({ message_visible: false });
         this.setState({ overview_visible: false });
@@ -198,18 +291,57 @@ class healthmentors extends React.Component {
                     <td><div style={{ width: "200px", height: "400px", overflow: "scroll" }}>
 
 
-                    <button className="btn btn-success" style={{width:"150px"}}>mukamana emeline</button>
-                    <button className="btn btn-success" style={{width:"150px"}}>kanakuze dative </button>
-                    <button className="btn btn-success" style={{width:"150px"}}>umutoni alida</button>
-                    <button className="btn btn-success" style={{width:"150px"}}>mukamana </button>
-                    <button className="btn btn-success" style={{width:"150px"}}>kamaziga vestine</button>
-                    <button className="btn btn-success" style={{width:"150px"}}>mugisha </button>
-                    <button className="btn btn-success" style={{width:"150px"}}>nayubu</button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM1.bind(this)}>mukamana emeline</button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM2.bind(this)}>kanakuze dative </button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM3.bind(this)}>umutoni alida</button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM4.bind(this)}>mukamana </button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM5.bind(this)}>kamaziga vestine</button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM6.bind(this)}>mugisha </button>
+                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM7.bind(this)}>nayubu</button>
 
 
           </div></td>
                   <td>
         <div style={{ width: "640px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE mubyeyi, twabibutsaga ko uyumunsi ari ugutanga inkingo  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse Mujyana, murakoze kutwibutsa </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>yego nmwe murakoze, mubizirikane  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze  </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m2_visible ? "m2" : "m2_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>namwe murakoze mubizirikane </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>yego cyane </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m3_visible ? "m3" : "m3_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
@@ -228,6 +360,86 @@ class healthmentors extends React.Component {
     </table>
           </div>
         </div>
+
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m4_visible ? "m4" : "m4_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m5_visible ? "m5" : "m5_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m6_visible ? "m6" : "m6_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+
+        <div style={{ width: "640px", height: "400px" }} className={this.state.m7_visible ? "m7" : "m7_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+
       </td>
 </tr>
           </tbody>

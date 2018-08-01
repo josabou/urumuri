@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 
 .text-center{
   align-items: center;
 }
-=======
->>>>>>> e6432c178d4041488293e13ec1073e6fc15964c1
+
 input {
     margin-bottom: 1rem;
     display: block;
@@ -975,7 +974,7 @@ input[type=text]:focus {
 }
 
 input[type=text], select, textarea {
-    width: 100%;
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1061,7 +1060,20 @@ body {
     background-color: #428bca;
     padding: 5px 15px;
 }
-
+.m1_invisible{display: none;}
+.m2_invisible{display: none;}
+.m3_invisible{display: none;}
+.m4_invisible{display: none;}
+.m5_invisible{display: none;}
+.m6_invisible{display: none;}
+.m7_invisible{display: none;}
+.m1{display: block;}
+.m2{display: block;}
+.m3{display: block;}
+.m4{display: block;}
+.m5{display: block;}
+.m6{display: block;}
+.m7{display: block;}
 .overview {
     display: block;
 }

@@ -101,7 +101,7 @@ user(e){
               </div>
     </div>
 		 </div>
-     <div className="col-sm-12">
+     <div className="col-xs-12">
      <div className="row">
      <div className="col-xs-4 ">
      <label >Province:</label>
@@ -113,7 +113,7 @@ user(e){
   <option value="eastern" >eastern </option>
   <option value="western">western</option>
   </select> </div>
-  <div className="col-xs-4 ">
+  <div className="col-xs-3 ">
   <label cl>District:</label>
 
   <select ref="district" className="form-control">
@@ -156,7 +156,7 @@ user(e){
   <option value="health_center" >Health center</option>
   </select></div>
   </div></div>
- 
+
   <div className="col-sm-12">
   <div className="row">
   <div className="col-xs-4">
@@ -178,16 +178,16 @@ user(e){
 		  </div>
 
             <button className="btn btn-info" type="submit">Submit</button>
-           
+
             <button className="btn btn-basic">Cancel</button>
     </div>
    </form>
-  
-  
+
+
    </div>
 
-   
-    
+
+
 
 </div>
     );
