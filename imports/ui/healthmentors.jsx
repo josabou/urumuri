@@ -237,7 +237,7 @@ class healthmentors extends React.Component {
                                                                 <h4>UKO UMWANA ANGANA</h4>
                                                                 <div style={{ height: "140px", overflow: "scroll" }}>
                                                                     <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                    <div>{this.renderTask(this)}</div>
+                                                                    <div>{this.renderTask()}</div>
                                                                 </div>
                                                             </div>
                                                             <div style={{ clear: "both" }}></div>
@@ -431,6 +431,6 @@ class healthmentors extends React.Component {
 
 export default withTracker(() => {
     return {
-      mentor_data: user.find({healthmentors_id: sessionStorage.getItem('username')+""}).fetch(),
+      mentor_data: user.find({username: sessionStorage.getItem('username')+""}).fetch(),
     };
   })(healthmentors);
