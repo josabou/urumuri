@@ -30,13 +30,13 @@ class healthmentors extends React.Component {
         return this.props.mentor_data.map((task) => (
           <div> <div>{user.find({_id:task._id}).fetch().forEach(function (mydata){
               console.log(mydata.sector);
-              global._sector=mydata.sector;
+              global.sector=mydata.sector;
               global.username=mydata.username;
                      })}</div> 
                      <div>
 {vaccines.find({}).fetch().forEach(function (myvaccine){
     console.log(myvaccine.name);
-    global._name=myvaccine.name;
+    global.name=myvaccine.name;
     global.age=myvaccine.age;
            })}
                      </div>
