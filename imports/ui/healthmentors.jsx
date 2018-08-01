@@ -27,7 +27,7 @@ class healthmentors extends React.Component {
     }
     renderTask(){
         return this.props.mentor_data.map((task) => (
-          <div> <div>{user.find({_id:task._id}).fetch.forEach(function (mydata){
+          <div> <div>{user.find({_id:task._id}).fetch().forEach(function (mydata){
               console.log(mydata.sector);
           })}</div> 
               <div>{task.username}</div></div>));
