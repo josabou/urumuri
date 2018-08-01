@@ -65,7 +65,7 @@ user(e){
   render (){
     return (
       <div class="row " style={{height:"100%"}}>
-    <form className="form" style={{maxWidth: "800px",height:"100%",overflow:"scroll"}} onSubmit={this.user.bind(this)} >
+    <form className="form" style={{height:"100%",overflow:"scroll"}} onSubmit={this.user.bind(this)} >
     <div className="signup">
     <header className="registration_form"> Registration-Form</header><hr></hr>
     <div className="col-sm-12">
@@ -169,7 +169,7 @@ user(e){
 <div className="row">
 <div className="col-xs-4">
         <label class="pass">Confirm Password :</label></div>
-ConfirmPassword:<div class="col-xs-8"><input
+<div class="col-xs-8"><input
               type="Password" ref="confirmpswd" className="form-control"
               placeholder="Password" required />
 		 </div>
