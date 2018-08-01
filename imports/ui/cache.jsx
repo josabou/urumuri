@@ -247,6 +247,213 @@ class test extends Component {
       </Sidebar>
     );
   }
+  Childcolb.insert([
+     {
+      cat:'parents1',
+      sub1:[
+
+         {
+            title:'user1',
+            cont: 'My first comment',
+            more: 'My first comment',
+         },
+
+            {
+               title:'user1',
+               cont: 'My first comment',
+               more: 'My first comment',
+            },
+
+               {
+                  title:'user1',
+                  cont: 'My first comment',
+                  more: 'My first comment',
+               },
+
+              {
+               title:'user1',
+               cont: 'My first comment',
+              more: 'My first comment',
+            },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+               {
+                  title:'user1',
+                  cont: 'My first comment',
+                  more: 'My first comment',
+               },
+
+                  {
+                     title:'user1',
+                     cont: 'My first comment',
+                     more: 'My first comment',
+                  },
+
+                     {
+                        title:'user1',
+                        cont: 'My first comment',
+                        more: 'My first comment',
+                     },
+
+                    {
+                     title:'user1',
+                     cont: 'My first comment',
+                    more: 'My first comment',
+                  },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    }
+                  ]
+     },
+
+
+  ]);
+  Childcolb.insert([
+     {
+      cat:'parents2',
+      sub1:[
+
+         {
+            title:'user1',
+            cont: 'My first comment',
+            more: 'My first comment',
+         },
+
+            {
+               title:'user1',
+               cont: 'My first comment',
+               more: 'My first comment',
+            },
+
+               {
+                  title:'user1',
+                  cont: 'My first comment',
+                  more: 'My first comment',
+               },
+
+              {
+               title:'user1',
+               cont: 'My first comment',
+              more: 'My first comment',
+            },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+              {
+                title:'user1',
+                cont: 'My first comment',
+                more: 'My first comment',
+              },
+
+               {
+                  title:'user1',
+                  cont: 'My first comment',
+                  more: 'My first comment',
+               },
+
+                  {
+                     title:'user1',
+                     cont: 'My first comment',
+                     more: 'My first comment',
+                  },
+
+                     {
+                        title:'user1',
+                        cont: 'My first comment',
+                        more: 'My first comment',
+                     },
+
+                    {
+                     title:'user1',
+                     cont: 'My first comment',
+                    more: 'My first comment',
+                  },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    },
+
+                    {
+                      title:'user1',
+                      cont: 'My first comment',
+                      more: 'My first comment',
+                    }
+                  ]
+                 },
+
+
+              ]);
 };Childcolb.insert({ cat:'parents1',title: 'Hello world', body: 'The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days',body2: 'First post'});
 
 export default test;
+
+  <div className="sepContainer"></div>
+  //<NavLink className="inactive" activeClassName="active" exact to="/">
+        <img src="././images/logo.png"alt="logo"></img>
+       </NavLink>
+  //<NavLink className="inactive" activeClassName="active" to="/test">test</NavLink>
+  //<NavLink className="inactive" to="/bad-url">Not Found Page</NavLink>
+  //<NavLink className="inactive" activeClassName="active" to="/whoweare">Who We </NavLink>
+  //<div>
+  //<h3>Our partner</h3>
+  //<div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
+
+  //<div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
+
+  //<div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
+
+  //<div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
+
+  //<div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
+
+   //</div>

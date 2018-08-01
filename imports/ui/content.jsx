@@ -103,24 +103,49 @@ render (){
         <p>{what.body[2]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a>
     </div>
+
+  </div>
+  <div className="info">
+    <div className="col-xs-4">
+      <h3>{what.title[0]}</h3>
+
+      <p>{what.body[0]}</p>
+
+      <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+
+      <div className="col-xs-4">
+        <h3>{what.title[1]}</h3>
+        <p>{what.body[1]}</p>
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+      <div className="col-xs-4 ">
+        <h3>{what.title[2]}</h3>
+        <p>{what.body[2]}</p>
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a>
+    </div>
+
+  </div>
+  <div className="info">
+    <div className="col-xs-4">
+      <h3>{what.title[0]}</h3>
+
+      <p>{what.body[0]}</p>
+
+      <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+
+      <div className="col-xs-4">
+        <h3>{what.title[1]}</h3>
+        <p>{what.body[1]}</p>
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
+      <div className="col-xs-4 ">
+        <h3>{what.title[2]}</h3>
+        <p>{what.body[2]}</p>
+        <a href="" title="" className="buttonhome">&rarr; download pdf</a>
+    </div>
+
   </div>
 
 
 
-  <div className="sepContainer"></div>
-  <div>
-  <h3>Our partner</h3>
-  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
-
-  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
-
-  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
-
-  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
-
-  <div className="col-xs-2"> <img src="././images/img6.jpg" alt=""/> </div>
-
-   </div>
   <div className="blankSeparator"></div>
   <div>
   <div className="col-xs-3">
