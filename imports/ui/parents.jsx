@@ -211,9 +211,9 @@ class parents extends React.Component {
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">AMAKURU K'UMWANA</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA Y'UMWANA</a>
+                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA</a>
                                             </li>
-                                            <li tyle={{width:"30px"}}><a href="/child_register"  data-toggle="tab">ANDIKISHA UMWANA WAWE</a> 
+                                            <li style={{width:"30px"}}><a href="/child_register"  data-toggle="tab">ANDIKISHA UMWANA WAWE</a> 
                                             </li>
 
                                         </ul>
