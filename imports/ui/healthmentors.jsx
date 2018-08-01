@@ -33,63 +33,7 @@ class healthmentors extends React.Component {
         }
 
     }
-    renderTask(){
-        return this.props.mentor_data.map((task) => (
-          <div> <div>{user.find({_id:task._id,position:"parents"}).fetch().forEach(function (mydata){
-              console.log(mydata.sector);
-              global.sector=mydata.sector;
-              global.username=mydata.username;
-                     })}</div>
-                     <div>
-{vaccines.find({}).fetch().forEach(function (myvaccine){
-    console.log(myvaccine.name);
-    global.name=myvaccine.name;
-    global.age=myvaccine.age;
-           })}
-       </div>
-      <div>{task.username}</div>
-      <div>
-  <div className="container" style={{ width: "100%" }}>
-    <div>
-    <div className="row">
-  <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
-  <div style={{ clear: "both" }}></div>
-      </div>
-  <div className="row">
-    <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZITARAFATWA:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
-        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-          <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-            <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-            <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-        <div className="badge">Mugiga <span className="btn-success inactive">Taken 13/12/15</span> </div>
-        </div>
-      </div>
-      <div className="col" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZAFASHWE:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
-        <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-          <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-          <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-      <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-        <div className="badge">Mugiga <span className="btn-danger inactive">limited age 4</span> </div>
-          </div>
-        </div>
- <div className="col order-first" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>
-          <h4>UKO UMWANA ANGANA</h4>
-        <div style={{ height: "140px", overflow: "scroll" }}>
-                                                                    <span className="badge" style={{ fontSize: "20px" }}>4</span>
-                                                                    <div>{this.renderTask()}</div>
-                                                                </div>
-                                                            </div>
-                                                            <div style={{ clear: "both" }}></div>
-                                                        </div></div>
-                                                </div>
-              </div>
-              </div>));
-
-    }
+    
 
     showM1() {
         this.setState({ m1_visible: false });
@@ -504,7 +448,7 @@ class healthmentors extends React.Component {
                           <h4>UKO UMWANA ANGANA</h4>
     <div style={{ height: "140px", overflow: "scroll" }}>
       <span className="badge" style={{ fontSize: "20px" }}>4</span>
-      <div>{this.renderTask()}</div>
+   
                 </div>
       </div>
     <div style={{ clear: "both" }}></div>
@@ -696,8 +640,4 @@ class healthmentors extends React.Component {
     }
 }
 
-export default withTracker(() => {
-    return {
-      mentor_data: user.find({username: sessionStorage.getItem('username')+""}).fetch(),
-    };
-  })(healthmentors);
+export default healthmentors;
