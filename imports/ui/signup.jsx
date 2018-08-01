@@ -64,11 +64,10 @@ user(e){
 }
   render (){
     return (
-      <div class="row ">
-       <header className="registration_form"> Registration-Form</header><hr></hr>
+      <div class="row " style={{height:"100%"}}>
+    <form className="form" style={{maxWidth: "800px",height:"100%",overflow:"scroll"}} onSubmit={this.user.bind(this)} >
     <div className="signup">
-  
-    <form className="form" style={{width:"100%"}} onSubmit={this.user.bind(this)} >
+    <header className="registration_form"> Registration-Form</header><hr></hr>
     <div className="col-sm-12">
     <div className="row">
     <div className="col-xs-4">
@@ -181,8 +180,8 @@ ConfirmPassword:<div class="col-xs-8"><input
       <div className="col-xs-8">
             <button className="btn btn-info" type="submit">Submit</button></div>
             <div class="col-xs-8">
-            <button className="btn btn-basic">Cancel</button>
-    </div></div></div>
+            <button className="btn btn-basic">Cancel</button></div>
+    </div></div>
    </form>
 
    <div className="footer">
