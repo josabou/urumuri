@@ -73,7 +73,7 @@ user(e){
           placeholder="Enter your Firstname" required/>
     </div>
     <div className="form-group">
-              Lastname:<input
+              Lastname:<input className="form-control"
               type="text" ref="lname"
               placeholder="Enter your Lastname" required />
     </div>
