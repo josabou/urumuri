@@ -66,7 +66,7 @@ user(e){
     return (
     <div className="signup">
     <div style={{height:"600px",width:"100%",overflow:"scroll"}}>
-    <form className="form" onSubmit={this.user.bind(this)} >
+    <form className="form" style={{width:"100%"}} onSubmit={this.user.bind(this)} >
     <div className="form-group">
 Firstname:<input
           type="text" ref="fname"  className="form-control"
