@@ -216,7 +216,7 @@ class healthmentors extends React.Component {
       <tbody>
     <tr>
         <td><textarea className="form-control" style={{ width: "100%", height: "80px" }}></textarea></td>
-    <td><button className="btn btn-primary active" style={{width:"60px",height:"60px" }}>Send</button></td>
+    <td><button className="btn btn-primary active" style={{width:"80px",height:"60px" }}>Send</button></td>
                       </tr>
       </tbody>
                           </table>
@@ -246,7 +246,7 @@ class healthmentors extends React.Component {
 
           </div></td>
                   <td>
-        <div style={{ width: "640px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
+        <div style={{ width: "600px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE mubyeyi, twabibutsaga ko uyumunsi ari ugutanga inkingo  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse Mujyana, murakoze kutwibutsa </div>
