@@ -1,7 +1,5 @@
-
-
-.text-center{
-  align-items: center;
+.text-center {
+    align-items: center;
 }
 
 input {
@@ -74,6 +72,10 @@ button:hover {
     display: inline-block;
     padding: 2000px;
     margin-top: auto;
+}
+
+.navlink {
+    text-decoration: none;
 }
 
 span.psw {
@@ -961,19 +963,18 @@ a:focus {
     font-size: 13px;
     margin-top: 10px;
 }
+
 input[type=text]:focus {
     background-color: lightblue;
 }
 
-
-
-
-
-*{
+* {
     box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -1018,16 +1019,22 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25,
+    .col-75,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
@@ -1060,20 +1067,63 @@ body {
     background-color: #428bca;
     padding: 5px 15px;
 }
-.m1_invisible{display: none;}
-.m2_invisible{display: none;}
-.m3_invisible{display: none;}
-.m4_invisible{display: none;}
-.m5_invisible{display: none;}
-.m6_invisible{display: none;}
-.m7_invisible{display: none;}
-.m1{display: block;}
-.m2{display: block;}
-.m3{display: block;}
-.m4{display: block;}
-.m5{display: block;}
-.m6{display: block;}
-.m7{display: block;}
+
+.m1_invisible {
+    display: none;
+}
+
+.m2_invisible {
+    display: none;
+}
+
+.m3_invisible {
+    display: none;
+}
+
+.m4_invisible {
+    display: none;
+}
+
+.m5_invisible {
+    display: none;
+}
+
+.m6_invisible {
+    display: none;
+}
+
+.m7_invisible {
+    display: none;
+}
+
+.m1 {
+    display: block;
+}
+
+.m2 {
+    display: block;
+}
+
+.m3 {
+    display: block;
+}
+
+.m4 {
+    display: block;
+}
+
+.m5 {
+    display: block;
+}
+
+.m6 {
+    display: block;
+}
+
+.m7 {
+    display: block;
+}
+
 .overview {
     display: block;
 }
@@ -1186,4 +1236,28 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: skyblue;
+    color: white;
 }
