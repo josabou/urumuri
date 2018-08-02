@@ -310,9 +310,9 @@ class parents extends React.Component {
                                 <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
                                     <h4>UPCOMMING EVENTS</h4>
                                     <div style={{ height: "600px", overflow: "scroll" }}>
-                                        <h5>MINISANTE</h5>
+                                        <h5><strong>MINISANTE</strong></h5>
                                         <div>Hari igikorwa cyo gukingira abana kuri uyu wa<span>12/02/18</span></div>
-                                        <h5>Health center</h5>
+                                        <h5><strong>Health center</strong></h5>
                                         <div>Ejo kuri <span>12/02/18</span>hari igikorwa cyo gukingira kuri health center ya kacyiru</div>
                                     </div>
                                 </div>

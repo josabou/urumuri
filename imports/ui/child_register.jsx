@@ -61,39 +61,39 @@ child(e){
  
     <div className="form-group">
               Ichild's birthday:<input
-              type="date" ref="age" className="form-control"
+              type="date" ref="age"
                />
     </div>
    
     <div className="form-group">
     parent's name:<input
     type="text" value={  sessionStorage.getItem('username')} ref="parent_id"
-    placeholder="parent name" className="form-control" />
+    placeholder="parent name"  />
 </div>
 <div className="form-group">
   Itaken vaccines:
   <div>
-<input type="date" ref="vaccined1" className="form-control"  />
+<input type="date" ref="vaccined1"  />
 <div className="checkbox-inline">
-<input type="checkbox" ref="vaccine1" className="form-control" />Baccille Calmette Guérin vaccine
+<input type="checkbox" ref="vaccine1"  />Baccille Calmette Guérin vaccine
     </div></div>
     <div>
-    <input type="date" ref="vaccined2" className="form-control"/>
+    <input type="date" ref="vaccined2" />
  <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine2" className="form-control"/>Poliomyélite I 
+ <input type="checkbox"  ref="vaccine2"/>Poliomyélite I 
   </div></div><div>
-  <input type="date" ref="vaccined3" className="form-control"/>
+  <input type="date" ref="vaccined3"/>
  <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine3" className="form-control"/>Pentavalent I
+ <input type="checkbox"  ref="vaccine3"/>Pentavalent I
 </div></div><div>
 <input type="date" ref="vaccined4" />
 <div className="checkbox-inline">
-<input type="checkbox" ref="vaccine4" className="form-control" />Pneumocoque
+<input type="checkbox" ref="vaccine4"/>Pneumocoque
 </div>
 </div><div>
-<input type="date" ref="vaccined5" className="form-control" />
+<input type="date" ref="vaccined5" />
   <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine5" className="form-control"/> Rougeole
+ <input type="checkbox"  ref="vaccine5"/> Rougeole
 </div></div>
 
 
@@ -101,9 +101,9 @@ child(e){
     <div className="form-group">
               History:<input
               type="date" ref="hstd"
-              placeholder="Enter History" className="form-control"/><input
+              placeholder="Enter History" /><input
               type="text" ref="hst"
-              placeholder="Enter History" className="form-control" />
+              placeholder="Enter History" />
     </div>
  
     <div className="form-group">
