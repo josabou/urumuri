@@ -74,7 +74,7 @@ button:hover {
     margin-top: auto;
 }
 
-.navlink {
+.nav {
     text-decoration: none;
 }
 
@@ -552,7 +552,7 @@ hr {
 
 #services {
     padding: 140px 0;
-    background: url(././images/services-bg.jpg);
+    background: url(../img/services-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -1003,7 +1003,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: transparent;
+    background-color: #f2f2f2;
     padding: 20px;
 }
 
@@ -1057,6 +1057,12 @@ body {
 }
 
 #exTab1 .tab-content {
+    color: white;
+    background-color: #428bca;
+    padding: 5px 15px;
+}
+
+#exTab3 .tab-content {
     color: white;
     background-color: #428bca;
     padding: 5px 15px;
