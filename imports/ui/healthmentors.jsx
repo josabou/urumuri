@@ -589,7 +589,7 @@ class healthmentors extends React.Component {
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
             <div style={{ height: "140px", overflow: "scroll" }}>
-            <span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+            <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
             
             </div>
             </div>
@@ -623,7 +623,7 @@ class healthmentors extends React.Component {
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
             <div style={{ height: "140px", overflow: "scroll" }}>
-            <span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+            <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
             
             </div>
             </div>
@@ -657,7 +657,7 @@ class healthmentors extends React.Component {
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
             <div style={{ height: "140px", overflow: "scroll" }}>
-            <span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+            <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
             
             </div>
             </div>
