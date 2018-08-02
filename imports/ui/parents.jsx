@@ -205,7 +205,7 @@ class parents extends React.Component {
                                 </div>
                                 <div className={this.state.food_visible ? "food" : "food_invisible"} >
                                     <div><h2>OVERVIEW</h2></div>
-                                    <div id="exTab2" className="container" style={{ width: "100%" }}>
+                                    <div id="exTab3" className="container" style={{ width: "100%" }}>
 
                                         <ul className="nav nav-tabs" tyle={{width:"400px"}}>
                                             <li className="active" s>
