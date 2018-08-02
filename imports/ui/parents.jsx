@@ -210,12 +210,10 @@ class parents extends React.Component {
                                         <ul className="nav nav-tabs" tyle={{width:"400px"}}>
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">CHILD'S INFO</a>
-                                            </li>
-<<<<<<< HEAD
-                                            <li style={{width:"110px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
-=======
+                                            </li>          
+
                                             <li><a href="#2" data-toggle="tab">AGE'S INFO</a>
->>>>>>> c2ae9c8d9cbbaad12f486ad55dd0a28e7b875b94
+
                                             </li>
 
 
@@ -298,9 +296,9 @@ class parents extends React.Component {
                                                                 </div>
                                                             </div></td>
                                                             </tr>
-<<<<<<< HEAD
+
                                                            
-=======
+
                                                             <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
 
                   <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
@@ -325,7 +323,6 @@ class parents extends React.Component {
                                         <div style={{ clear: "both" }}></div>
                                     </div></div>
                             </div></td></tr>
->>>>>>> dc1029739bdbb62d96cd4d506656c4da5c6b2905
                                                     </tbody>
                                                 </table>
                                             </div>
