@@ -222,7 +222,8 @@ class parents extends React.Component {
                                             <div className="tab-pane active" id="1">
                                                 <div>
 
-                                                    <div className="container" style={{ width: "100%" }}>
+                                                   
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
                                                         <div>
                                                             <div className="row">
                                                                 <div style={{ clear: "both" }}></div>
