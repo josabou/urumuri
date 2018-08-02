@@ -211,7 +211,7 @@ class parents extends React.Component {
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">CHILD'S INFO</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
+                                            <li style={{width:"80px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
                                             </li>
                                          
 
@@ -222,7 +222,7 @@ class parents extends React.Component {
                                                 <div>
 
                                                    
-                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
+                  <div className="container-fluid" style={{ width: "500%" ,heigth:"50%"}}>
                                                         <div>
                                                             <div className="row">
                                                                 <div style={{ clear: "both" }}></div>
@@ -231,7 +231,15 @@ class parents extends React.Component {
                                                                 <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
                                                                     
                                                                     <div style={{ height: "350px", overflow: "scroll" }}>
-                                                                    <div className="badge">{this.renderchildren()}</div>
+                                                                    <p>child's name: Nelly uwera</p>
+                                                                   < p>child's age: 2 mouths</p>
+                                                                    <h5><strong> vaccines your child has taken</strong></h5>
+                                                               
+                                                                    <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div><br/>
+            <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
+            <h5><strong> vaccines your child hasn't taken</strong></h5>
+            <div className="badge">Pneumocoque <span className="btn-danger inactive"></span> </div><br/>
+            <div className="badge">Rougeole <span className="btn-danger inactive"></span> </div><br/>
                                                                        
                                                                         <div className="badge" style={{background:"green"}}><button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
 
