@@ -153,11 +153,11 @@ class parents extends React.Component {
                     <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)} >Close &times;</button>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBIKORWA BITEGANIJWE KUBA</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showFood.bind(this)}>AMAKURU Y'AMAFUNGURO UMWANA YAFATA</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showVaccine.bind(this)} >INKINGO ZAFASHWE NIMYAKA Y'UMWANA</a>
-                        <a href="/child_register" className="w3-bar-item w3-button" >ANDIKISHA UMWANA WAWE</a><br/>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>UPCOMMING EVENTS</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showFood.bind(this)}>NUTRITION INFO</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showVaccine.bind(this)} >TAKEN VACCINE</a>
+                        <a href="/child_register" className="w3-bar-item w3-button" >REGISTER YOUR CHILD</a><br/>
                     </div>
 </div>
                     <div>
@@ -167,7 +167,7 @@ class parents extends React.Component {
 
                             <div className="container" style={{ width: "100%", color: "black" }}>
                                 <div className={this.state.message_visible ? "message" : "message_invisible"}>
-                                    <h2>UBUTUMWA</h2>
+                                    <h2>MESSAGE</h2>
                                     <div>
                                         <table>
                                             <tbody>
@@ -204,16 +204,16 @@ class parents extends React.Component {
                                     </div>
                                 </div>
                                 <div className={this.state.food_visible ? "food" : "food_invisible"} >
-                                    <div><h2>INCAMAKE</h2></div>
+                                    <div><h2>OVERVIEW</h2></div>
                                     <div id="exTab2" className="container" style={{ width: "100%" }}>
 
                                         <ul className="nav nav-tabs" tyle={{width:"400px"}}>
                                             <li className="active" s>
-                                                <a href="#1" data-toggle="tab">AMAKURU K'UMWANA</a>
+                                                <a href="#1" data-toggle="tab">CHILD'S INFO</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AMAKURU KUMYAKA</a>
+                                            <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="/child_register"  data-toggle="tab">ANDIKISHA UMWANA WAWE</a> 
+                                            <li style={{width:"30px"}}><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> 
                                             </li>
 
                                         </ul>
@@ -300,13 +300,13 @@ class parents extends React.Component {
                                     </div>
                                     <div className="row">
                                         <div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>INKINGO ZAFASHWE:</h4>
+                                            <h4>ITAKEN VACCINES:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
                                             <div className="badge">{this.renderTakenVaccine()}</div>
                                             </div>
                                         </div>
                                         <div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>INKINGO ZITARAFATWA:</h4>
+                                            <h4>UNTAKEN VACCINES:</h4>
                                             <div style={{ height: "140px", overflow: "scroll" }}>
                                             <div className="badge">{this.renderUnTakenVaccine()}</div>
                                             </div>
@@ -322,16 +322,16 @@ class parents extends React.Component {
                                     </div>
                                 </div>
                                 <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
-                                    <h4>IBIKORWA IBITEGANIJWE KUBA</h4>
+                                    <h4>UPCOMMING EVENTS</h4>
                                     <div style={{ height: "600px", overflow: "scroll" }}>
-                                        <h5>minisante</h5>
+                                        <h5>MINISANTE</h5>
                                         <div>Hari igikorwa cyo gukingira abana kuri uyu wa<span>12/02/18</span></div>
                                         <h5>Health center</h5>
                                         <div>Ejo kuri <span>12/02/18</span>hari igikorwa cyo gukingira kuri health center ya kacyiru</div>
                                     </div>
                                 </div>
                                 <div className={this.state.vaccine_visible ? "vaccine" : "vaccine_invisible"}>
-                                    <h4>Inkingo Umwana yafashe nimyaka afite</h4>
+                                    <h4>VACCINES TAKEN AND CHILD'S AGE</h4>
                                     <div style={{ height: "400px", overflow: "scroll" }}>
 
                                         <div><div className="container">
@@ -359,11 +359,11 @@ class parents extends React.Component {
                                           
                                         </div>
                                         <div>
-                                                <h4>Hitamo imyaka y'Umwana</h4>
+                                                <h4>CHOOSE THE CHILD'S AGE</h4>
                                                 <form>
-                                                    Itariki Yavukiyeho: <input type="date" />
+                                                   CHILD'S BIRTHDAY: <input type="date" />
                                                     <textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea>
-                                                    <button className="btn btn-success" style={{width:"50px",height:"20px"}} onClick={this.showFood.bind(this)}  >OHEREZA</button>
+                                                    <button className="btn btn-success" style={{width:"50px",height:"20px"}} onClick={this.showFood.bind(this)}  >SEND</button>
 
                                                 </form>
                                             </div>
