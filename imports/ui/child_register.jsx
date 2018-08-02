@@ -54,46 +54,46 @@ child(e){
     <div style={{height:"600px",overflow:"scroll"}}>
     <form className="form" onSubmit={this.child.bind(this)} >
     <div className="form-group">
-          IZINA RY'UMWANA:<input
+          child's name:<input
           type="text" ref="childname"
-          placeholder="Enter your childname" />
+          placeholder="Enter your childname" className="form-control" />
     </div>
  
     <div className="form-group">
-              IMINSI UMWANA AMAZE AVUTSE:<input
-              type="date" ref="age"
+              Ichild's birthday:<input
+              type="date" ref="age" className="form-control"
                />
     </div>
    
     <div className="form-group">
-    AMAZINA Y'UMUBYEYI:<input
+    parent's name:<input
     type="text" value={  sessionStorage.getItem('username')} ref="parent_id"
-    placeholder="parent name"  />
+    placeholder="parent name" className="form-control" />
 </div>
 <div className="form-group">
-  INKINGO UMWANA YAFASHE:
+  Itaken vaccines:
   <div>
-<input type="date" ref="vaccined1" />
+<input type="date" ref="vaccined1" className="form-control"  />
 <div className="checkbox-inline">
-<input type="checkbox" ref="vaccine1" />Baccille Calmette Guérin vaccine
+<input type="checkbox" ref="vaccine1" className="form-control" />Baccille Calmette Guérin vaccine
     </div></div>
     <div>
-    <input type="date" ref="vaccined2"/>
+    <input type="date" ref="vaccined2" className="form-control"/>
  <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine2"/>Poliomyélite I 
+ <input type="checkbox"  ref="vaccine2" className="form-control"/>Poliomyélite I 
   </div></div><div>
-  <input type="date" ref="vaccined3"/>
+  <input type="date" ref="vaccined3" className="form-control"/>
  <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine3"/>Pentavalent I
+ <input type="checkbox"  ref="vaccine3" className="form-control"/>Pentavalent I
 </div></div><div>
 <input type="date" ref="vaccined4" />
 <div className="checkbox-inline">
-<input type="checkbox" ref="vaccine4"/>Pneumocoque
+<input type="checkbox" ref="vaccine4" className="form-control" />Pneumocoque
 </div>
 </div><div>
-<input type="date" ref="vaccined5" />
+<input type="date" ref="vaccined5" className="form-control" />
   <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine5"/> Rougeole
+ <input type="checkbox"  ref="vaccine5" className="form-control"/> Rougeole
 </div></div>
 
 
@@ -101,9 +101,9 @@ child(e){
     <div className="form-group">
               History:<input
               type="date" ref="hstd"
-              placeholder="Enter History" /><input
+              placeholder="Enter History" className="form-control"/><input
               type="text" ref="hst"
-              placeholder="Enter History" />
+              placeholder="Enter History" className="form-control" />
     </div>
  
     <div className="form-group">
