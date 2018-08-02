@@ -67,7 +67,7 @@ user(e){
       <div>
       <div class="row " >
     <form className="form" onSubmit={this.user.bind(this)} >
-    <div className="signup"  style={{width:"90%",height:"90%",overflow:"scroll"}}>
+    <div className="signup"  style={{width:"700px"}}>
     <header className="registration_form"> Registration-Form</header><hr></hr>
     <div className="col-sm-12">
     <div className="row">
