@@ -52,15 +52,15 @@ class Header extends React.Component {
    }
   render() {
     return (
-      <header className='Header'>
-
-        <NavLink className="active navs"  activeClassName="active" exact to="/">Home</NavLink>
+      <header className=' navbar navbar-inverse'>
+     
+        <NavLink className="active "  activeClassName="active" exact to="/">Home</NavLink>
         <NavLink className="inactive navs" activeClassName="active" to="/about">Who We Are</NavLink>
 
         <NavLink className="inactive navs" activeClassName="active" to="/content">Content</NavLink>
         <NavLink className="inactive navs" activeClassName="active" to="/contact">Contact Us</NavLink>
 
-        <a className="inactive navs" id="jojo_sign_in" href="#" data-toggle="modal" data-target="#myModal" style={{ float: "right"}}>SIGN IN  </a>
+        <a className="inactive navs" id="jojo_sign_in" href="#" data-toggle="modal" data-target="#myModal" style={{ float: "right"}}><span class="glyphicon glyphicon-user"></span>SIGN IN  </a>
         <a className="inactive navs" href="/" id="activitypage" style={{ display: "none"  }}>Activity Page</a>
         <a className="inactive navs" href="#" onClick={this.logOut.bind(this)} id="logout" style={{ display: "none" }}>Log out</a>
 
@@ -96,7 +96,6 @@ class Header extends React.Component {
           </div>
         </div>
         <div className="pull-right" style={{ marginRight: "10%", display: "none", marginTop: "-15px" }} id="profileUI"><span id="username_Jojo_general" style={{ padding: "8px", fontSize: "16px", borderRadius: "5px" }}></span></div>
- 
       </header>
     );
   }
