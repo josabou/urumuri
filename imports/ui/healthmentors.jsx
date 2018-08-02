@@ -181,10 +181,10 @@ class healthmentors extends React.Component {
                     <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)}>Close &times;</button>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBIKORWA BITEGANIJWE KUBA</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showAnnounce.bind(this)}>IMENYESHA</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>INCAMAKE</a>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>UBUTUMWA</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBUPCOMMING EVENTS</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showAnnounce.bind(this)}>ANNOUNCE</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>OVERVIEW</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
                     </div>
 </div>
                     <div>
@@ -196,7 +196,7 @@ class healthmentors extends React.Component {
 
                                 <div className={this.state.announce_visible ? "announce" : "announce_invisible"}>
                                 <div >
-                                    <h2 className="text-center">IMENYESHA</h2>
+                                    <h2 className="text-center">ANNOUNCE</h2>
                                     <div>
                                         <select >
                                             <option>Health Mentor</option>
@@ -206,7 +206,7 @@ class healthmentors extends React.Component {
                                         </select>
                                         <hr></hr>
 
-            <div><h3 >ABABYEYI</h3>
+            <div><h3 >PARENTS</h3>
           <div style={{ height: "300px", overflow: "scroll" }}>
                 <form >
           <input type="checkbox" value="Kanakuze Veddy" /> Kanakuze Veddy<br />
@@ -227,7 +227,7 @@ class healthmentors extends React.Component {
                                </div>
                                 </div>
                                 <div className={this.state.message_visible ? "message" : "message_invisible"}>
-                                    <h2>UBUTUMWA</h2>
+                                    <h2>MESSAGE</h2>
                         <div>
                           <table>
                         <tbody>
@@ -246,7 +246,7 @@ class healthmentors extends React.Component {
 
           </div></td>
                   <td>
-        <div style={{ width: "500px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
+        <div style={{ width: "560px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE mubyeyi, twabibutsaga ko uyumunsi ari ugutanga inkingo  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse Mujyana, murakoze kutwibutsa </div>
@@ -315,7 +315,7 @@ class healthmentors extends React.Component {
                 <table>
                   <tbody>
               <tr>
-  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><textarea className="form-control" style={{ width: "450px", height: "40px" }} placeholder="type your message here"></textarea></td>
   <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
                     </tr>
     </tbody>
@@ -388,7 +388,7 @@ class healthmentors extends React.Component {
     </div>
   </div>
     <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"} style={{height:"300px"}}>
-      <h4 >IBIKORWA BITEGANIJWE KUBA</h4>
+      <h4 >IUPCOMMING EVENTS</h4>
             <div>
                             <h5><strong>MINISANTE</strong></h5>
                                         <div>Turabamenyesha ko ,uri uku kwezi hategnijwe igikorrw cyo gukingira abana mugiga kuri tariki ya <span>12/02/18</span></div>
@@ -403,9 +403,9 @@ class healthmentors extends React.Component {
 
     <ul className="nav nav-tabs">
                                         <li className="active">
-                                            <a href="#1" data-toggle="tab">ABABYEYI</a>
+                                            <a href="#1" data-toggle="tab">PARENTS</a>
                                         </li>
-                                        <li><a href="#2" data-toggle="tab">IMENYESHA</a>
+                                        <li><a href="#2" data-toggle="tab">ANNOUNCE</a>
                                         </li>
 
                                     </ul>
@@ -422,7 +422,7 @@ class healthmentors extends React.Component {
                                 </div>
           <div className="row">
           <div className="col order-last" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-                    <h4>INKINGO ZITARAFATWA:</h4>
+                    <h4>TAKEN VACCINE:</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
     <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
   <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
@@ -430,18 +430,18 @@ class healthmentors extends React.Component {
                                           </div>
                                                             </div>
     <div className="col" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-                            <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
+                            <h4>IUNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
         <div style={{ height: "140px", overflow: "scroll" }}>
-        <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
-      <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
-            <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
+        <div className="badge">Pentavalent I <span className="btn-danger inactive"> right after her/his born day</span> </div>
+      <div className="badge">Pneumocoque <span className="btn-danger inactive"> after 2 mouths and half</span> </div>
+            <div className="badge">Rougeole <span className="btn-danger inactive"> after 4 mouths and half</span> </div>
 
                                                                 </div>
                                                             </div>
   <div className="col order-first" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-                          <h4>UKO UMWANA ANGANA</h4>
+                          <h4>CHILD'S AGE</h4>
     <div style={{ height: "140px", overflow: "scroll" }}>
-      <span className="badge" style={{ fontSize: "20px" }}>amaze iminsi 240(amezi 8)</span>
+      <span className="badge" style={{ fontSize: "20px" }}>240 days( 8mouths)</span>
    
                 </div>
       </div>
@@ -459,7 +459,7 @@ class healthmentors extends React.Component {
 </div>
 <div className="row">
 <div className="col order-last" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-<h4>INKINGO ZITARAFATWA:</h4>
+<h4>TAKEN VACCINES:</h4>
 <div style={{ height: "140px", overflow: "scroll" }}>
 <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
 <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
@@ -467,7 +467,7 @@ class healthmentors extends React.Component {
 </div>
                 </div>
 <div className="col" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-<h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
+<h4>UNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
 <div style={{ height: "140px", overflow: "scroll" }}>
 <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
 <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
@@ -476,9 +476,9 @@ class healthmentors extends React.Component {
                     </div>
                 </div>
 <div className="col order-first" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-<h4>UKO UMWANA ANGANA</h4>
+<h4>CGILD'S AGE</h4>
 <div style={{ height: "140px", overflow: "scroll" }}>
-<span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+<span className="badge" style={{ fontSize: "20px" }}>30 days</span>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ class healthmentors extends React.Component {
       </div>
       <div className="row">
       <div className="col order-last" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZITARAFATWA:</h4>
+      <h4>TAKEN VACCINES:</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
       <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
@@ -504,7 +504,7 @@ class healthmentors extends React.Component {
       </div>
                       </div>
       <div className="col" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
+      <h4>INUNTAKEN VACCINES AND THIR LIMITED AGE:</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
       <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
       <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
@@ -513,9 +513,9 @@ class healthmentors extends React.Component {
                           </div>
                       </div>
       <div className="col order-first" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>UKO UMWANA ANGANA</h4>
+      <h4>CHILD'S AGE</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
-      <span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+      <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
       
       </div>
       </div>
@@ -533,7 +533,7 @@ class healthmentors extends React.Component {
       </div>
       <div className="row">
       <div className="col order-last" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZITARAFATWA:</h4>
+      <h4>TAKEN VACCINES:</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
       <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
@@ -541,7 +541,7 @@ class healthmentors extends React.Component {
       </div>
                       </div>
       <div className="col" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
+      <h4>UNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
       <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
       <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
@@ -550,9 +550,9 @@ class healthmentors extends React.Component {
                           </div>
                       </div>
       <div className="col order-first" style={{ float: "left", width: "30%", borderLeft: "1px solid black", padding: "5px" }}>
-      <h4>UKO UMWANA ANGANA</h4>
+      <h4>CHILD'S AGE</h4>
       <div style={{ height: "140px", overflow: "scroll" }}>
-      <span className="badge" style={{ fontSize: "20px" }}>iminsi 30</span>
+      <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
       
       </div>
       </div>
