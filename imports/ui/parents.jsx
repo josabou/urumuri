@@ -180,10 +180,10 @@ class parents extends React.Component {
                                                     <td>
                                                         <div style={{ width: "400px", height: "400px" }}>
                                                             <div style={{ height: "300px", overflow: "scroll" }}>
-                                                                <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+                                                            <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>
+                                                            <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. umwana wanjye iyo muhaye ibiryo birimo carotti agira ikibazo cy'umusarani </div>
+                                                            <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>ooh, nibyizako wamuhindurira,  ukamugaburira inombe yimbwija zivane nigitoki </div>
+                                                            <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze mujyana </div>
 
                                                             </div>
                                                             <div>

@@ -22,11 +22,54 @@ class health_center extends React.Component {
         this.state = {
             overview_visible: true,
             message_visible: false,
+            m1_visible:true,
+            m2_visible:false,
+            m3_visible:false,
+            m4_visible:false,
             announce_visible: false
         }
 
     }
+    showM1() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
 
+
+
+        this.setState({ m1_visible: true });
+    }
+    showM2() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+     
+
+
+        this.setState({ m2_visible: true });
+    }
+    showM3() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+
+
+
+        this.setState({ m3_visible: true });
+    }
+    showM4() {
+        this.setState({ m1_visible: false });
+        this.setState({ m2_visible: false });
+        this.setState({ m3_visible: false });
+        this.setState({ m4_visible: false });
+
+
+
+        this.setState({ m4_visible: true });
+    }
     showMessage() {
         this.setState({ message_visible: false });
         this.setState({ overview_visible: false });
@@ -140,27 +183,38 @@ class health_center extends React.Component {
                                             <tbody>
                                                 <tr>
                                                     <td><div style={{ width: "200px", height: "400px", overflow: "scroll" }}>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
+                                                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM1.bind(this)}>NIYITUGENERA Josiane</button>
+                                                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM2.bind(this)}>Germain </button>
+                                                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM3.bind(this)}>Salvi</button>
+                                                    <button className="btn btn-success" style={{width:"150px"}} onClick={this.showM4.bind(this)}>Gilbert </button>
                                                     </div></td>
                                                     <td>
-                                                        <div style={{ width: "400px", height: "400px" }}>
-                                                            <div style={{ height: "300px", overflow: "scroll" }}>
-                                                                <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
-                                                                <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>sfs9fs fsfo9hsfbsf sfohsb fsnfb sfsfbs sfn9  </div>
+                                                    <div style={{ width: "640px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
+            <div style={{ height: "300px", overflow: "scroll" }}>
 
+            <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>Mujyana, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , nifuzaga ko ubyibutsa abaturage bawe  </div>
+            <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. turabyitaho </div>
+             
+
+
+      </div>
+                    <div>
+                <table>
+                  <tbody>
+              <tr>
+  <td><textarea className="form-control" style={{ width: "500px", height: "40px" }}></textarea></td>
+  <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                    </tr>
+    </tbody>
+    </table>
+          </div>
+        </div>
+                                                        <div style={{ width: "640px", height: "400px" }} className={this.state.m2_visible ? "m2" : "m2_invisible"}>
+                                                        <div style={{ height: "300px", overflow: "scroll" }}>
+                                                        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>Mujyanama, mwaramutse neza mumurenge aho n'amahoro!?  </div>
+                                                        <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>yego turaho  </div>
+                                                        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>yeeh namahoro noneho</div>
+                                                        
                                                             </div>
                                                             <div>
                                                                 <table>
@@ -203,9 +257,9 @@ class health_center extends React.Component {
                                                                                         <div className="col order-last" style={{ float: "left", width: "300px" }}>
                                                                                             <div className="badge" style={{color:"black",background:"blue"}}>INKINGO ZAFASHWE:</div>
                                                                                             <div >
-                                                                                                <div className="badge">Baccille Calmette Guérin vaccine <span className="btn-success inactive"style={{ fontSize: "20px" }}>4</span> </div>
-                                                                                                <div className="badge">Poliomyélite I <span className="btn-success inactive"  style={{ fontSize: "20px" }}>4</span> </div>
-                                                                                                <div className="badge">Pentavalent I <span className="btn-success inactive" style={{ fontSize: "20px" }}>5</span> </div>
+                                                                                                <div className="badge">Baccille Calmette Guérin vaccine <span className="btn-success inactive"style={{ fontSize: "20px" }}>40</span> </div>
+                                                                                                <div className="badge">Poliomyélite I <span className="btn-success inactive"  style={{ fontSize: "20px" }}>50</span> </div>
+                                                                                                <div className="badge">Pentavalent I <span className="btn-success inactive" style={{ fontSize: "20px" }}>60</span> </div>
                                                                                             </div>
                                                                                         </div>
                                                                                
@@ -224,7 +278,7 @@ class health_center extends React.Component {
                                                                                         <div className="col order-first" style={{ float: "left", width: "200px"}}>
                                                                                             <div className="badge" style={{color:"black",background:"blue"}}>UKO ABATURAGE BANGANA</div>
                                                                                             <div>
-                                                                                                <span className="badge" style={{ fontSize: "20px" }}>4</span>
+                                                                                                <span className="badge" style={{ fontSize: "20px" }}>200</span>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div style={{ clear: "both" }}></div>
