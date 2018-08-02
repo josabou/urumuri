@@ -65,7 +65,7 @@ user(e){
   render (){
     return (
       <div>
-      <div class="row " >
+      <div className="row " >
     <form className="form" onSubmit={this.user.bind(this)} >
     <div className="signup"  style={{width:"700px",height:"500px",overflow:"scroll"}}>
     <header className="registration_form"> Registration-Form</header><hr></hr>
@@ -122,8 +122,9 @@ user(e){
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
   </select></div></div> 
-  <div class="col-xs-3 ">
-  <label className="loation">Sector:</label>
+  <div className="col-xs-3 ">
+  <label 
+  >Sector:</label>
 
   <select ref="sector" className="form-control">
 
@@ -160,7 +161,7 @@ user(e){
   <div className="col-sm-12">
   <div className="row">
   <div className="col-xs-4">
-          <label class="username">Username :</label></div>
+          <label >Username :</label></div>
 <div className="col-xs-8"><input
               type="text" ref="username" className="form-control"/>
      		 </div>
@@ -169,7 +170,7 @@ user(e){
   <div className="col-sm-12">
   <div className="row">
   <div className="col-xs-4">
-          <label class="pass">Password :</label></div>
+          <label >Password :</label></div>
 <div className="col-xs-8"><input
               type="Password" ref="pswd" className="form-control"/>
      		 </div>
@@ -178,8 +179,8 @@ user(e){
       <div className="col-sm-12">
 <div className="row">
 <div className="col-xs-4">
-        <label class="pass">Confirm Password :</label></div>
-<div class="col-xs-8"><input
+        <label >Confirm Password :</label></div>
+<div className="col-xs-8"><input
               type="Password" ref="confirmpswd" className="form-control"
               placeholder="Password" required />
 		 </div>
