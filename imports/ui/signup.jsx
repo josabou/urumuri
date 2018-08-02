@@ -157,7 +157,15 @@ user(e){
   <option value="health_center" >Health center</option>
   </select></div>
   </div></div>
-
+  <div className="col-sm-12">
+  <div className="row">
+  <div className="col-xs-4">
+          <label class="username">Username :</label></div>
+<div className="col-xs-8"><input
+              type="text" ref="username" className="form-control"/>
+     		 </div>
+          </div>
+		  </div>
   <div className="col-sm-12">
   <div className="row">
   <div className="col-xs-4">
