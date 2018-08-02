@@ -67,7 +67,7 @@ user(e){
       <div>
       <div class="row " >
     <form className="form" onSubmit={this.user.bind(this)} >
-    <div className="signup"  style={{width:"700px",height:"70%",overflow:"scroll"}}>
+    <div className="signup"  style={{width:"90%",height:"90%",overflow:"scroll"}}>
     <header className="registration_form"> Registration-Form</header><hr></hr>
     <div className="col-sm-12">
     <div className="row">
@@ -114,14 +114,15 @@ user(e){
   <option value="western">western</option>
   </select> </div>
   <div className="col-xs-3">
-  <label cl>District:</label>
+  <label >District:</label>
 
   <select ref="district" className="form-control">
 
   <option value="gasabo" >Gasabo</option>
   <option value="kicukiro">kicukiro</option>
   <option value="nyarugenge">nyarugenge</option>
-  </select></div></div> <div class="col-xs-3 ">
+  </select></div></div> 
+  <div class="col-xs-3 ">
   <label className="loation">Sector:</label>
 
   <select ref="sector" className="form-control">
