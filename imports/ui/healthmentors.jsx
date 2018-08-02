@@ -247,7 +247,7 @@ class healthmentors extends React.Component {
           </div></td>
                   <td>
         <div style={{ width: "560px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE mubyeyi, twabibutsaga ko uyumunsi ari ugutanga inkingo  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse Mujyana, murakoze kutwibutsa </div>
         <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>yego nmwe murakoze, mubizirikane  </div>
@@ -266,7 +266,7 @@ class healthmentors extends React.Component {
           </div>
         </div>
         <div style={{ width: "640px", height: "400px" }} className={this.state.m2_visible ? "m2" : "m2_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. umwana wanjye iyo muhaye ibiryo birimo carotti agira ikibazo cy'umusarani </div>
         <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>ooh, nibyizako wamuhindurira,  ukamugaburira inombe yimbwija zivane nigitoki </div>
@@ -286,7 +286,7 @@ class healthmentors extends React.Component {
         </div>
 
         <div style={{ width: "640px", height: "400px" }} className={this.state.m3_visible ? "m3" : "m3_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
             <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE MUJYANA, umwana wanjye arikugira ikibazo cyumusarani, nifuzaga ubufasha </div>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>yooh, waba waramugabiriye ibiki muri iyiminsi? </div>
 
@@ -305,7 +305,7 @@ class healthmentors extends React.Component {
         </div>
 
         <div style={{ width: "640px", height: "400px" }} className={this.state.m4_visible ? "m4" : "m4_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>umwana wawe mubyeyi ntago arafata urukingo rwa mugiga, nabibutsaga ko mucyumweru gitaha ziazatangira gutangwa kukigo nderabuzima gihereye kacyiru</div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze mujyana.  </div>
 
@@ -323,7 +323,7 @@ class healthmentors extends React.Component {
           </div>
         </div>
         <div style={{ width: "640px", height: "400px" }} className={this.state.m5_visible ? "m5" : "m5_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
             <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>muraho neza mujyanan </div>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>muraho neza.. </div>
   
@@ -343,7 +343,7 @@ class healthmentors extends React.Component {
         </div>
 
         <div style={{ width: "640px", height: "400px" }} className={this.state.m6_visible ? "m6" : "m6_invisible"}>
-            <div style={{ height: "300px", overflow: "scroll" }}>
+            <div style={{ height: "300px", overflow: "scroll",color:"white" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mwaramutse neza mubyeyi..  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>yego muraho mujyana  </div>
 
@@ -363,7 +363,7 @@ class healthmentors extends React.Component {
 
         <div style={{ width: "640px", height: "400px" }} className={this.state.m7_visible ? "m7" : "m7_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
-              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>waramutse neza mubyeyi, nakwibutsaga ko ejo kukigo nderabuzima hari igikorwa cyo gutanga urukingo rukingira iseru urasabwa kuzinduka, ubaye uzi nundi mubyeyi wamubwira  </div>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red",color:"white" }}>waramutse neza mubyeyi, nakwibutsaga ko ejo kukigo nderabuzima hari igikorwa cyo gutanga urukingo rukingira iseru urasabwa kuzinduka, ubaye uzi nundi mubyeyi wamubwira  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse neza mujyana, yego rwose tuzainduka  </div>
         <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubizirikane, umunsis mwiza </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze </div>

@@ -211,7 +211,7 @@ class parents extends React.Component {
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">CHILD'S INFO</a>
                                             </li>
-                                            <li style={{width:"80px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
+                                            <li><a href="#2" data-toggle="tab">AGE'S INFO</a>
                                             </li>
                                          
 
@@ -262,7 +262,7 @@ class parents extends React.Component {
                                                         <tr><td>Info for Child's age</td></tr>
                                                         <tr><td><button className="accordion">uko wagaburira umwaanaUmwana wawe ari hagati y’amezi 8 na 10</button>
                                                             <div className="panel">
-                                                                <div style={{width:"100px", height: "500px", overflow: "scroll" }}>
+                                                                <div style={{width:"600px", height: "500px", overflow: "scroll" }}>
                                                                     <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
                                                                     <div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
                                                                     <div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
