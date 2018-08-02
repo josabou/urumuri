@@ -399,7 +399,7 @@ class healthmentors extends React.Component {
 
 </div><div className={this.state.overview_visible ? "overview" : "overview_invisible"} >
                                 <div><h2>OVERVIEW</h2></div>
-                                <div id="exTab2" className="container" >
+                                <div  className="container" >
 
     <ul className="nav nav-tabs">
                                         <li className="active">
