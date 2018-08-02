@@ -74,6 +74,12 @@ button:hover {
     margin-top: auto;
 }
 
+<<<<<<< HEAD
+=======
+.nav {
+    text-decoration: none;
+}
+>>>>>>> 92f03bcaec164fa6e885c14e431222676bbfcf79
 
 span.psw {
     float: left;
@@ -92,12 +98,6 @@ span.psw {
 .btn {
     margin-top: 20px;
     margin-left: 20px;
-}
-
-.container {
-    margin: 0 auto;
-    min-height: 100%;
-    background: white;
 }
 
 .nav {
@@ -549,7 +549,7 @@ hr {
 
 #services {
     padding: 140px 0;
-    background: url(././images/services-bg.jpg);
+    background: url(../img/services-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -998,12 +998,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 20px;
-}
-
 .col-25 {
     float: left;
     width: 25%;
@@ -1054,6 +1048,12 @@ body {
 }
 
 #exTab1 .tab-content {
+    color: white;
+    background-color: #428bca;
+    padding: 5px 15px;
+}
+
+#exTab3 .tab-content {
     color: white;
     background-color: #428bca;
     padding: 5px 15px;

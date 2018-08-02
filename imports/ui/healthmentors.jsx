@@ -186,8 +186,8 @@ class healthmentors extends React.Component {
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>OVERVIEW</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
                     </div>
-</div>
-                    <div className="container-fluid"><div className="row"><div style={{float:"none", margin:"0 auto"}}>
+</div><div>
+                    <div className="container">
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
                         <div className="center-block" style={{ margin: "0px 300px 0px 300px" }} >
@@ -387,8 +387,8 @@ class healthmentors extends React.Component {
       </table>
     </div>
   </div>
-    <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"} style={{height:"300px"}}>
-      <h4 >IUPCOMMING EVENTS</h4>
+    <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"} style={{height:"700px"}}>
+      <h4 >UPCOMMING EVENTS</h4>
             <div>
                             <h5><strong>MINISANTE</strong></h5>
                                         <div>Turabamenyesha ko ,uri uku kwezi hategnijwe igikorrw cyo gukingira abana mugiga kuri tariki ya <span>12/02/18</span></div>
@@ -399,7 +399,7 @@ class healthmentors extends React.Component {
 
 </div><div className={this.state.overview_visible ? "overview" : "overview_invisible"} >
                                 <div><h2>OVERVIEW</h2></div>
-                                <div id="exTab2" className="container" >
+                                <div  className="container" >
 
     <ul className="nav nav-tabs">
                                         <li className="active">
@@ -414,7 +414,7 @@ class healthmentors extends React.Component {
     <div className="tab-pane active" id="1">
         <div >
 
-                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
+                  <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
           <div>
                 <div className="row">
 
@@ -452,7 +452,7 @@ class healthmentors extends React.Component {
     </div>
         <div>
 
-        <div className="container-fluid" style={{ width: "100%" }}>
+        <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
         <div>
 <div className="row">
 <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -489,7 +489,7 @@ class healthmentors extends React.Component {
       </div>
       <div>
 
-    <div className="container-fluid" style={{ width: "100%" }}>
+      <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
       <div>
       <div className="row">
     <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>umutoni alida <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -526,7 +526,7 @@ class healthmentors extends React.Component {
 </div>
     <div>
 
-      <div className="container-fluid" style={{ width: "100%" }}>
+    <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
   <div>
         <div className="row">
     <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>mukamana <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -563,7 +563,7 @@ class healthmentors extends React.Component {
     </div>
                 <div>
 
-  <div className="container-fluid" style={{ width: "100%" }}>
+                <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>kamaziga vestine <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -597,7 +597,7 @@ class healthmentors extends React.Component {
             <div style={{ clear: "both" }}></div>
             </div></div>
               </div>
-              <div className="container-fluid" style={{ width: "100%" }}>
+              <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>mugisha <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -631,7 +631,7 @@ class healthmentors extends React.Component {
             <div style={{ clear: "both" }}></div>
             </div></div>
               </div>
-              <div className="container-fluid" style={{ width: "100%" }}>
+              <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>nayubu <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -686,10 +686,9 @@ class healthmentors extends React.Component {
           </div>
           </div>
                             </div>
-                        </div>
-                    </div>
+                     
 </div>
-</div>
+</div></div>
             </div>
         )
     }

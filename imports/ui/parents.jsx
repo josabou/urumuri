@@ -204,8 +204,8 @@ class parents extends React.Component {
                                     </div>
                                 </div>
                                 <div className={this.state.food_visible ? "food" : "food_invisible"} >
-                                    <div><h2>OVERVIEW</h2></div>
-                                    <div id="exTab2" className="container" style={{ width: "100%" }}>
+                                    <div><h2>OVERVIEW</h2><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> </div>
+                                    <div id="exTab1" className="container" style={{ width: "100%" }}>
 
                                         <ul className="nav nav-tabs" tyle={{width:"400px"}}>
                                             <li className="active" s>
@@ -213,8 +213,7 @@ class parents extends React.Component {
                                             </li>
                                             <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> 
-                                            </li>
+                                         
 
                                         </ul>
 
@@ -222,7 +221,8 @@ class parents extends React.Component {
                                             <div className="tab-pane active" id="1">
                                                 <div>
 
-                                                    <div className="container" style={{ width: "100%" }}>
+                                                   
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
                                                         <div>
                                                             <div className="row">
                                                                 <div style={{ clear: "both" }}></div>
@@ -293,7 +293,8 @@ class parents extends React.Component {
                                                             </div></td>
                                                             </tr>
                                                             <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
-                                                            <div className="container" style={{ width: "100%" }}>
+                                                           
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
                                 <div>
                                     <div className="row">
                                         <div style={{ clear: "both" }}></div>
