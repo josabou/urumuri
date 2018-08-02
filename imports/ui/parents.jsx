@@ -293,7 +293,8 @@ class parents extends React.Component {
                                                             </div></td>
                                                             </tr>
                                                             <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
-                                                            <div className="container" style={{ width: "100%" }}>
+                                                           
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
                                 <div>
                                     <div className="row">
                                         <div style={{ clear: "both" }}></div>
