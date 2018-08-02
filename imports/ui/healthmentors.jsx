@@ -246,7 +246,7 @@ class healthmentors extends React.Component {
 
           </div></td>
                   <td>
-        <div style={{ width: "600px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
+        <div style={{ width: "500px", height: "400px" }} className={this.state.m1_visible ? "m1" : "m1_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>MWARAMUTSE mubyeyi, twabibutsaga ko uyumunsi ari ugutanga inkingo  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>mwaramutse Mujyana, murakoze kutwibutsa </div>
