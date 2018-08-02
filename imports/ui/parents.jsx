@@ -300,30 +300,7 @@ class parents extends React.Component {
                                                                 </div>
                                                             </div></td>
                                                             </tr>
-                                                            <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
                                                            
-                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
-                                <div>
-                                    <div className="row">
-                                        <div style={{ clear: "both" }}></div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>ITAKEN VACCINES:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                            <div className="badge">{this.renderTakenVaccine()}</div>
-                                            </div>
-                                        </div>
-                                        <div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>UNTAKEN VACCINES:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                            <div className="badge">{this.renderUnTakenVaccine()}</div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style={{ clear: "both" }}></div>
-                                    </div></div>
-                            </div></td></tr>
                                                     </tbody>
                                                 </table>
                                             </div>
