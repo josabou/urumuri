@@ -147,6 +147,8 @@ if(this.state.subscribe.childcolb.ready() && typeof what1 !== "undefined"){
       <span className="sr-only">Next</span>
     </a>
   </div>
+  <h2 className="text-center">frequent asked question</h2>
+
   <Accordion>
         <AccordionItem>
             <AccordionItemTitle>
@@ -266,26 +268,97 @@ If your baby can do ALL of these things then he or she is ready to try first foo
                 <p>Proteins are the other important type of dietary component that you should have in your diet this should vary with your amount of body weight and age. Normally accepted amount of protein level is 1g per 1kg of body weight. Therefore healthy adult should have about 70 grams of protein in their diet Also some special people like children needs more protein in their diet. Because there growth requires large amount of amino acids. More than that protein helps to maintain your protection against inflections. You can get protein from meat  fish  eggs  milk some types of vegetarian foods like beans</p>
             </AccordionItemBody>
         </AccordionItem>
-        
+
     </Accordion>
+    <div id="services" className="text-center">
+        <div className="section-title center">
+          <h2>our Services</h2>
+
+        </div>
+        <div className="space"></div>
+        <div className="row">
+          <div className="col-md-3 col-sm-6">
+            <div className="service"> <i className="fa fa-desktop"></i>
+              <h3>Web Design</h3>
+              <p>you have a company or an organisation and you need a responsive and well designed website ?, we offer you all services related to web designing .</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"> <i className="fa fa-cogs"></i>
+              <h3>Web Development</h3>
+              <p>and if you are looking fof web developer, we are here for you .</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"> <i className="fa fa-tablet"></i>
+              <h3>App Design</h3>
+              <p>we offer you also android/web app designing services .if you are looking for the user friendlly interface and content covering app, please lets cooperate .</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"><i className="fa fa-html5"></i>
+              <h3>PSD to HTML5</h3>
+              <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+            </div>
+          </div>
+        </div>
+        <div className="space"></div>
+        <div className="row">
+          <div className="col-md-3 col-sm-6">
+            <div className="service"><i className="fa fa-wordpress"></i>
+              <h3>WordPress</h3>
+              <p>we also offer you a web built in WordPress and is easier to edit and control all content in web.</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"><i className="fa fa-bullhorn"></i>
+              <h3>Marketing</h3>
+              <p>all services on an online marketing also we offer it.</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"><i className="fa fa-rocket"></i>
+              <h3>Branding</h3>
+              <p>we also provide services of branding. if you have an organisation or if you are looking for your branding yourself coperate with us.</p>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6">
+            <div className="service"><i className="fa fa-leaf"></i>
+              <h3>graphic Design</h3>
+              <p>we are also good at graphic designing software .</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="contact" className="text-center">
+      <div className="container">
 
 
-  <div className="social">
-    <h3>Follow us</h3>
-    <ul>
-      <li><a href="https://www.facebook.com/people/Salvio_Sage"><i className="fa fa-facebook"></i></a></li>
-      <li><a href="https://twitter.com/salvio_sage"><i className="fa fa-twitter"></i></a></li>
-      <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
-      <li><a href="#"><i className="fa fa-github"></i></a></li>
-      <li><a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="fa fa-linkedin"></i></a></li>
-    </ul>
-  </div>,
-  <div className="footer">
+        <div >
 
-      <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
 
-  </div>
+          <div className="social">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/people/Salvio_Sage"><i className="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/salvio_sage"><i className="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+              <li><a href="#"><i className="fa fa-github"></i></a></li>
+              <li><a href="https://www.instagram.com/salviosage/"><i className="fa fa-instagram"></i></a></li>
+              <li><a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div className="container">
+        <p>Copyright &copy; team ueumuri. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team urumuri</a></p>
+      </div>
+    </div>
+
+
+
   </div>
 
     );}
