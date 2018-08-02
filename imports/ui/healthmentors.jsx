@@ -399,7 +399,7 @@ class healthmentors extends React.Component {
 
 </div><div className={this.state.overview_visible ? "overview" : "overview_invisible"} >
                                 <div><h2>OVERVIEW</h2></div>
-                                <div id="exTab2" className="container" style={{ width: "100%" }}>
+                                <div id="exTab2" className="container" >
 
     <ul className="nav nav-tabs">
                                         <li className="active">
@@ -669,11 +669,11 @@ class healthmentors extends React.Component {
     <div className="tab-pane" id="2">
             <table>
       <tbody>
-    <tr><td>Kanakuze Dativa</td></tr>
+    <tr><td style={{color:"black",fontWeight:"bold"}}>Kanakuze Dativa</td></tr>
     <tr><td><img src="images/noticon.png" style={{ maxWidth: "15px", maxHeight: "15px" }} /></td>
   <td>Mwiriwe neza mujyana, nafuzaga kubabaza kubijyanye numwana wanjye..</td>
                                                         <td>12/02/15</td></tr>
-    <tr><td>Health Center</td></tr>
+    <tr><td style={{color:"black",fontWeight:"bold"}}>kacyiru Health Center</td></tr>
     <tr><td><img src="images/noticon.png" style={{ maxWidth: "15px", maxHeight: "15px" }} /></td>
       <td>Wiriwe Mujyana, twakumenyashaga ko hari igikorwa giteganijwe mumurenge wacu cyo gutera abana inshinge twashakaga ko ubigenza kuba turage bawe
       icyo gikorwa kiba giteganijwe kuwa</td>
