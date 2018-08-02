@@ -265,7 +265,7 @@ class healthmentors extends React.Component {
     </table>
           </div>
         </div>
-        <div style={{ width: "640px", height: "400px" }} className={this.state.m2_visible ? "m2" : "m2_invisible"}>
+        <div style={{ width: "510px", height: "400px" }} className={this.state.m2_visible ? "m2" : "m2_invisible"}>
             <div style={{ height: "300px", overflow: "scroll" }}>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>
         <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. umwana wanjye iyo muhaye ibiryo birimo carotti agira ikibazo cy'umusarani </div>
@@ -685,16 +685,13 @@ class healthmentors extends React.Component {
           </div>
           </div>
                             </div>
-<<<<<<< HEAD
-                        </div>
+         </div>
                     </div>
                     </center>
 
-=======
->>>>>>> dc1029739bdbb62d96cd4d506656c4da5c6b2905
 
 </div>
-</div></div>
+
             
         )
     }
