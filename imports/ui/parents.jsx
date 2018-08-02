@@ -204,8 +204,8 @@ class parents extends React.Component {
                                     </div>
                                 </div>
                                 <div className={this.state.food_visible ? "food" : "food_invisible"} >
-                                    <div><h2>OVERVIEW</h2></div>
-                                    <div id="exTab3" className="container" style={{ width: "100%" }}>
+                                    <div><h2>OVERVIEW</h2><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> </div>
+                                    <div id="exTab1" className="container" style={{ width: "100%" }}>
 
                                         <ul className="nav nav-tabs" tyle={{width:"400px"}}>
                                             <li className="active" s>
@@ -213,8 +213,7 @@ class parents extends React.Component {
                                             </li>
                                             <li style={{width:"30px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
                                             </li>
-                                            <li style={{width:"30px"}}><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> 
-                                            </li>
+                                         
 
                                         </ul>
 
