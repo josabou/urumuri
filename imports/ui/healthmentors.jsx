@@ -181,13 +181,13 @@ class healthmentors extends React.Component {
                     <div className="w3-sidebar w3-bar-block  w3-light-green w3-animate-left" style={{ display: "none" }} id="mySidebar">
                         <button className="w3-bar-item w3-button w3-large"
                             onClick={this.w3_close.bind(this)}>Close &times;</button>
-                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>IBUPCOMMING EVENTS</a>
+                        <a href="#" className="w3-bar-item w3-button" onClick={this.showIncomming.bind(this)}>BUPCOMMING EVENTS</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showAnnounce.bind(this)}>ANNOUNCE</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>OVERVIEW</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
                     </div>
 </div>
-                    <div className="container-fluid">
+                    <div className="container-fluid"><div className="row">
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
                         <div className="center-block" style={{ margin: "0px 300px 0px 300px" }} >
@@ -689,7 +689,7 @@ class healthmentors extends React.Component {
                         </div>
                     </div>
 
-
+</div>
             </div>
         )
     }
