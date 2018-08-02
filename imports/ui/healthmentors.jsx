@@ -414,7 +414,7 @@ class healthmentors extends React.Component {
     <div className="tab-pane active" id="1">
         <div >
 
-                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
+                  <div className="container-fluid" style={{ width: "80%" ,heigth:"50%"}}>
           <div>
                 <div className="row">
 
@@ -452,7 +452,7 @@ class healthmentors extends React.Component {
     </div>
         <div>
 
-        <div className="container-fluid" style={{ width: "100%" }}>
+        <div className="container-fluid" style={{ width: "80%" }}>
         <div>
 <div className="row">
 <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
