@@ -186,8 +186,8 @@ class healthmentors extends React.Component {
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showOverview.bind(this)}>OVERVIEW</a>
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
                     </div>
-</div>
-                    <div style={{alignContent:"center"}}>
+</div><center>
+                    <div>
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
                         <div className="center-block" style={{ margin: "0px 300px 0px 300px" }} >
@@ -687,6 +687,7 @@ class healthmentors extends React.Component {
                             </div>
                         </div>
                     </div>
+                    </center>
 
 
             </div>
