@@ -52,15 +52,17 @@ class Header extends React.Component {
    }
   render() {
     return (
-      <header className=' navbar navbar-inverse'>
-     
-        <NavLink className="active "  activeClassName="active" exact to="/">Home</NavLink>
-        <NavLink className="inactive navs" activeClassName="active" to="/about">Who We Are</NavLink>
+      <header className=' navbar navbar-custom '>
+<a class="navbar-brand" href="#"> <img src="././images/logo.png" style={{ height:"40px", width: "80px", padding: "  2px",
+position: "relative"}}/></a>
 
-        <NavLink className="inactive navs" activeClassName="active" to="/content">Content</NavLink>
-        <NavLink className="inactive navs" activeClassName="active" to="/contact">Contact Us</NavLink>
+        <NavLink className="inactive nav-link"  activeClassName="active" exact to="/">Home</NavLink>
+        <NavLink className="inactive nav-link" activeClassName="active" to="/about">Who We Are</NavLink>
 
-        <a className="inactive navs" id="jojo_sign_in" href="#" data-toggle="modal" data-target="#myModal" style={{ float: "right"}}><span class="glyphicon glyphicon-user"></span>SIGN IN  </a>
+        <NavLink className="inactive  nav-link" activeClassName="active" to="/content">Content</NavLink>
+        <NavLink className="inactive nav-link" activeClassName="active" to="/contact">Contact Us</NavLink>
+
+        <a className="inactive nav-link" id="jojo_sign_in" href="#" data-toggle="modal" data-target="#myModal" style={{ float: "right"}}><span class="glyphicon glyphicon-user"></span>SIGN IN  </a>
         <a className="inactive navs" href="/" id="activitypage" style={{ display: "none"  }}>Activity Page</a>
         <a className="inactive navs" href="#" onClick={this.logOut.bind(this)} id="logout" style={{ display: "none" }}>Log out</a>
 

@@ -4,9 +4,9 @@ class about extends Component {
 
     return (
 
-    <div>
+
 <div> <div id="about">
-  <div className="container">
+
   <div id="team" className="text-center">
 
       <div className="section-title center">
@@ -26,7 +26,7 @@ class about extends Component {
         <div className="col-xs-6 col-md-3 col-sm-6">
           <div className="thumbnail"> <img src="././images/jojo.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
-              <h3>jjosiane</h3>
+              <h3>josiane</h3>
               <p>Web Designer</p>
             </div>
           </div>
@@ -42,7 +42,7 @@ class about extends Component {
         <div className="col-xs-6 col-md-3 col-sm-6">
           <div className="thumbnail"> <img src="././images/salvi.jpg" alt="..." className="img-thumbnail team-img"/>
             <div className="caption">
-              <h3>josiane</h3>
+              <h3>girbert</h3>
               <p>Project Manager</p>
             </div>
           </div>
@@ -77,8 +77,8 @@ I software developer. In addition to my love of computers  programming,I like to
         </div>
       </div>
     </div>
-  </div>
-</div></div>
+
+</div>
 <div className="footer">
 
     <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>

@@ -152,7 +152,7 @@ if(this.state.subscribe.childcolb.ready() && typeof what1 !== "undefined"){
   <Accordion>
         <AccordionItem>
             <AccordionItemTitle>
-                <h3>BREASTFEEDING</h3>
+                <h3> Why breastfeeding ?</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
                 <p>Exclusive breastfeeding is a cornerstone of child survival and child health because it provides essential, irreplaceable nutrition for a child’s growth and development. Nonetheless, just 38% of infants are exclusively breastfed in the first six months of life globally.
@@ -163,7 +163,7 @@ In 2012, the World Health Assembly endorsed a global breastfeeding target to inc
         </AccordionItem>
         <AccordionItem>
             <AccordionItemTitle>
-                <h3>IMPORTANCE OF A BALANCED DIET</h3>
+                <h3> is balanced diet importance for my kid? so how to prepare it?</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
                 <p>A balanced diet chart is of utmost importance for the body to function properly. It needs the vitamins and minerals to maintain the cells, tissues, and organs.
@@ -211,21 +211,34 @@ By knowing the foods to avoid, you can keep your baby healthy and safe!</p>
         </AccordionItem>
         <AccordionItem>
             <AccordionItemTitle>
-                <h3>No-cook first foods</h3>
+                <h3>What foods should my baby avoid?</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
-                <p>Not all homemade baby foods require cooking. Try these easy, no-cook first foods for
-babies. All you need is a fork for mashing.
+                <p>Before your baby turns 1, there are some foods you should avoid giving him or her. Some foods
 
-Banana
-Simply peel a ripe banana and mash it with a fork. Add water, breast milk or infant
-formula for a smoother texture.
-Avocado
-Cut and peel the avocado. Mash it with a fork. Add water, breast milk or infant formula
-for a smoother texture.
-Canned Beans
-Open a can of beans, rinse them under water, and put some in a bowl. Mash them with
-a fork. Add water, breast milk or infant formula for a smoother texture.</p>
+should be avoided because they could cause sickness or safety concerns, while other foods
+
+should be avoided because they are unhealthy.
+
+Foods to avoid include:
+
+ Cow’s milk: Drinking cow’s milk before age 1 may put your baby at risk for intestinal
+bleeding. Instead of cow’s milk use breast milk or infant formula before age 1. Alternative milks: Alternative milks like soy milk, almond milk, rice milk, oat milk, etc.
+should not substitute breast milk or formula in the first year. Honey: Honey (even as an ingredient) may cause a serious health problem called
+botulism. Your child can start to try honey and foods that contain honey only after he or
+she is 1-year-old.
+Sugary drinks: Sugary drinks like fruit juice (even 100% juice), soda, tea/coffee or
+horchata encourage babies to crave sugary foods and can cause cavities, even before your
+baby has all of his or her teeth.
+
+ Salty foods: Foods that are high in salt, also known as sodium, should be avoided
+because babies’ kidneys can’t handle too much salt. Check food labels to find foods low
+in sodium.
+ Choking hazards: Small, hard foods pose high risks of choking. Common foods that are
+most risky include nuts, popcorn, hot dogs and whole grapes. As a tip, you can cut grapes
+into small pieces and then serve them to your baby. And just remember, anything can be
+a choking hazard so be sure to watch your baby carefully as he or she eats.
+By knowing the foods to avoid, you can keep your baby healthy and safe!</p>
             </AccordionItemBody>
         </AccordionItem>
         <AccordionItem>
@@ -239,30 +252,22 @@ eating foods?</h3>
 formula? Every baby is different – but you can look for these signs to tell that your baby
 is developmentally ready to start trying foods:
 
- Your baby has good head control. Your baby can keep his or her head in a
+ Your baby has good head control. Your baby can keep his or her head in a
 steady, upright position.
- Your baby can sit up with little or no support. Your baby needs to be able to
+ Your baby can sit up with little or no support. Your baby needs to be able to
 sit upright in a highchair to swallow well.
- Your baby is able to grab objects. Your baby uses his or her hands to grab
+ Your baby is able to grab objects. Your baby uses his or her hands to grab
 and hold onto objects, like a spoon.
- Your baby shows interest in what others are eating. Your baby opens his or
+ Your baby shows interest in what others are eating. Your baby opens his or
 her mouth and leans forward when food is offered.
- Your baby is about 6 months old. At around 6 months of age your baby’s gut
+ Your baby is about 6 months old. At around 6 months of age your baby’s gut
 has developed to digest foods other than breast milk or formula.
 If your baby can do ALL of these things then he or she is ready to try first foods.</p>
             </AccordionItemBody>
         </AccordionItem>
         <AccordionItem>
             <AccordionItemTitle>
-                <h3>{what6.title[0]}</h3>
-            </AccordionItemTitle>
-            <AccordionItemBody>
-                <p>{what6.body[0]}</p>
-            </AccordionItemBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionItemTitle>
-                <h3>INGREDIENTS IN A BALANCED DIET</h3>
+                <h3>ingredients in balanced diet</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
                 <p>Proteins are the other important type of dietary component that you should have in your diet this should vary with your amount of body weight and age. Normally accepted amount of protein level is 1g per 1kg of body weight. Therefore healthy adult should have about 70 grams of protein in their diet Also some special people like children needs more protein in their diet. Because there growth requires large amount of amino acids. More than that protein helps to maintain your protection against inflections. You can get protein from meat  fish  eggs  milk some types of vegetarian foods like beans</p>
@@ -277,57 +282,36 @@ If your baby can do ALL of these things then he or she is ready to try first foo
         </div>
         <div className="space"></div>
         <div className="row">
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-8">
             <div className="service"> <i className="fa fa-desktop"></i>
-              <h3>Web Design</h3>
-              <p>you have a company or an organisation and you need a responsive and well designed website ?, we offer you all services related to web designing .</p>
+              <h3>Data collection
+</h3>
+              <p>We are planning to collect data of our client and analyze it to provide them their nutrition profile that and match it with the standard nutrition profile and start to work on how to improve it.
+</p>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-8">
             <div className="service"> <i className="fa fa-cogs"></i>
-              <h3>Web Development</h3>
-              <p>and if you are looking fof web developer, we are here for you .</p>
+              <h3>Updates </h3>
+              <p>Information value with time this act as a fact to make sure that our clients have to be updated and informed during her 1000 days and it have to depend to their profile status
+ .</p>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-8">
             <div className="service"> <i className="fa fa-tablet"></i>
-              <h3>App Design</h3>
-              <p>we offer you also android/web app designing services .if you are looking for the user friendlly interface and content covering app, please lets cooperate .</p>
+              <h3>Follow up</h3>
+              <p>As we mentioned in problems most of them can be related to times and method used to care about the first 1000 days.that why we are aiming to provide online follow up and we insure standard,fast and accurate information to our clients for each and every day pace of their journey
+.</p>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="service"><i className="fa fa-html5"></i>
-              <h3>PSD to HTML5</h3>
-              <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+          <div className="col-md-3 col-sm-8">
+            <div className="service"> <i className="fa fa-tablet"></i>
+              <h3>Follow up</h3>
+              <p>As we mentioned in problems most of them can be related to times and method used to care about the first 1000 days.that why we are aiming to provide online follow up and we insure standard,fast and accurate information to our clients for each and every day pace of their journey
+.</p>
             </div>
           </div>
-        </div>
-        <div className="space"></div>
-        <div className="row">
-          <div className="col-md-3 col-sm-6">
-            <div className="service"><i className="fa fa-wordpress"></i>
-              <h3>WordPress</h3>
-              <p>we also offer you a web built in WordPress and is easier to edit and control all content in web.</p>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="service"><i className="fa fa-bullhorn"></i>
-              <h3>Marketing</h3>
-              <p>all services on an online marketing also we offer it.</p>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="service"><i className="fa fa-rocket"></i>
-              <h3>Branding</h3>
-              <p>we also provide services of branding. if you have an organisation or if you are looking for your branding yourself coperate with us.</p>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="service"><i className="fa fa-leaf"></i>
-              <h3>graphic Design</h3>
-              <p>we are also good at graphic designing software .</p>
-            </div>
-          </div>
+
         </div>
     </div>
     <div id="contact" className="text-center">
