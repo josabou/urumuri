@@ -413,8 +413,8 @@ class healthmentors extends React.Component {
               <div className="tab-content ">
     <div className="tab-pane active" id="1">
         <div >
-
-                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
+                                                        
+        <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
           <div>
                 <div className="row">
 
@@ -451,8 +451,8 @@ class healthmentors extends React.Component {
         </div>
     </div>
         <div>
-
-        <div className="container-fluid" style={{ width: "100%" }}>
+                                                        
+        <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
         <div>
 <div className="row">
 <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>Kanakuze Dativa <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -489,7 +489,8 @@ class healthmentors extends React.Component {
       </div>
       <div>
 
-    <div className="container-fluid" style={{ width: "100%" }}>
+                                                          
+      <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
       <div>
       <div className="row">
     <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>umutoni alida <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -526,7 +527,8 @@ class healthmentors extends React.Component {
 </div>
     <div>
 
-      <div className="container-fluid" style={{ width: "100%" }}>
+                                                          
+    <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
   <div>
         <div className="row">
     <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>mukamana <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -563,7 +565,8 @@ class healthmentors extends React.Component {
     </div>
                 <div>
 
-  <div className="container-fluid" style={{ width: "100%" }}>
+                                                        
+                <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>kamaziga vestine <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -597,7 +600,8 @@ class healthmentors extends React.Component {
             <div style={{ clear: "both" }}></div>
             </div></div>
               </div>
-              <div className="container-fluid" style={{ width: "100%" }}>
+                                                                     
+              <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>mugisha <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
@@ -631,7 +635,8 @@ class healthmentors extends React.Component {
             <div style={{ clear: "both" }}></div>
             </div></div>
               </div>
-              <div className="container-fluid" style={{ width: "100%" }}>
+              <                                                        
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
         <div>
         <div className="row">
         <div className="col order-last" style={{ float: "left", width: "200px", borderLeft: "1px solid black", padding: "5px" }}>nayubu <span className="badge">0787374821</span> <span className="badge">Kinyinya</span></div>
