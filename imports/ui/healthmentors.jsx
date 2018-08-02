@@ -33,7 +33,7 @@ class healthmentors extends React.Component {
         }
 
     }
-    
+
 
     showM1() {
         this.setState({ m1_visible: false });
@@ -207,7 +207,7 @@ class healthmentors extends React.Component {
                                         <hr></hr>
 
             <div><h3 >PARENTS</h3>
-          <div style={{ height: "300px", overflow: "scroll" }}>
+          <div >
                 <form >
           <input type="checkbox" value="Kanakuze Veddy" /> Kanakuze Veddy<br />
           <input type="checkbox" value="Hitimana baptist" /> Hitimana baptist<br />
@@ -326,7 +326,7 @@ class healthmentors extends React.Component {
             <div style={{ height: "300px", overflow: "scroll" }}>
             <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>muraho neza mujyanan </div>
               <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>muraho neza.. </div>
-  
+
 
 
       </div>
@@ -412,7 +412,7 @@ class healthmentors extends React.Component {
 
               <div className="tab-content ">
     <div className="tab-pane active" id="1">
-        <div >
+        <div  className="container">
 
                   <div className="container" style={{ width: "100%" ,heigth:"50%"}}>
           <div>
@@ -423,15 +423,15 @@ class healthmentors extends React.Component {
           <div className="row">
           <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
                     <h4>TAKEN VACCINE:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
     <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
   <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-      
+
                                           </div>
                                                             </div>
     <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
                             <h4>IUNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
-        <div style={{ height: "140px", overflow: "scroll" }}>
+        <div >
         <div className="badge">Pentavalent I <span className="btn-danger inactive"> right after her/his born day</span> </div>
       <div className="badge">Pneumocoque <span className="btn-danger inactive"> after 2 mouths and half</span> </div>
             <div className="badge">Rougeole <span className="btn-danger inactive"> after 4 mouths and half</span> </div>
@@ -442,7 +442,7 @@ class healthmentors extends React.Component {
                           <h4>CHILD'S AGE</h4>
     <div style={{ height: "140px", overflow: "scroll" }}>
       <span className="badge" style={{ fontSize: "20px" }}>240 days</span>
-   
+
                 </div>
       </div>
     <div style={{ clear: "both" }}></div>
@@ -460,7 +460,7 @@ class healthmentors extends React.Component {
 <div className="row">
 <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
 <h4>TAKEN VACCINES:</h4>
-<div style={{ height: "140px", overflow: "scroll" }}>
+<div >
 <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
 <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
 
@@ -468,7 +468,7 @@ class healthmentors extends React.Component {
                 </div>
 <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
 <h4>UNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
-<div style={{ height: "140px", overflow: "scroll" }}>
+<div >
 <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
 <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
 <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
@@ -477,7 +477,7 @@ class healthmentors extends React.Component {
                 </div>
 <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
 <h4>CGILD'S AGE</h4>
-<div style={{ height: "140px", overflow: "scroll" }}>
+<div >
 <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
 
 </div>
@@ -497,26 +497,26 @@ class healthmentors extends React.Component {
       <div className="row">
       <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>TAKEN VACCINES:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
       <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-      
+
       </div>
                       </div>
       <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>INUNTAKEN VACCINES AND THIR LIMITED AGE:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
       <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
       <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
-      
+
                           </div>
                       </div>
       <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>CHILD'S AGE</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
-      
+
       </div>
       </div>
       <div style={{ clear: "both" }}></div>
@@ -534,26 +534,26 @@ class healthmentors extends React.Component {
       <div className="row">
       <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>TAKEN VACCINES:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
       <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-      
+
       </div>
                       </div>
       <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>UNTAKEN VACCINES AND THEIR LIMITED AGE:</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
       <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
       <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
-      
+
                           </div>
                       </div>
       <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
       <h4>CHILD'S AGE</h4>
-      <div style={{ height: "140px", overflow: "scroll" }}>
+      <div >
       <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
-      
+
       </div>
       </div>
       <div style={{ clear: "both" }}></div>
@@ -571,26 +571,26 @@ class healthmentors extends React.Component {
             <div className="row">
             <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZITARAFATWA:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
             <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-            
+
             </div>
                             </div>
             <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
             <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
             <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
-            
+
                                 </div>
                             </div>
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
-            
+
             </div>
             </div>
             <div style={{ clear: "both" }}></div>
@@ -605,26 +605,26 @@ class healthmentors extends React.Component {
             <div className="row">
             <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZITARAFATWA:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
             <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-            
+
             </div>
                             </div>
             <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
             <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
             <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
-            
+
                                 </div>
                             </div>
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
-            
+
             </div>
             </div>
             <div style={{ clear: "both" }}></div>
@@ -639,26 +639,26 @@ class healthmentors extends React.Component {
             <div className="row">
             <div className="col order-last" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZITARAFATWA:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div>
             <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div>
-            
+
             </div>
                             </div>
             <div className="col" style={{ float: "left", width: "40%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>INKINGO ZAFASHWE n'imyaka zitagomba kurenza:</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <div className="badge">Pentavalent I <span className="btn-danger inactive"> nyuma yamezi abiri nigice avutse</span> </div>
             <div className="badge">Pneumocoque <span className="btn-danger inactive"> nyuma yamezi atatu nigice avutse</span> </div>
             <div className="badge">Rougeole <span className="btn-danger inactive"> nyuma yamezi 4 nigice avutse</span> </div>
-            
+
                                 </div>
                             </div>
             <div className="col order-first" style={{ float: "left", width: "20%", borderLeft: "1px solid black", padding: "5px" }}>
             <h4>UKO UMWANA ANGANA</h4>
-            <div style={{ height: "140px", overflow: "scroll" }}>
+            <div >
             <span className="badge" style={{ fontSize: "20px" }}>30 days</span>
-            
+
             </div>
             </div>
             <div style={{ clear: "both" }}></div>
@@ -685,12 +685,17 @@ class healthmentors extends React.Component {
           </div>
           </div>
                             </div>
+<<<<<<< HEAD
                         </div>
                     </div>
                     </center>
 
+=======
+>>>>>>> dc1029739bdbb62d96cd4d506656c4da5c6b2905
 
-            </div>
+</div>
+</div></div>
+            
         )
     }
 }

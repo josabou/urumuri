@@ -20,7 +20,7 @@ class parents extends React.Component {
           <div key={key._id}><p>umwana wawe yitwa {key.childname}</p>
               <p> amaze iminsi {key.age}  avutse</p>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p> {vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> </p>             
+              <p> {vaccine.type ? vaccine.time + " : " +" yafashe  rukingo rwitwa "+ vaccine.name : ""}<br/> </p>
               )) : key.vaccine}
               <button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button>
           </div>
@@ -55,7 +55,7 @@ class parents extends React.Component {
         return this.props.child_data.map((key) => (
           <div key={key._id}>
               {Array.isArray(key.vaccine) ? key.vaccine.map((vaccine)=>(
-              <p> {vaccine.type ? vaccine.time + " : " + vaccine.name : ""}<br/></p>             
+              <p> {vaccine.type ? vaccine.time + " : " + vaccine.name : ""}<br/></p>
               )) : key.vaccine}
           </div>
         ));
@@ -95,7 +95,7 @@ class parents extends React.Component {
         this.setState({ message_visible: false });
         this.setState({ food_visible: false });
         this.setState({ vaccine_visible: false });
-  
+
 
         this.setState({ food_visible: true });
     }
@@ -108,7 +108,7 @@ class parents extends React.Component {
 
         this.setState({ vaccine_visible: true });
     }
-   
+
     componentDidMount() {
         if (sessionStorage.length == 0) {
             window.open("/", "_self");
@@ -211,9 +211,13 @@ class parents extends React.Component {
                                             <li className="active" s>
                                                 <a href="#1" data-toggle="tab">CHILD'S INFO</a>
                                             </li>
+<<<<<<< HEAD
+                                            <li style={{width:"110px"}}><a href="#2" data-toggle="tab">AGE'S INFO</a>
+=======
                                             <li><a href="#2" data-toggle="tab">AGE'S INFO</a>
+>>>>>>> c2ae9c8d9cbbaad12f486ad55dd0a28e7b875b94
                                             </li>
-                                         
+
 
                                         </ul>
 
@@ -221,7 +225,7 @@ class parents extends React.Component {
                                             <div className="tab-pane active" id="1">
                                                 <div>
 
-                                                   
+
                   <div className="container-fluid" style={{ width: "500%" ,heigth:"50%"}}>
                                                         <div>
                                                             <div className="row">
@@ -229,22 +233,16 @@ class parents extends React.Component {
                                                             </div>
                                                             <div className="row">
                                                                 <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
-                                                                    
+
                                                                     <div style={{ height: "350px", overflow: "scroll" }}>
-                                                                    <p>child's name: Nelly uwera</p>
-                                                                   < p>child's age: 2 mouths</p>
-                                                                    <h5><strong> vaccines your child has taken</strong></h5>
-                                                               
-                                                                    <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div><br/>
-            <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
-            <h5><strong> vaccines your child hasn't taken</strong></h5>
-            <div className="badge">Pneumocoque <span className="btn-danger inactive"></span> </div><br/>
-            <div className="badge">Rougeole <span className="btn-danger inactive"></span> </div><br/>
-                                                                       
-                                                                        <div className="badge" style={{background:"green"}}><button  style={{width:"100px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
+                        <div className="badge">{this.renderchildren()}</div><br/>
+                        
+                                      <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div><br/>
+                                  <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
+                          <div className="badge" style={{background:"green"}}><button  style={{width:"300px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
 
                                                                     </div>
-                                                                   
+
 
                                                                 </div>
 
@@ -252,7 +250,7 @@ class parents extends React.Component {
                                                             </div></div>
                                                     </div>
                                                 </div>
-                 
+
 
 
                                             </div>
@@ -262,7 +260,7 @@ class parents extends React.Component {
                                                         <tr><td>Info for Child's age</td></tr>
                                                         <tr><td><button className="accordion">uko wagaburira Umwana wawe ari hagati y’amezi 8 na 10</button>
                                                             <div className="panel">
-                                                                <div style={{width:"600px", height: "500px", overflow: "scroll" }}>
+                                                                <div style={{width:"500px", height: "500px", overflow: "scroll" }}>
                                                                     <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
                                                                     <div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
                                                                     <div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
@@ -296,11 +294,38 @@ class parents extends React.Component {
                                                                           ongeramo ibiyiko 2 by’amavuta ya Olive, hanyuma ubinyuze muri mixeur <span><img src="images/9.jpg" style={{ width: "50px", height: "50px" }} /></span>
                                                                             cyangwa se ikindi kintu wifashisha mu gusya ibiribwa, kugeza igihe uboneye inombe yoroshye kandi ivanze neza.<span><img src="images/10.jpg" style={{ width: "60px", height: "60px" }} /></span>
                                                                         </p></div>
-   
+
                                                                 </div>
                                                             </div></td>
                                                             </tr>
+<<<<<<< HEAD
                                                            
+=======
+                                                            <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
+
+                  <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
+                                <div>
+                                    <div className="row">
+                                        <div style={{ clear: "both" }}></div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>ITAKEN VACCINES:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                            <div className="badge">{this.renderTakenVaccine()}</div>
+                                            </div>
+                                        </div>
+                                        <div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
+                                            <h4>UNTAKEN VACCINES:</h4>
+                                            <div style={{ height: "140px", overflow: "scroll" }}>
+                                            <div className="badge">{this.renderUnTakenVaccine()}</div>
+                                            </div>
+                                        </div>
+
+                                        <div style={{ clear: "both" }}></div>
+                                    </div></div>
+                            </div></td></tr>
+>>>>>>> dc1029739bdbb62d96cd4d506656c4da5c6b2905
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -337,12 +362,12 @@ class parents extends React.Component {
                                                     <input type="checkbox" />Pneumocoque (afite amezi 3 n’igice)
 </label>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9): 
+                                                    <input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9):
 </label>
                                             </form>
-                                            
+
                                         </div>
-                                          
+
                                         </div>
                                         <div>
                                                 <h4>CHOOSE THE CHILD'S AGE</h4>
@@ -356,12 +381,12 @@ class parents extends React.Component {
                                     </div>
                                 </div>
 
-                        
+
 
                             </div>
                         </div>
                     </div>
-                
+
             </div>
         )
     }
