@@ -148,7 +148,7 @@ user(e){
      <div className="row">
      <div className="col-xs-4 ">
   <label className="loation">Position:</label></div>
-  <div className="col-xs-8 ">
+  <div className="col-xs-4 ">
  <select ref="position" className="form-control">
 
   <option value="health_mentor" >Health mentor</option>
