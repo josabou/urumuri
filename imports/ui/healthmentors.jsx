@@ -187,7 +187,7 @@ class healthmentors extends React.Component {
                         <a href="#" className="w3-bar-item w3-button" onClick={this.showMessage.bind(this)}>MESSAGE</a>
                     </div>
 </div><center>
-                    <div>
+                    <div style={{alignContent:"center"}}>
                         <button style={{ width: "100px" }} className="w3-button w3-white w3-xxlarge" onClick={this.w3_open.bind(this)}>&#9776;</button>
 
                         <div className="center-block" style={{ margin: "0px 300px 0px 300px" }} >
@@ -388,7 +388,7 @@ class healthmentors extends React.Component {
     </div>
   </div>
     <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"} style={{height:"300px"}}>
-      <h4 >IUPCOMMING EVENTS</h4>
+      <h4 >UPCOMMING EVENTS</h4>
             <div>
                             <h5><strong>MINISANTE</strong></h5>
                                         <div>Turabamenyesha ko ,uri uku kwezi hategnijwe igikorrw cyo gukingira abana mugiga kuri tariki ya <span>12/02/18</span></div>
