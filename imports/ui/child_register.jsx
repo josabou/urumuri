@@ -12,7 +12,7 @@ child(e){
     global.age=this.refs.age.value;
     global.parent_id=this.refs.parent_id.value;
     global.vaccined1=this.refs.vaccined1.value;
-    global.vaccined2=this.refs.vaccined2.value; 
+    global.vaccined2=this.refs.vaccined2.value;
     global.vaccined3=this.refs.vaccined3.value;
     global.vaccined4=this.refs.vaccined4.value;
     global.vaccined5=this.refs.vaccined5.value;
@@ -39,9 +39,9 @@ child(e){
       if (result){
         window.open("/parents","_self")
     }});
-   
-  
- 
+
+
+
   }
   else
   {
@@ -58,13 +58,13 @@ child(e){
           type="text" ref="childname"
           placeholder="Enter your childname" className="form-control" />
     </div>
- 
+
     <div className="form-group">
               Ichild's birthday:<input
               type="date" ref="age" className="form-control"
                />
     </div>
-   
+
     <div className="form-group">
     parent's name:<input
     type="text" value={  sessionStorage.getItem('username')} ref="parent_id"
@@ -80,7 +80,7 @@ child(e){
     <div>
     <input type="date" ref="vaccined2" className="form-control"/>
  <div className="checkbox-inline">
- <input type="checkbox"  ref="vaccine2" className="form-control"/>Poliomyélite I 
+ <input type="checkbox"  ref="vaccine2" className="form-control"/>Poliomyélite I
   </div></div><div>
   <input type="date" ref="vaccined3" className="form-control"/>
  <div className="checkbox-inline">
@@ -105,7 +105,7 @@ child(e){
               type="text" ref="hst"
               placeholder="Enter History" className="form-control" />
     </div>
- 
+
     <div className="form-group">
             <button className="btn btn-info" type="submit">Register</button>
             <button className="btn btn-basic">Cancel</button>
