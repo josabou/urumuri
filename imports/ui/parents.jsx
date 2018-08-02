@@ -348,22 +348,22 @@ class parents extends React.Component {
                                             <h6>Menya ibyerekeye inkingo w'emeza izo Umwana wawe yamaze gufata</h6>
                                             <form>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />BCG (Baccille Calmette Guérin vaccine): Uru rukingo ruhabwa umwana ukivuka rukaba rumukingira igituntu n’imbasa
+                                                    <input type="checkbox" />BCG (Baccille Calmette Guérin vaccine)
     </label>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />Poliomyélite I (afite ukwezi 1 n’igice): Umwana aba akingiwe: Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke
+                                                    <input type="checkbox" />Poliomyélite I (afite ukwezi 1 n’igice):
   </label>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />Pentavalent I (Afite amezi 2 n’igice): Aha na none umwana aba akingiwe, Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke
+                                                    <input type="checkbox" />Pentavalent I (Afite amezi 2 n’igice)
 </label>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />Pneumocoque (afite amezi 3 n’igice): Umwana uhawe uru rukingo aba akingiwe: Imbasa, kokorishi, agakwega (tetanosi), akaniga, Hib, Hepatite B, Pinemokoke.
+                                                    <input type="checkbox" />Pneumocoque (afite amezi 3 n’igice)
 </label>
                                                 <label className="checkbox-inline">
-                                                    <input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9): Uru rukingo rukaba rukingira umwana ISERU.
+                                                    <input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9): 
 </label>
                                             </form>
-                                            <h3> <strong>ICYITONDERWA:</strong>uwana wese agomba gufata izi nkingo zose uko zavuzwe hejuru</h3>
+                                            
                                         </div>
                                           
                                         </div>
