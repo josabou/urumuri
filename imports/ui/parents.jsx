@@ -260,7 +260,7 @@ class parents extends React.Component {
                                                 <table>
                                                     <tbody>
                                                         <tr><td>Info for Child's age</td></tr>
-                                                        <tr><td><button className="accordion">uko wagaburira umwaanaUmwana wawe ari hagati y’amezi 8 na 10</button>
+                                                        <tr><td><button className="accordion">uko wagaburira Umwana wawe ari hagati y’amezi 8 na 10</button>
                                                             <div className="panel">
                                                                 <div style={{width:"600px", height: "500px", overflow: "scroll" }}>
                                                                     <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
