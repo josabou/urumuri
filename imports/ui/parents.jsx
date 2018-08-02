@@ -232,7 +232,7 @@ class parents extends React.Component {
 
                                                                     <div style={{ height: "350px", overflow: "scroll" }}>
                         <div className="badge">{this.renderchildren()}</div><br/>
-                        <div className="badge">your childs name</div><br/>
+                        
                                       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div><br/>
                                   <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
                           <div className="badge" style={{background:"green"}}><button  style={{width:"300px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>

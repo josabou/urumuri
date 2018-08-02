@@ -100,6 +100,12 @@ span.psw {
     margin-left: 20px;
 }
 
+.container {
+    margin: 0 auto;
+    min-height: 100%;
+    background: white;
+}
+
 .nav {
     width: 98%;
     margin-left: 10px;
@@ -996,6 +1002,12 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 .col-25 {
