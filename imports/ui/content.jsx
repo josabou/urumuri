@@ -86,57 +86,57 @@ render (){
 
 <div className="blankSeparator"></div>
 
-  <div className="info">
-    <div className="col-xs-4">
+  <div className="info text-center">
+    <div className="col-xs-12 text-center">
       <h3>{what.title[0]}</h3>
 
-      <p>{what.body[0]}</p>
+      <p >{what.body[0]}</p>
 
       <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
 
-      <div className="col-xs-4">
+      <div className="col-xs-12">
         <h3>{what.title[1]}</h3>
         <p>{what.body[1]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
-      <div className="col-xs-4 ">
+      <div className="col-xs-12 ">
         <h3>{what.title[2]}</h3>
         <p>{what.body[2]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a>
     </div>
 
   </div>
-  <div className="info">
-    <div className="col-xs-4">
+  <div className="info text-center">
+    <div className="col-xs-12">
       <h3>{what.title[0]}</h3>
 
       <p>{what.body[0]}</p>
 
       <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
 
-      <div className="col-xs-4">
+      <div className="col-xs-12">
         <h3>{what.title[1]}</h3>
         <p>{what.body[1]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
-      <div className="col-xs-4 ">
+      <div className="col-xs-12 ">
         <h3>{what.title[2]}</h3>
         <p>{what.body[2]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a>
     </div>
 
   </div>
-  <div className="info">
-    <div className="col-xs-4">
+  <div className="info text-center">
+    <div className="col-xs-12">
       <h3>{what.title[0]}</h3>
 
       <p>{what.body[0]}</p>
 
       <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
 
-      <div className="col-xs-4">
+      <div className="col-xs-12">
         <h3>{what.title[1]}</h3>
         <p>{what.body[1]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a> </div>
-      <div className="col-xs-4 ">
+      <div className="col-xs-12 ">
         <h3>{what.title[2]}</h3>
         <p>{what.body[2]}</p>
         <a href="" title="" className="buttonhome">&rarr; download pdf</a>
@@ -144,85 +144,20 @@ render (){
 
   </div>
 
-
-
-  <div className="blankSeparator"></div>
-  <div>
-  <div className="col-xs-3">
-    <section className="boxthreeleft"> <img src="images/home/1.png" alt=""/>
-      <h3>{what.title[3]}</h3>
-      <p>{what.body[3]}</p>
-      <a className ="simple" href="#">+ Learn more</a> </section>
-  </div>
-
-  <div className="col-xs-3">
-    <section className="boxthreecenter"> <img src="images/home/2.png" alt=""/>
-      <h3>{what.title[4]}</h3>
-      <p>{what.body[4]}.</p>
-      <a className ="simple" href="#">+ Learn more</a> </section>
-  </div>
-  <div className="col-xs-3">
-    <section className="boxthreecenter"> <img src="images/home/2.png" alt=""/>
-      <h3>{what.title[4]}</h3>
-      <p>{what.body[4]}.</p>
-      <a className ="simple" href="#">+ Learn more</a> </section>
-  </div>
-
-  <div className="col-xs-3 lastcolumn">
-    <section className="boxthreeright"> <img src="images/home/3.png" alt=""/>
-      <h3>{what.title[5]}</h3>
-      <p>{what.body[5]}.</p>
-      <a className ="simple" href="#">+ Learn more</a> </section>
-  </div>
-  </div>
 <div className="blankSeparator1"></div>
 <div>
 
-<Accordion>
-      <AccordionItem>
-          <AccordionItemTitle>
-              <h3>{what.title[5]}</h3>
-          </AccordionItemTitle>
-          <AccordionItemBody>
-              <p>{what.body[5]}</p>
-          </AccordionItemBody>
-      </AccordionItem>
-      <AccordionItem>
-          <AccordionItemTitle>
-              <h3>Complex title</h3>
-              <div>With a bit of description</div>
-          </AccordionItemTitle>
-          <AccordionItemBody>
-              <p>{what.body[5]}</p>
-          </AccordionItemBody>
-      </AccordionItem>
-  </Accordion>
 
 </div>
-<div className="footer">
- <div className="container">
-   <p>Copyright &copy; 1000DaysCare. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team urumuri</a></p>
- </div>
- </div>
+
 </div>
 
 
     );}
     return (<div>'loading data'</div>);
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
+
+
 }
 }
 
