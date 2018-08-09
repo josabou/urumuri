@@ -396,8 +396,8 @@ If your baby can do ALL of these things then he or she is ready to try first foo
           </div>
           <div className="col-md-3 col-sm-8">
             <div className="service"> <i className="fa fa-tablet"></i>
-              <h3>Follow up</h3>
-              <p>As we mentioned in problems most of them can be related to times and method used to care about the first 1000 days.that why we are aiming to provide online follow up and we insure standard,fast and accurate information to our clients for each and every day pace of their journey
+              <h3>reminding</h3>
+              <p>As we mentioned in problems most of the mothers are unawareness of the vaccination schedules and as we know it is more important to child . so our app is going to remind the schedules and other event to the users
 .</p>
             </div>
           </div>
