@@ -76,8 +76,7 @@ render (){
 
 <div id="content">
 <div className="contents">
-<input type="text" placeholder=" Type to Search.."/>
-<button type="submitonClick={this.insert.bind(this)}">search<i className="fa fa-search"></i></button>
+
 
 <div>
 <Select className="sele" value={selected.selectedOption1} onChange={this.handleChange1} options={options} />

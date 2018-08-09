@@ -131,7 +131,7 @@ if(this.state.subscribe.childcolb.ready() && typeof what1 !== "undefined"){
         <img src="././images/img4.jpg" alt="New York"/>
         <div className="carousel-caption">
              <h1>The First 1,000 Days: When Nutrition Matters Most</h1>
-             <p>The world of childhood nutrition and wellness is riddled with conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days..</p>
+             <p>The world of childhood nutrition and wellness is riddled with ² conflicting advice. Whether you are considering baby-led weaning or sleep training, there’s several experts on either side of the coin. And yet, amid the chatter, there is growing consensus around one topic: the importance of the first 1,000 days..</p>
              <button>readmore</button>
            </div>
       </div>
@@ -147,6 +147,93 @@ if(this.state.subscribe.childcolb.ready() && typeof what1 !== "undefined"){
       <span className="sr-only">Next</span>
     </a>
   </div>
+  <div id="about">
+
+
+
+
+         <h4 className="section-title text-center center">We are team urumuri all very passionate about infant nutrition!</h4>
+
+       <div className="row">
+         <div className="col-md-3" >
+           <div className="about-text">
+             <h4>who we are</h4>
+             <p>
+   we are team urumuri we are very passionate about infant nutrition .</p>
+             <p> we are a complete team of four people including  </p>
+           </div>
+         </div>
+         <div className="col-md-2">
+           <div className="about-text">
+             <h4>Jean salvi Dukuzwenimana </h4>
+
+             <p> a mobile web specialist ,software engineering student at AUCA.</p>
+             <p>HACKER</p>
+             <ul>
+               <li>java programming </li>
+               <li>javascript  </li>
+               <li>web mobile app developer  </li>
+               <li>python </li>
+               <li>ruby on rails</li>
+             </ul>
+           </div>
+         </div>
+         <div className="col-md-2">
+           <div className="about-text">
+             <h4>Germaine
+Umutoni
+</h4>
+
+             <p>  information management  student at AUCA, very passionate about technology startup.</p>
+             <p>HUSTLER</p>
+             <ul>
+               <li>java programming </li>
+               <li>database programmer </li>
+               <li> management  </li>
+
+             </ul>
+           </div>
+         </div>
+         <div className="col-md-2">
+           <div className="about-text">
+             <h4>Josiane
+Niyitugenera
+</h4>
+
+             <p> Computer science student at CST , very passionate about addressing people's challenge through technology.</p>
+             <p>HACKER</p>
+             <ul>
+               <li>java programming </li>
+
+               <li>database programming   </li>
+               <li>python </li>
+               <li>ruby on rails</li>
+             </ul>
+           </div>
+         </div>
+         <div className="col-md-2">
+           <div className="about-text">
+             <h4>Gilbert
+Dukuzumuremyi
+</h4>
+
+             <p>Business information technology student at  CBE ,passionate about startups .</p>
+             <p>HIPSTER</p>
+             <ul>
+               <li> bussiness management </li>
+               <li>javascript  </li>
+               <li>data science  </li>
+
+             </ul>
+           </div>
+         </div>
+       </div>
+
+
+
+
+     </div>
+
   <h2 className="text-center">frequent asked question</h2>
 
   <Accordion>
@@ -275,6 +362,9 @@ If your baby can do ALL of these things then he or she is ready to try first foo
         </AccordionItem>
 
     </Accordion>
+
+
+
     <div id="services" className="text-center">
         <div className="section-title center">
           <h2>our Services</h2>
@@ -346,6 +436,7 @@ If your baby can do ALL of these things then he or she is ready to try first foo
   </div>
 
     );}
+
     return (<div>'loading data'</div>);
 }
 }

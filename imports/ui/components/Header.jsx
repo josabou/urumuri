@@ -52,12 +52,11 @@ class Header extends React.Component {
    }
   render() {
     return (
-      <header className=' navbar navbar-custom '>
-<a class="navbar-brand" href="#"> <img src="././images/logo.png" style={{ height:"40px", width: "80px", padding: "  2px",
-position: "relative"}}/></a>
+      <header className=' navbar  '>
+
 
         <NavLink className="inactive nav-link"  activeClassName="active" exact to="/">Home</NavLink>
-        <NavLink className="inactive nav-link" activeClassName="active" to="/about">Who We Are</NavLink>
+
 
         <NavLink className="inactive  nav-link" activeClassName="active" to="/content">Content</NavLink>
         <NavLink className="inactive nav-link" activeClassName="active" to="/contact">Contact Us</NavLink>
