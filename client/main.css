@@ -14,7 +14,11 @@ textarea {
 
 select {
     margin-bottom: 1rem;
-    display: block;
+    display: inline-block;
+}
+.sele{
+  width: 50%;
+  display: inline-block;
 }
 
 .signup {
@@ -555,7 +559,7 @@ hr {
 
 #services {
     padding: 140px 0;
-    background: url(../img/services-bg.jpg);
+    background: url(././/images/services-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
