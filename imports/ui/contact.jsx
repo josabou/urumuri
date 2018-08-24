@@ -16,7 +16,7 @@ class contact extends Component {
 
       <div className="col-md-4">
         <div className="contact-item"> <i className="fa fa-envelope-o fa-2x"></i>
-          <p>urumuri@gmail.com</p>
+          <p>itafari@gmail.com</p>
         </div>
       </div>
       <div className="col-md-4">
@@ -77,7 +77,7 @@ class contact extends Component {
   <a href="https://rw.linkedin.com/in/dukuzwenimana-jean-salvi-205a58140"><i className="socicon socicon-twitter"></i></a>
 
 
-    <p>Copyright &copy; team urumuli. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">team-urumuri</a></p>
+    <p>Copyright &copy; itafari. Designed by <a href="http://www.salvi.alwaysdata.net" rel="nofollow">jean-salvi</a></p>
 </div>
 </div>
 </div>

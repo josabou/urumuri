@@ -172,208 +172,203 @@ class parents extends React.Component {
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td><div style={{ width: "200px", height: "400px", overflow: "scroll" }}>
-                                                        <div style={{ borderBottom: "1px solid black" }}>
-                                                            <h6>Kanakuze Dativa</h6>
-                                                        </div>
-                                                    </div></td>
-                                                    <td>
-                                                        <div style={{ width: "400px", height: "400px" }}>
-                                                            <div style={{ height: "300px", overflow: "scroll" }}>
-                                                            <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>
-                                                            <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. umwana wanjye iyo muhaye ibiryo birimo carotti agira ikibazo cy'umusarani </div>
-                                                            <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>ooh, nibyizako wamuhindurira,  ukamugaburira inombe yimbwija zivane nigitoki </div>
-                                                            <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze mujyana </div>
+              <td><div style={{ width: "200px", height: "400px", overflow: "scroll" }}>
+                <div style={{ borderBottom: "1px solid black" }}>
+                                <h6>Kanakuze Dativa</h6>
+                                            </div>
+                </div></td>
+                          <td>
+                        <div style={{ width: "400px", height: "400px" }}>
+                  <div style={{ height: "300px", overflow: "scroll" }}>
+              <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>mubyeyi, mwaramutse neza, nakwibutsaga ko umana hari inkingo atarafata , harimo nurwi isru ruzatangwa muri iki cyumeru tuzabamenyesha itariki bidatinze  </div>  <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze Mujyana, gusa narimfite ikibazo.. umwana wanjye iyo muhaye ibiryo birimo carotti agira ikibazo cy'umusarani </div>
+        <div style={{ float: "right", width: "60%", borderBottom: "1px solid red" }}>ooh, nibyizako wamuhindurira,  ukamugaburira inombe yimbwija zivane nigitoki </div>
+                  <div style={{ float: "left", width: "60%", borderBottom: "1px solid red" }}>murakoze mujyana </div>
 
-                                                            </div>
-                                                            <div>
-                                                                <table>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td><textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea></td>
-                                                                            <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div className={this.state.food_visible ? "food" : "food_invisible"} >
-                                    <div><h2>OVERVIEW</h2><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> </div>
-                                    <div id="exTab1" className="container" style={{ width: "100%" }}>
+              </div>
+                  <div>
+    <table>
+                                <tbody>
+                    <tr>
+                    <td><textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea></td>
+                      <td><button className="btn-success" style={{ width: "120px", height: "40px" }}>Send</button></td>
+                                        </tr>
+                                </tbody>
+                      </table>
+                            </div>
+                  </div>
+              </td>
+              </tr>
+                    </tbody>
+        </table>
+              </div>
+          </div>
+    <div className={this.state.food_visible ? "food" : "food_invisible"} >
+<div><h2>OVERVIEW</h2><a href="/child_register"  data-toggle="tab">REGISTER YOUR CHILD</a> </div>
+<div id="exTab1" className="container" style={{ width: "100%" }}>
 
-                                        <ul className="nav nav-tabs" tyle={{width:"400px"}}>
-                                            <li className="active" s>
-                                                <a href="#1" data-toggle="tab">CHILD'S INFO</a>
-                                            </li>          
-
-                                            <li><a href="#2" data-toggle="tab">AGE'S INFO</a>
+<ul className="nav nav-tabs" tyle={{width:"400px"}}>
+  <li className="active" s>
+      <a href="#1" data-toggle="tab">CHILD'S INFO</a>
+                                            </li>
+<li><a href="#2" data-toggle="tab">AGE'S INFO</a>
 
                                             </li>
 
+</ul>
 
-                                        </ul>
-
-                                        <div className="tab-content ">
-                                            <div className="tab-pane active" id="1">
+  <div className="tab-content ">
+  <div className="tab-pane active" id="1">
                                                 <div>
 
 
-                  <div className="container-fluid" style={{ width: "500%" ,heigth:"50%"}}>
-                                                        <div>
-                                                            <div className="row">
-                                                                <div style={{ clear: "both" }}></div>
-                                                            </div>
-                                                            <div className="row">
-                                                                <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
-
-                                                                    <div style={{ height: "350px", overflow: "scroll" }}>
+  <div className="container-fluid" style={{ width: "500%" ,heigth:"50%"}}>
+              <div>
+      <div className="row">
+                <div style={{ clear: "both" }}></div>
+            </div>
+          <div className="row">
+    <div className="col order-last" style={{ float: "left", width: "100%", borderLeft: "1px solid black", padding: "5px" }}>
+  <div style={{ height: "350px", overflow: "scroll" }}>
                         <div className="badge">{this.renderchildren()}</div><br/>
-                        
+
                                       <div className="badge">accille Calmette Guérin vaccine <span className="btn-success inactive">Taken 13/05/18</span> </div><br/>
-                                  <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
-                          <div className="badge" style={{background:"green"}}><button  style={{width:"300px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
+    <div className="badge">Poliomyélite I  <span className="btn-success inactive">Taken 13/06/18</span> </div><br/>
+        <div className="badge" style={{background:"green"}}><button  style={{width:"300px",height:"30px"}} onClick={this.showVaccine.bind(this)} >Update</button></div>
 
-                                                                    </div>
+                </div>
 
+
+                      </div>
+  <div style={{ clear: "both" }}></div>
+            </div></div>
+            </div>
+    </div>
+
+
+
+      </div>
+      <div className="tab-pane" id="2">
+          <table>
+        <tbody>
+            <tr><td>Info for Child's age</td></tr>
+          <tr><td><button className="accordion">uko wagaburira Umwana wawe ari hagati y’amezi 8 na 10</button>
+          <div className="panel">
+          <div style={{width:"500px", height: "500px", overflow: "scroll" }}>
+        <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
+            <div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
+            <div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
+                    <div><strong>•	Imboga : </strong>karoti, poivron, epinari, urunyogwe, ibitonore, intoryi, ibibiringanya, igitunguru, amashu, ibirayi, ibihumyo</div>
+              <div><strong>•	Poroteyine : </strong>Inyama y’inkoko, umuhondo w’igi, inyama y’inka</div>
+            <div><strong>•	Ibiva ku mata :</strong> Yogourt, fromage</div>
+          <strong>ICYITONDERWA:</strong> Ibi biryo urabisya, gusa uko agenda amera amenyo, imbuto zoroshye ushobora kumuha akifatira akaba yanyunyuza nk’ikinyomoro. Tangira umumenyereze kwitamika kandi, amenye uko bafata ikiyiko.
+            <strong>URUGERO: Inombe y’ibirayi, urunyogwe na karoti</strong>
+              <div><img src="images/10.jpg" style={{ width: "100px", height: "100px" }} /></div>
+                <p>Iyi ni indyo yuzuye ishobora kugaburirwa umwana kuva ku mezi umunani.<br />
+                      Muri iyi ndyo, harimo intungamubiri nka proteines, beta-carotenes, imyunyungugu nka fer fibres, n’izindi zitandukanye.</p>
+                <h6 style={{ fontWeight: "bold", color: "blue" }}> Ibikenewe</h6>
+<ol>
+<li>Agakombe k’amashaza atonoye (yavuyeho igishishwa cy’inyuma)<span><img src="images/1.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
+<li>Ibirayi 2 biringaniye, bihase kandi bikasemo uduce <span><img src="images/2.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
+<li>Karoti 2 ziringaniye ziharuye zikasemo n’uduce<span><img src="images/3.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
+<li>½ cy’igitunguru gikase<span><img src="images/4.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
+<li>Ibiyiko 2 by’amavuta ya Olive ataratetswemo ibindi bintu<span><img src="images/5.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
+<li>Ikiyiko cy’umutobe w’indimu<span><img src="images/6.png" style={{ width: "50px", height: "50px" }} /></span></li>
+</ol>
+<h4><strong style={{ color: "green" }}>UKO BITEGURWA</strong></h4>
+  <div>
+<p><strong>step1:</strong>Ufata amashaza ukayatumbika mu mazi igihe kinini, ukayakuramo ugashyira mu yandi mazi,
+yamara kuvaho ibishishwa ukayatogosa ku ruhande, hanyuma ukayashyira mu kuma gasya.
+(umuntu ashobora kwifashisha paswari mu gihe nta kabugenewe afite).</p>
+
+<p><strong>step2:</strong>Biza amazi mu gasafuriya ku ruhande, hanyuma ushyiremo bya birayi bikase, wongeremo za karoti <span><img src="images/7.jpg" style={{ width: "50px", height: "50px" }} /></span>
+ubirekere ku muriro mukeya mu gihe cy’iminota 30 kugeza kuri 40.<span><img src="images/8.jpg" style={{ width: "50px", height: "50px" }} /></span></p>
+
+<p><strong>step3:</strong>Fata wa munyigi w’amashaza, uvange na bya birayi na karoti bihiye wakuye ku muriro bikirimo n’amazi wabitekesheje,
+    ongeramo ibiyiko 2 by’amavuta ya Olive, hanyuma ubinyuze muri mixeur <span><img src="images/9.jpg" style={{ width: "50px", height: "50px" }} /></span>
+cyangwa se ikindi kintu wifashisha mu gusya ibiribwa, kugeza igihe uboneye inombe yoroshye kandi ivanze neza.<span><img src="images/10.jpg" style={{ width: "60px", height: "60px" }} /></span>
+</p></div>
 
                                                                 </div>
-
-                                                                <div style={{ clear: "both" }}></div>
-                                                            </div></div>
-                                                    </div>
-                                                </div>
-
-
-
-                                            </div>
-                                            <div className="tab-pane" id="2">
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td>Info for Child's age</td></tr>
-                                                        <tr><td><button className="accordion">uko wagaburira Umwana wawe ari hagati y’amezi 8 na 10</button>
-                                                            <div className="panel">
-                                                                <div style={{width:"500px", height: "500px", overflow: "scroll" }}>
-                                                                    <h4><strong style={{ color: "green" }}>IBYO YASHOBORA GUFATA</strong></h4>
-                                                                    <div><strong>•	Ibinyampeke :</strong> Umuceri, ingano, ibibikomokaho, amasaka</div>
-                                                                    <div><strong>•	Imbuto : </strong>avoka, imineke, ibinyomoro, apricots,icunga, prunes, watermelon, ipapayi, inkeri</div>
-                                                                    <div><strong>•	Imboga : </strong>karoti, poivron, epinari, urunyogwe, ibitonore, intoryi, ibibiringanya, igitunguru, amashu, ibirayi, ibihumyo</div>
-                                                                    <div><strong>•	Poroteyine : </strong>Inyama y’inkoko, umuhondo w’igi, inyama y’inka</div>
-                                                                    <div><strong>•	Ibiva ku mata :</strong> Yogourt, fromage</div>
-                                                                    <strong>ICYITONDERWA:</strong> Ibi biryo urabisya, gusa uko agenda amera amenyo, imbuto zoroshye ushobora kumuha akifatira akaba yanyunyuza nk’ikinyomoro. Tangira umumenyereze kwitamika kandi, amenye uko bafata ikiyiko.
-                                                                    <strong>URUGERO: Inombe y’ibirayi, urunyogwe na karoti</strong>
-                                                                    <div><img src="images/10.jpg" style={{ width: "100px", height: "100px" }} /></div>
-                                                                    <p>Iyi ni indyo yuzuye ishobora kugaburirwa umwana kuva ku mezi umunani.<br />
-                                                                        Muri iyi ndyo, harimo intungamubiri nka proteines, beta-carotenes, imyunyungugu nka fer fibres, n’izindi zitandukanye.</p>
-                                                                    <h6 style={{ fontWeight: "bold", color: "blue" }}> Ibikenewe</h6>
-                                                                    <ol>
-                                                                        <li>Agakombe k’amashaza atonoye (yavuyeho igishishwa cy’inyuma)<span><img src="images/1.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                        <li>Ibirayi 2 biringaniye, bihase kandi bikasemo uduce <span><img src="images/2.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                        <li>Karoti 2 ziringaniye ziharuye zikasemo n’uduce<span><img src="images/3.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                        <li>½ cy’igitunguru gikase<span><img src="images/4.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                        <li>Ibiyiko 2 by’amavuta ya Olive ataratetswemo ibindi bintu<span><img src="images/5.jpg" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                        <li>Ikiyiko cy’umutobe w’indimu<span><img src="images/6.png" style={{ width: "50px", height: "50px" }} /></span></li>
-                                                                    </ol>
-                                                                    <h4><strong style={{ color: "green" }}>UKO BITEGURWA</strong></h4>
-                                                                    <div>
-                                                                        <p><strong>step1:</strong>Ufata amashaza ukayatumbika mu mazi igihe kinini, ukayakuramo ugashyira mu yandi mazi,
-                                                                       yamara kuvaho ibishishwa ukayatogosa ku ruhande, hanyuma ukayashyira mu kuma gasya.
-                                                                       (umuntu ashobora kwifashisha paswari mu gihe nta kabugenewe afite).</p>
-
-                                                                        <p><strong>step2:</strong>Biza amazi mu gasafuriya ku ruhande, hanyuma ushyiremo bya birayi bikase, wongeremo za karoti <span><img src="images/7.jpg" style={{ width: "50px", height: "50px" }} /></span>
-                                                                            ubirekere ku muriro mukeya mu gihe cy’iminota 30 kugeza kuri 40.<span><img src="images/8.jpg" style={{ width: "50px", height: "50px" }} /></span></p>
-
-                                                                        <p><strong>step3:</strong>Fata wa munyigi w’amashaza, uvange na bya birayi na karoti bihiye wakuye ku muriro bikirimo n’amazi wabitekesheje,
-                                                                          ongeramo ibiyiko 2 by’amavuta ya Olive, hanyuma ubinyuze muri mixeur <span><img src="images/9.jpg" style={{ width: "50px", height: "50px" }} /></span>
-                                                                            cyangwa se ikindi kintu wifashisha mu gusya ibiribwa, kugeza igihe uboneye inombe yoroshye kandi ivanze neza.<span><img src="images/10.jpg" style={{ width: "60px", height: "60px" }} /></span>
-                                                                        </p></div>
-
-                                                                </div>
-                                                            </div></td>
+</div></td>
                                                             </tr>
 
-                                                           
 
-                                                            <tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
+
+<tr><td><h4><strong style={{color:"red"}}>INKINGO UMWANA WAWE ATARAFATA</strong></h4>
 
                   <div className="container-fluid" style={{ width: "100%" ,heigth:"50%"}}>
                                 <div>
+<div className="row">
+<div style={{ clear: "both" }}></div>
+</div>
                                     <div className="row">
-                                        <div style={{ clear: "both" }}></div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>ITAKEN VACCINES:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                            <div className="badge">{this.renderTakenVaccine()}</div>
+<div className="col order-last" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
+<h4>ITAKEN VACCINES:</h4>
+<div style={{ height: "140px", overflow: "scroll" }}>
+<div className="badge">{this.renderTakenVaccine()}</div>
                                             </div>
-                                        </div>
-                                        <div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
-                                            <h4>UNTAKEN VACCINES:</h4>
-                                            <div style={{ height: "140px", overflow: "scroll" }}>
-                                            <div className="badge">{this.renderUnTakenVaccine()}</div>
+</div>
+<div className="col" style={{ float: "left", width: "300px", borderLeft: "1px solid black", padding: "5px" }}>
+<h4>UNTAKEN VACCINES:</h4>
+<div style={{ height: "140px", overflow: "scroll" }}>
+<div className="badge">{this.renderUnTakenVaccine()}</div>
                                             </div>
-                                        </div>
+</div>
 
-                                        <div style={{ clear: "both" }}></div>
+<div style={{ clear: "both" }}></div>
                                     </div></div>
                             </div></td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
-                                    <h4>UPCOMMING EVENTS</h4>
-                                    <div style={{ height: "600px", overflow: "scroll" }}>
-                                        <h5><strong>MINISANTE</strong></h5>
-                                        <div>Hari igikorwa cyo gukingira abana kuri uyu wa<span>12/02/18</span></div>
-                                        <h5><strong>Health center</strong></h5>
-                                        <div>Ejo kuri <span>12/02/18</span>hari igikorwa cyo gukingira kuri health center ya kacyiru</div>
-                                    </div>
-                                </div>
-                                <div className={this.state.vaccine_visible ? "vaccine" : "vaccine_invisible"}>
-                                    <h4>VACCINES TAKEN AND CHILD'S AGE</h4>
-                                    <div style={{ height: "400px", overflow: "scroll" }}>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div className={this.state.upcomming_visible ? "upcomming" : "upcomming_invisible"}>
+<h4>UPCOMMING EVENTS</h4>
+<div style={{ height: "600px", overflow: "scroll" }}>
+<h5><strong>MINISANTE</strong></h5>
+<div>Hari igikorwa cyo gukingira abana kuri uyu wa<span>12/02/18</span></div>
+<h5><strong>Health center</strong></h5>
+<div>Ejo kuri <span>12/02/18</span>hari igikorwa cyo gukingira kuri health center ya kacyiru</div>
+</div>
+</div>
+<div className={this.state.vaccine_visible ? "vaccine" : "vaccine_invisible"}>
+<h4>VACCINES TAKEN AND CHILD'S AGE</h4>
+<div style={{ height: "400px", overflow: "scroll" }}>
 
-                                        <div><div className="container">
+<div><div className="container">
 
-                                            <h6>Menya ibyerekeye inkingo w'emeza izo Umwana wawe yamaze gufata</h6>
-                                            <form>
-                                                <label className="checkbox-inline">
-                                                    <input type="checkbox" />BCG (Baccille Calmette Guérin vaccine)
+<h6>Menya ibyerekeye inkingo w'emeza izo Umwana wawe yamaze gufata</h6>
+<form>
+<label className="checkbox-inline">
+<input type="checkbox" />BCG (Baccille Calmette Guérin vaccine)
     </label>
-                                                <label className="checkbox-inline">
-                                                    <input type="checkbox" />Poliomyélite I (afite ukwezi 1 n’igice):
+  <label className="checkbox-inline">
+<input type="checkbox" />Poliomyélite I (afite ukwezi 1 n’igice):
   </label>
-                                                <label className="checkbox-inline">
-                                                    <input type="checkbox" />Pentavalent I (Afite amezi 2 n’igice)
+<label className="checkbox-inline">
+  <input type="checkbox" />Pentavalent I (Afite amezi 2 n’igice)
 </label>
-                                                <label className="checkbox-inline">
-                                                    <input type="checkbox" />Pneumocoque (afite amezi 3 n’igice)
+<label className="checkbox-inline">
+<input type="checkbox" />Pneumocoque (afite amezi 3 n’igice)
 </label>
-                                                <label className="checkbox-inline">
-                                                    <input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9):
+<label className="checkbox-inline">
+<input type="checkbox" />VAR cyangwa Rougeole (afite amezi 9):
 </label>
-                                            </form>
+</form>
 
-                                        </div>
+</div>
 
-                                        </div>
-                                        <div>
-                                                <h4>CHOOSE THE CHILD'S AGE</h4>
-                                                <form>
-                                                   CHILD'S BIRTHDAY: <input type="date" />
-                                                    <textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea>
-                                                    <button className="btn btn-success" style={{width:"50px",height:"20px"}} onClick={this.showFood.bind(this)}  >SEND</button>
+</div>
+<div>
+<h4>CHOOSE THE CHILD'S AGE</h4>
+<form>
+ CHILD'S BIRTHDAY: <input type="date" />
+<textarea className="form-control" style={{ width: "250px", height: "80px" }}></textarea>
+<button className="btn btn-success" style={{width:"50px",height:"20px"}} onClick={this.showFood.bind(this)}  >SEND</button>
 
-                                                </form>
+</form>
                                             </div>
                                     </div>
                                 </div>
