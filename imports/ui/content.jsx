@@ -35,6 +35,8 @@ super(props);
     this.state = {
       selectedOption1: 0,
       selectedOption2: 0,
+      selectedOption1l: 'search or select',
+      selectedOption2l: 'search or select',
       subscribe:{
     childcolb:Meteor.subscribe('Childcolb' )
     }
@@ -46,6 +48,7 @@ super(props);
 
   handleChange1 = (selectedOption) => {
     this.setState({selectedOption1: selectedOption.value });
+    this.setState({selectedOption2l: selectedOption.label });
     console.log(`Option1 selected:`, selectedOption);
   }
 
@@ -79,8 +82,8 @@ render (){
 
 
 <div>
-<Select className="sele" value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
-<Select  className="sele" value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>
+<Select className="sele" placeholder={label1}  value={selected.selectedOption1} onChange={this.handleChange1} options={options} />
+<Select  className="sele" placeholder={label2} value={selected.selectedOption2} onChange={this.handleChange2} options={discriptions} /></div>
 </div>
 
 <div className="blankSeparator"></div>
